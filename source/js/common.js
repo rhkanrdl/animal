@@ -132,14 +132,36 @@ function menu() {
       $(this).parent().find("ul.files").addClass("on");
   });
 
+
+  var subToggle = "0";
+
   $(".sub-head button").on("click", function(){
 
-    if (windowW < 1200) {
 
-        $(this).parent().toggleClass("on");
-        $(".shadow").toggleClass("on");
 
+    if (subToggle == "1") {
+
+        $(this).parent().removeClass("on");
+        $(".shadow").removeClass("on");
+        subToggle = "0";
+
+    } else if (windowW < 1200 || subToggle == "0") {
+
+        $(this).parent().addClass("on");
+        $(".shadow").addClass("on");
+        subToggle = "1";
+        
     }
+
+    if ($(this).parent().hasClass("depth2")) {
+        $(".sub-head div.depth1").removeClass("on");
+    }
+
+    if ($(this).parent().hasClass("depth1")) {
+        $(".sub-head div.depth2").removeClass("on");
+    }
+
+    console.log(subToggle);
 
   });
 
