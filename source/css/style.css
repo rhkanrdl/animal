@@ -1994,7 +1994,7 @@ body header .container h1 a::before {
   }
 }
 body header .container div.tools {
-  position: fixed;
+  position: absolute;
   right: 15px;
   top: 7px;
 }
@@ -2011,6 +2011,14 @@ body header .container div.tools button {
   font-size: 0;
   border: none;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20.559' height='15.632' viewBox='0 0 20.559 15.632'%3E%3Cg id='그룹_12' data-name='그룹 12' transform='translate(0 0)'%3E%3Crect id='사각형_16' data-name='사각형 16' width='20.559' height='2.5' transform='translate(0 6.566)'/%3E%3Crect id='사각형_17' data-name='사각형 17' width='20.559' height='2.5' transform='translate(0 0)'/%3E%3Crect id='사각형_18' data-name='사각형 18' width='20.559' height='2.5' transform='translate(0 13.132)'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center/20px auto;
+}
+body.sub header div.tools {
+  position: fixed;
+}
+@media (min-width: 1195px) {
+  body.sub header div.tools {
+    position: absolute;
+  }
 }
 @media (max-width: 1194px) {
   body nav#main-menu {

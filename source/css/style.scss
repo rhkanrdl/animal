@@ -129,7 +129,7 @@ body {
 
 
       div.tools {
-        position:fixed;
+        position:absolute;
         right:15px;
         top:7px;
 
@@ -152,6 +152,19 @@ body {
     }
   }
   
+
+  &.sub {
+    header {
+      div.tools {
+        position:fixed;
+
+        @media (min-width: $screen-size-pc) {
+          position:absolute;
+        }
+
+      }
+    }
+  }
 
 @media (max-width: ($screen-size-pc - 1)) {
     nav#main-menu {
