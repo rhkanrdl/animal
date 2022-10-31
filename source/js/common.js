@@ -11,8 +11,17 @@ $(function(){
   $("button.check-co").click(function() {
       $("#modal-co").addClass("on");
   });
-  
 
+  
+  $("ul.map-list li").on("click", function() {
+    $("ul.map-list li").removeClass("on");
+    $(this).addClass("on");
+});
+
+  $("ul.map-list li button").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+  });
 
   $(".faqList li h5").on("click", function(){
       $(".faqList li h5").removeClass("on");
@@ -150,7 +159,7 @@ function menu() {
         $(this).parent().addClass("on");
         $(".shadow").addClass("on");
         subToggle = "1";
-        
+
     }
 
     if ($(this).parent().hasClass("depth2")) {
