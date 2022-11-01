@@ -1951,7 +1951,6 @@ body header {
 @media (min-width: 1195px) {
   body header {
     height: 100px;
-    border-bottom: 1px solid #DDDDDD;
   }
 }
 body header .container h1 {
@@ -2274,6 +2273,256 @@ body.sub header div.tools {
 body div#content {
   /* MAIN */
   /* SUB */
+}
+body div#content.main section.main-issue {
+  text-align: center;
+}
+body div#content.main section.main-issue div.container h3 {
+  margin: 5px auto 15px;
+  padding-top: 110%;
+  background: url(../images/m_main.svg) no-repeat center/cover;
+  font-size: 0;
+}
+@media (min-width: 1195px) {
+  body div#content.main section.main-issue div.container h3 {
+    margin: 24px auto 40px;
+    padding: 0;
+    height: 460px;
+    background: url(../images/main.svg) no-repeat center/cover;
+  }
+}
+body div#content.main section.main-contents {
+  text-align: center;
+}
+@media (min-width: 1195px) {
+  body div#content.main section.main-contents div.container {
+    padding-left: 408px;
+  }
+}
+body div#content.main section.main-contents div.container a.report {
+  display: block;
+  position: relative;
+  background: transparent linear-gradient(118deg, #6A7CEF 0%, #5F34B5 100%) 0% 0% no-repeat padding-box;
+  padding: 30px 25px;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 20px;
+  margin: 0 0 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.main section.main-contents div.container a.report {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 378px;
+    height: 400px;
+    padding: 60px;
+    font-size: 24px;
+  }
+}
+body div#content.main section.main-contents div.container a.report::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 18px;
+  width: 109px;
+  height: 94px;
+  background: url(../images/icon_reg.svg) no-repeat center/100% auto;
+}
+@media (min-width: 1195px) {
+  body div#content.main section.main-contents div.container a.report::before {
+    right: 10px;
+    bottom: 28px;
+    width: 181px;
+    height: 156px;
+  }
+}
+body div#content.main section.main-contents div.container a.report span {
+  display: block;
+  font-size: 24px;
+  margin: 4px 0 14px;
+}
+@media (min-width: 1195px) {
+  body div#content.main section.main-contents div.container a.report span {
+    font-size: 30px;
+    margin: 8px 0 20px;
+  }
+}
+body div#content.main section.main-contents div.container a.report i {
+  display: block;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 13px;
+  width: 37px;
+  line-height: 37px;
+  background: #451BCF;
+  text-align: center;
+  border-radius: 50%;
+}
+@media (min-width: 1195px) {
+  body div#content.main section.main-contents div.container a.report i {
+    font-size: 20px;
+    width: 55px;
+    line-height: 55px;
+  }
+}
+body div#content.main section.main-contents div.container div.links {
+  margin: 0 0 15px;
+  font-size: 0;
+}
+@media (min-width: 1195px) {
+  body div#content.main section.main-contents div.container div.links {
+    margin: 0 0 30px;
+  }
+}
+body div#content.main section.main-contents div.container div.links a {
+  display: inline-block;
+  width: calc((100% - 15px) / 2);
+  font-size: 17px;
+  padding: 27px 20px 38px;
+  background: #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  font-weight: 900;
+  color: #111111;
+  line-height: 1.6;
+}
+@media (min-width: 1195px) {
+  body div#content.main section.main-contents div.container div.links a {
+    padding: 35px 40px;
+    width: calc((100% - 30px) / 2);
+    font-size: 19px;
+  }
+}
+body div#content.main section.main-contents div.container div.links a span {
+  display: block;
+}
+@media (min-width: 1195px) {
+  body div#content.main section.main-contents div.container div.links a span {
+    display: inline;
+  }
+}
+body div#content.main section.main-contents div.container div.links a i {
+  font-style: normal;
+  font-weight: 600;
+  color: #999999;
+  padding-left: 10px;
+}
+body div#content.main section.main-contents div.container div.links a u {
+  display: none;
+}
+@media (min-width: 1195px) {
+  body div#content.main section.main-contents div.container div.links a u {
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    color: #555555;
+    font-size: 16px;
+  }
+  body div#content.main section.main-contents div.container div.links a u:first-of-type {
+    margin-top: 10px;
+  }
+}
+body div#content.main section.main-contents div.container div.links a.farm {
+  margin-right: 15px;
+  background: url(../images/icon_link01.svg) no-repeat right 16px bottom 16px/auto 35px;
+}
+@media (min-width: 1195px) {
+  body div#content.main section.main-contents div.container div.links a.farm {
+    margin-right: 30px;
+    background-position: right 30px bottom 26px;
+    background-size: auto 50px;
+  }
+}
+body div#content.main section.main-contents div.container div.links a.info {
+  background: url(../images/icon_link02.svg) no-repeat right 16px bottom 16px/auto 42px;
+}
+@media (min-width: 1195px) {
+  body div#content.main section.main-contents div.container div.links a.info {
+    background-position: right 30px bottom 26px;
+    background-size: 50px auto;
+  }
+}
+body div#content.main section.main-contents div.container div.notice {
+  margin: 0 0 40px;
+  padding: 30px 25px;
+  background: #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 1195px) {
+  body div#content.main section.main-contents div.container div.notice {
+    padding: 35px 40px 30px;
+    margin: 0 0 70px;
+  }
+}
+body div#content.main section.main-contents div.container div.notice h3 {
+  position: relative;
+  margin: 0 0 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+@media (min-width: 1195px) {
+  body div#content.main section.main-contents div.container div.notice h3 {
+    font-size: 18px;
+  }
+}
+body div#content.main section.main-contents div.container div.notice h3 a {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  font-size: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15'%3E%3Cpath id='패스_435' data-name='패스 435' d='M1251.075,3141.729h-5.827V3135.9a.586.586,0,0,0-1.173,0v5.827h-5.827a.587.587,0,0,0,0,1.173h5.827v5.827a.586.586,0,0,0,1.173,0V3142.9h5.827a.587.587,0,1,0,0-1.173Z' transform='translate(-1237.162 -3134.815)' fill='%236e6bb8' stroke='%23111' stroke-width='1'/%3E%3C/svg%3E%0A") no-repeat center/100% auto;
+}
+@media (min-width: 1195px) {
+  body div#content.main section.main-contents div.container div.notice h3 a {
+    width: 16px;
+    height: 16px;
+  }
+}
+body div#content.main section.main-contents div.container div.notice ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body div#content.main section.main-contents div.container div.notice ul li a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  word-break: keep-all;
+  text-overflow: ellipsis;
+  line-height: 1.8;
+  font-size: 15px;
+  color: #555555;
+}
+@media (min-width: 1195px) {
+  body div#content.main section.main-contents div.container div.notice ul li a {
+    font-size: 16px;
+    line-height: 1.6;
+    padding-right: 140px;
+  }
+}
+body div#content.main section.main-contents div.container div.notice ul li a::before {
+  content: "·";
+  padding: 0 6px 0 0;
+}
+body div#content.main section.main-contents div.container div.notice ul li a i {
+  display: none;
+}
+@media (min-width: 1195px) {
+  body div#content.main section.main-contents div.container div.notice ul li a i {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-style: normal;
+    font-size: 14px;
+  }
 }
 body div#content.sub {
   padding: 0 0 60px;
