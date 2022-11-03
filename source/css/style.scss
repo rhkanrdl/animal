@@ -1854,6 +1854,10 @@ body {
                 &.type5 {
                   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='42.661' viewBox='0 0 32 42.661'%3E%3Cpath id='패스_1289' data-name='패스 1289' d='M182.708,17.229a16.01,16.01,0,0,0-18.65-12.778c-7.537,1.384-13.049,8.035-13.061,16.4a15.4,15.4,0,0,0,2.941,8.537q5.917,8.368,11.859,16.727a1.342,1.342,0,0,0,2.384.007c3.956-5.578,7.926-11.141,11.855-16.73A15.531,15.531,0,0,0,182.708,17.229Z' transform='translate(-150.998 -4.184)' fill='%23cd62f9'/%3E%3C/svg%3E%0A") no-repeat center / 100% auto;
                 }
+
+                &.type6 {
+                  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29' height='38.661' viewBox='0 0 29 38.661'%3E%3Cpath id='패스_1307' data-name='패스 1307' d='M179.736,16.006a14.509,14.509,0,0,0-16.9-11.58C156,5.68,151.008,11.708,151,19.289a13.958,13.958,0,0,0,2.665,7.736q5.363,7.583,10.747,15.159a1.216,1.216,0,0,0,2.161.006c3.585-5.055,7.183-10.1,10.744-15.162A14.075,14.075,0,0,0,179.736,16.006Z' transform='translate(-150.998 -4.184)' fill='%2348bddb'/%3E%3C/svg%3E%0A") no-repeat center / 100% auto;
+                }
               }
 
               strong {
@@ -1877,6 +1881,7 @@ body {
 
                 @media (min-width: $screen-size-pc) {
                   font-size:16px;
+                  margin:0 10px 0 0;
                 }
 
                 &:first-of-type {
