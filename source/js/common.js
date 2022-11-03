@@ -8,6 +8,32 @@ $(function(){
 
 
 
+  
+
+
+
+  $(".sub-farm .main .box input").on("focus", function() {
+    $(this).parent().addClass("on");
+  });
+
+  $(".sub-farm .main .outline").on("mouseleave", function() {
+    $(".sub-farm .main .box").removeClass("on");
+    $(".sub-farm .main .box input").blur();
+  });
+
+  $(".sub-farm .main .outline .list button").on("click", function() {
+    $(".sub-farm .main .outline .list button").removeClass("active");
+    $(this).addClass("active");
+    $(".sub-farm .main .box").removeClass("on");
+    $(".sub-farm .main .box input").attr("value", $(this).html());
+  });
+
+
+
+
+
+
+
   $("button.check-co").click(function() {
       $("#modal-co").addClass("on");
   });
@@ -58,20 +84,6 @@ $(function(){
 
 
   /* ----- slider ----- */
-  var $popupzone = $("section.main-news div.popupzone div.slider");
-
-  $popupzone.slick({
-      autoplay:true,
-      autoplaySpeed:5000,
-      arrows:false,
-      speed: 800,
-      dots: true,
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1
-  });
-
-
 
 
 });
@@ -146,31 +158,32 @@ function menu() {
 
   $(".sub-head button").on("click", function(){
 
+    if (windowW < 1200) {
 
-
-    if (subToggle == "1") {
-
-        $(this).parent().removeClass("on");
-        $(".shadow").removeClass("on");
-        subToggle = "0";
-
-    } else if (windowW < 1200 || subToggle == "0") {
-
-        $(this).parent().addClass("on");
-        $(".shadow").addClass("on");
-        subToggle = "1";
+        if (subToggle == "1") {
+    
+            $(this).parent().removeClass("on");
+            $(".shadow").removeClass("on");
+            subToggle = "0";
+    
+        } else if (windowW < 1200 || subToggle == "0") {
+    
+            $(this).parent().addClass("on");
+            $(".shadow").addClass("on");
+            subToggle = "1";
+    
+        }
+    
+        if ($(this).parent().hasClass("depth2")) {
+            $(".sub-head div.depth1").removeClass("on");
+        }
+    
+        if ($(this).parent().hasClass("depth1")) {
+            $(".sub-head div.depth2").removeClass("on");
+        }
 
     }
 
-    if ($(this).parent().hasClass("depth2")) {
-        $(".sub-head div.depth1").removeClass("on");
-    }
-
-    if ($(this).parent().hasClass("depth1")) {
-        $(".sub-head div.depth2").removeClass("on");
-    }
-
-    console.log(subToggle);
 
   });
 

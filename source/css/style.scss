@@ -1763,6 +1763,162 @@ body {
         
       }
 
+      section.sub-farm {
+
+        min-height:500px;
+        text-align:center;
+
+        div.container {
+
+          div.main {
+
+            h3 {
+              text-align:center;
+              font-size:18px;
+              color:#111;
+              font-weight:700;
+              margin:10px 0 20px;
+
+              @media (min-width: $screen-size-pc) {
+                font-size:20px;
+                margin:0 0 26px;
+              }
+            }
+
+            div.outline {
+              background: transparent linear-gradient(98deg, #6BB771 0%, #6E91DC 100%) 0% 0% no-repeat padding-box;
+              border-radius:28px;
+              padding:5px;
+              box-shadow: 0px 0px 10px #00000026;
+              height:54px;
+
+              @media (min-width: $screen-size-pc) {
+                width:488px;
+                margin:0 auto;
+                border-radius:33px;
+                height:68px;
+              }
+
+              div.box {
+                position:relative;
+                background:#fff;
+                border-radius:22px;
+                overflow:hidden;
+                border:1px solid transparent;
+
+                @media (min-width: $screen-size-pc) {
+                  border-radius:29px;
+                }
+
+                &::after {
+                  content:"";
+                  display:block;
+                  position:absolute;
+                  right:20px;
+                  top:18px;
+                  width:16px;
+                  height:10px;
+                  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Cpath id='다각형_13' data-name='다각형 13' d='M8,0l8,10H0Z' transform='translate(16 10) rotate(180)' fill='%234e3dc4'/%3E%3C/svg%3E%0A") no-repeat center / 100% auto;
+
+                  @media (min-width: $screen-size-pc) {
+                    top:24px;
+                  }
+                }
+
+                input {
+                  height:42px;
+                  width:100%;
+                  background:transparent;
+                  border:none;
+                  padding:0 60px 0 20px;
+                  outline:none;
+                  font-size:15px;
+                  color:#111;
+
+                  @media (min-width: $screen-size-pc) {
+                    height:56px;
+                    font-size:16px;
+                    padding:0 70px 0 30px;
+                  }
+
+                  &::placeholder {
+                    color:#999999;
+                  }
+                }
+
+                div.list {
+                  max-height:0;
+                  overflow:hidden;
+                  @include ani();
+
+                  button {
+                    width:100%;
+                    font-size:15px;
+                    text-align:left;
+                    color:#555;
+                    border:none;
+                    padding:0 20px;
+                    height:40px;
+                    background:transparent;
+
+                    @media (min-width: $screen-size-pc) {
+                      font-size:17px;
+                      padding:0 30px;
+                    }
+  
+
+                    &:hover,
+                    &:active,
+                    &.active {
+                      color:#111111;
+                      text-decoration:underline;
+                      font-weight:600;
+                    }
+
+                  }
+                }
+
+                &.on {
+
+                  border-color:#555555;
+                  box-shadow: 0px 0px 10px #00000026;
+
+                  div.list {
+                    max-height:60vh;
+                    overflow-y:auto;
+  
+                    @media (min-width: $screen-size-pc) {
+                      max-height:40vh;
+                    }
+  
+                  }
+
+                }
+              }
+            }
+
+            button.submit {
+              display:block;
+              margin:20px auto;
+              width:150px;
+              height:40px;
+              border-radius:40px;
+              background:#2F2D3B;
+              color:#fff;
+              font-size:17px;
+
+              @media (min-width: $screen-size-pc) {
+                width:170px;
+                height:50px;
+                margin:25px auto;
+                font-size:17px;
+              }
+            }
+          }
+
+        }
+      }
+
 
       section.sub-map {
         
