@@ -8,31 +8,47 @@ $(function(){
 
 
 
+
+  $(".sub-farm .data .tabs button").on("click", function(){
+
+    $(".sub-farm .data .tabs button").removeClass("on");
+    $(this).addClass("on");
+
+    $(".sub-farm .data .tab-data").removeClass("on");
+    
+    $(".sub-farm .data .tab-data."+ $(this).attr("data") +"").addClass("on");
+
+});
   
 
 
 
-  $(".sub-farm .main .box input").on("focus", function() {
+  $(".sub-farm .search .box input").on("focus", function() {
     $(this).parent().addClass("on");
   });
 
-  $(".sub-farm .main .outline").on("mouseleave", function() {
-    $(".sub-farm .main .box").removeClass("on");
-    $(".sub-farm .main .box input").blur();
+  $(".sub-farm .search .outline").on("mouseleave", function() {
+    $(".sub-farm .search .box").removeClass("on");
+    $(".sub-farm .search .box input").blur();
   });
 
-  $(".sub-farm .main .outline .list button").on("click", function() {
-    $(".sub-farm .main .outline .list button").removeClass("active");
+  $(".sub-farm .search .outline .list button").on("click", function() {
+    $(".sub-farm .search .outline .list button").removeClass("active");
     $(this).addClass("active");
-    $(".sub-farm .main .box").removeClass("on");
-    $(".sub-farm .main .box input").attr("value", $(this).html());
+    $(".sub-farm .search .box").removeClass("on");
+    $(".sub-farm .search .box input").attr("value", $(this).html());
   });
 
 
+  $(".sub-farm .table05 div span").on("click", function() {
+    if ($(this).hasClass("active")) {
+      $(".sub-farm .table05 div span").removeClass("active");
+    } else {
+      $(".sub-farm .table05 div span").removeClass("active");
+      $(this).addClass("active");
+    }
 
-
-
-
+  });
 
   $("button.check-co").click(function() {
       $("#modal-co").addClass("on");

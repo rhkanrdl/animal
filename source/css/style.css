@@ -1230,12 +1230,12 @@ article.layer-popup {
 div.alert-pop {
   display: none;
   position: fixed;
-  z-index: 10000;
+  z-index: 10000000000;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.6);
 }
 div.alert-pop.on {
   display: block;
@@ -1327,6 +1327,148 @@ div.alert-pop div.outline button.close {
 }
 @media (min-width: 1200px) {
   div.alert-pop div.outline button.close {
+    font-size: 14px;
+    padding: 0 20px 0 0;
+  }
+}
+
+div.write-pop {
+  display: none;
+  position: fixed;
+  z-index: 10000000000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.6);
+}
+div.write-pop.on {
+  display: block;
+}
+div.write-pop div.outline {
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  color: #111111;
+  font-size: 15px;
+  font-weight: 500;
+  word-break: keep-all;
+  border: 1px solid #555555;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.16);
+}
+@media (min-width: 1200px) {
+  div.write-pop div.outline {
+    width: 320px;
+    right: auto;
+    left: 50%;
+    margin-left: -160px;
+    font-size: 16px;
+  }
+}
+div.write-pop div.outline strong {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111111;
+  margin: 0;
+  padding: 42px 30px 14px;
+  border-bottom: 1px solid #555555;
+}
+@media (min-width: 1200px) {
+  div.write-pop div.outline strong {
+    font-size: 17px;
+    padding: 44px 30px 14px;
+  }
+}
+div.write-pop div.outline div.form {
+  padding: 20px 30px 0;
+}
+div.write-pop div.outline div.form p {
+  margin: 0 0 18px;
+  font-size: 0;
+}
+div.write-pop div.outline div.form p label {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 36px;
+  width: 80px;
+  font-size: 15px;
+}
+@media (min-width: 1200px) {
+  div.write-pop div.outline div.form p label {
+    font-size: 16px;
+  }
+}
+div.write-pop div.outline div.form p select,
+div.write-pop div.outline div.form p input {
+  vertical-align: top;
+  width: calc(100% - 80px);
+  font-size: 15px;
+  height: 34px;
+  border: 1px solid #AAAAAA;
+  padding: 0 10px;
+  color: #111111;
+}
+@media (min-width: 1200px) {
+  div.write-pop div.outline div.form p select,
+div.write-pop div.outline div.form p input {
+    font-size: 16px;
+  }
+}
+div.write-pop div.outline div.form p select::-moz-placeholder, div.write-pop div.outline div.form p input::-moz-placeholder {
+  color: #999999;
+}
+div.write-pop div.outline div.form p select:-ms-input-placeholder, div.write-pop div.outline div.form p input:-ms-input-placeholder {
+  color: #999999;
+}
+div.write-pop div.outline div.form p select::placeholder,
+div.write-pop div.outline div.form p input::placeholder {
+  color: #999999;
+}
+div.write-pop div.outline div.buttons {
+  text-align: center;
+  padding: 0 0 44px;
+  font-size: 0;
+}
+div.write-pop div.outline div.buttons button {
+  vertical-align: top;
+  height: 34px;
+  padding: 0 26px;
+  border-radius: 4px;
+  margin: 5px;
+  border: 1px solid #222222;
+  font-size: 17px;
+  font-weight: 600;
+  color: #555555;
+  background: #fff;
+}
+@media (min-width: 1200px) {
+  div.write-pop div.outline div.buttons button {
+    font-size: 16px;
+    height: 34px;
+  }
+}
+div.write-pop div.outline div.buttons button.main {
+  color: #fff;
+  border-color: #222222;
+  background: #4D4D4D;
+}
+div.write-pop div.outline button.close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  height: 14px;
+  border: none;
+  font-size: 13px;
+  color: #555555;
+  padding: 0 16px 0 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cg id='그룹_717' data-name='그룹 717' transform='translate(8077.432 1617.145)'%3E%3Crect id='사각형_17' data-name='사각형 17' width='15.131' height='1.84' transform='translate(-8076.131 -1617.145) rotate(45)' fill='%23555'/%3E%3Crect id='사각형_18' data-name='사각형 18' width='15.131' height='1.84' transform='translate(-8077.432 -1606.445) rotate(-45)' fill='%23555'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat right center/12px auto;
+}
+@media (min-width: 1200px) {
+  div.write-pop div.outline button.close {
     font-size: 14px;
     padding: 0 20px 0 0;
   }
@@ -3337,7 +3479,11 @@ body div#content.sub section.sub-farm {
   min-height: 500px;
   text-align: center;
 }
-body div#content.sub section.sub-farm div.container div.main h3 {
+body div#content.sub section.sub-farm div.container div.search {
+  position: relative;
+  z-index: 10;
+}
+body div#content.sub section.sub-farm div.container div.search h3 {
   text-align: center;
   font-size: 18px;
   color: #111;
@@ -3345,12 +3491,12 @@ body div#content.sub section.sub-farm div.container div.main h3 {
   margin: 10px 0 20px;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.sub-farm div.container div.main h3 {
+  body div#content.sub section.sub-farm div.container div.search h3 {
     font-size: 20px;
     margin: 0 0 26px;
   }
 }
-body div#content.sub section.sub-farm div.container div.main div.outline {
+body div#content.sub section.sub-farm div.container div.search div.outline {
   background: transparent linear-gradient(98deg, #6BB771 0%, #6E91DC 100%) 0% 0% no-repeat padding-box;
   border-radius: 28px;
   padding: 5px;
@@ -3358,14 +3504,14 @@ body div#content.sub section.sub-farm div.container div.main div.outline {
   height: 54px;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.sub-farm div.container div.main div.outline {
+  body div#content.sub section.sub-farm div.container div.search div.outline {
     width: 488px;
     margin: 0 auto;
     border-radius: 33px;
     height: 68px;
   }
 }
-body div#content.sub section.sub-farm div.container div.main div.outline div.box {
+body div#content.sub section.sub-farm div.container div.search div.outline div.box {
   position: relative;
   background: #fff;
   border-radius: 22px;
@@ -3373,11 +3519,11 @@ body div#content.sub section.sub-farm div.container div.main div.outline div.box
   border: 1px solid transparent;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.sub-farm div.container div.main div.outline div.box {
+  body div#content.sub section.sub-farm div.container div.search div.outline div.box {
     border-radius: 29px;
   }
 }
-body div#content.sub section.sub-farm div.container div.main div.outline div.box::after {
+body div#content.sub section.sub-farm div.container div.search div.outline div.box::after {
   content: "";
   display: block;
   position: absolute;
@@ -3388,11 +3534,11 @@ body div#content.sub section.sub-farm div.container div.main div.outline div.box
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10'%3E%3Cpath id='다각형_13' data-name='다각형 13' d='M8,0l8,10H0Z' transform='translate(16 10) rotate(180)' fill='%234e3dc4'/%3E%3C/svg%3E%0A") no-repeat center/100% auto;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.sub-farm div.container div.main div.outline div.box::after {
+  body div#content.sub section.sub-farm div.container div.search div.outline div.box::after {
     top: 24px;
   }
 }
-body div#content.sub section.sub-farm div.container div.main div.outline div.box input {
+body div#content.sub section.sub-farm div.container div.search div.outline div.box input {
   height: 42px;
   width: 100%;
   background: transparent;
@@ -3403,27 +3549,27 @@ body div#content.sub section.sub-farm div.container div.main div.outline div.box
   color: #111;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.sub-farm div.container div.main div.outline div.box input {
+  body div#content.sub section.sub-farm div.container div.search div.outline div.box input {
     height: 56px;
     font-size: 16px;
     padding: 0 70px 0 30px;
   }
 }
-body div#content.sub section.sub-farm div.container div.main div.outline div.box input::-moz-placeholder {
+body div#content.sub section.sub-farm div.container div.search div.outline div.box input::-moz-placeholder {
   color: #999999;
 }
-body div#content.sub section.sub-farm div.container div.main div.outline div.box input:-ms-input-placeholder {
+body div#content.sub section.sub-farm div.container div.search div.outline div.box input:-ms-input-placeholder {
   color: #999999;
 }
-body div#content.sub section.sub-farm div.container div.main div.outline div.box input::placeholder {
+body div#content.sub section.sub-farm div.container div.search div.outline div.box input::placeholder {
   color: #999999;
 }
-body div#content.sub section.sub-farm div.container div.main div.outline div.box div.list {
+body div#content.sub section.sub-farm div.container div.search div.outline div.box div.list {
   max-height: 0;
   overflow: hidden;
   transition: all 0.2s ease;
 }
-body div#content.sub section.sub-farm div.container div.main div.outline div.box div.list button {
+body div#content.sub section.sub-farm div.container div.search div.outline div.box div.list button {
   width: 100%;
   font-size: 15px;
   text-align: left;
@@ -3434,32 +3580,32 @@ body div#content.sub section.sub-farm div.container div.main div.outline div.box
   background: transparent;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.sub-farm div.container div.main div.outline div.box div.list button {
+  body div#content.sub section.sub-farm div.container div.search div.outline div.box div.list button {
     font-size: 17px;
     padding: 0 30px;
   }
 }
-body div#content.sub section.sub-farm div.container div.main div.outline div.box div.list button:hover, body div#content.sub section.sub-farm div.container div.main div.outline div.box div.list button:active, body div#content.sub section.sub-farm div.container div.main div.outline div.box div.list button.active {
+body div#content.sub section.sub-farm div.container div.search div.outline div.box div.list button:hover, body div#content.sub section.sub-farm div.container div.search div.outline div.box div.list button:active, body div#content.sub section.sub-farm div.container div.search div.outline div.box div.list button.active {
   color: #111111;
   text-decoration: underline;
   font-weight: 600;
 }
-body div#content.sub section.sub-farm div.container div.main div.outline div.box.on {
+body div#content.sub section.sub-farm div.container div.search div.outline div.box.on {
   border-color: #555555;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1490196078);
 }
-body div#content.sub section.sub-farm div.container div.main div.outline div.box.on div.list {
+body div#content.sub section.sub-farm div.container div.search div.outline div.box.on div.list {
   max-height: 60vh;
   overflow-y: auto;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.sub-farm div.container div.main div.outline div.box.on div.list {
+  body div#content.sub section.sub-farm div.container div.search div.outline div.box.on div.list {
     max-height: 40vh;
   }
 }
-body div#content.sub section.sub-farm div.container div.main button.submit {
+body div#content.sub section.sub-farm div.container div.search button.submit {
   display: block;
-  margin: 20px auto;
+  margin: 20px auto 47px;
   width: 150px;
   height: 40px;
   border-radius: 40px;
@@ -3468,12 +3614,492 @@ body div#content.sub section.sub-farm div.container div.main button.submit {
   font-size: 17px;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.sub-farm div.container div.main button.submit {
+  body div#content.sub section.sub-farm div.container div.search button.submit {
     width: 170px;
     height: 50px;
-    margin: 25px auto;
+    margin: 25px auto 90px;
     font-size: 17px;
   }
+}
+body div#content.sub section.sub-farm div.container div.data div.tabs {
+  font-size: 0;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.tabs {
+    border-bottom: 1px solid #555;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.tabs button {
+  width: 50%;
+  font-size: 17px;
+  border: 1px solid #B2B2B2;
+  border-bottom-color: #555555;
+  background: #EEECEC;
+  height: 44px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.tabs button {
+    position: relative;
+    top: 1px;
+    width: 146px;
+    height: 46px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.tabs button.on {
+  background: #fff;
+  border-color: #555;
+  border-bottom-color: transparent;
+}
+body div#content.sub section.sub-farm div.container div.data div.tab-data {
+  display: none;
+}
+body div#content.sub section.sub-farm div.container div.data div.tab-data.on {
+  display: block;
+}
+body div#content.sub section.sub-farm div.container div.data h4.btitle {
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 50px 0 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data h4.btitle {
+    margin: 68px 0 20px;
+    font-size: 17px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data h4.btitle::before {
+  content: "⊙";
+  padding: 0 4px 0 0;
+}
+body div#content.sub section.sub-farm div.container div.data h4.btitle small {
+  display: block;
+  line-height: 1.6;
+  margin: 10px 0 0;
+  color: #4E3DC4;
+  font-size: 13px;
+  font-weight: 400;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data h4.btitle small {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 0 0 20px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data h4.btitle button.modify {
+  position: absolute;
+  right: 0;
+  top: -11px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #EC4D47;
+  border: 1px solid #EC4D47;
+  width: 90px;
+  height: 32px;
+  background: #fff;
+  padding: 0;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data h4.btitle button.modify {
+    width: 100px;
+    height: 36px;
+    font-size: 16px;
+    top: -12px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table01 {
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  font-size: 0;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table01 {
+    width: 1000px;
+    display: table;
+    table-layout: fixed;
+  }
+  body div#content.sub section.sub-farm div.container div.data div.table01 div {
+    display: table-row;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table01 p {
+  position: relative;
+  border-bottom: 1px solid #CCCCCC;
+  padding: 15px 15px 15px 122px;
+  margin: 0;
+  color: #555;
+  word-break: keep-all;
+  font-size: 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table01 p {
+    display: table-cell;
+    vertical-align: top;
+    font-size: 16px;
+    padding: 20px 20px 20px 158px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table01 p strong {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 110px;
+  padding: 15px 10px;
+  border-left: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  background: #F1F5F6;
+  color: #111111;
+  font-weight: 400;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table01 p strong {
+    width: 138px;
+    padding: 20px 15px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table02 {
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  font-size: 0;
+}
+body div#content.sub section.sub-farm div.container div.data div.table02 > p {
+  position: relative;
+  border-bottom: 1px solid #CCCCCC;
+  padding: 15px 15px 15px 122px;
+  margin: 0;
+  color: #555;
+  word-break: keep-all;
+  font-size: 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table02 > p {
+    padding: 10px 10px 10px 158px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table02 > p strong {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 110px;
+  padding: 15px 10px;
+  border-left: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  background: #F1F5F6;
+  color: #111111;
+  font-weight: 400;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table02 > p strong {
+    width: 138px;
+    padding: 15px 15px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table02 > p span button {
+  width: 100%;
+  height: 32px;
+  border: 1px solid #CCCCCC;
+  background: url("data:image/svg+xml,%3Csvg id='search_black_24dp' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath id='패스_1322' data-name='패스 1322' d='M0,0H24V24H0Z' fill='none'/%3E%3Cpath id='패스_1323' data-name='패스 1323' d='M15.5,14h-.79l-.28-.27a6.51,6.51,0,1,0-.7.7l.27.28v.79l5,4.99L20.49,19Zm-6,0A4.5,4.5,0,1,1,14,9.5,4.494,4.494,0,0,1,9.5,14Z' fill='%234e3dc4'/%3E%3C/svg%3E%0A") no-repeat #fff right 10px center/24px auto;
+  font-size: 15px;
+  color: #111111;
+}
+body div#content.sub section.sub-farm div.container div.data div.table02 ul.result {
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 10px 10px 0;
+  border-left: 1px solid #ccc;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table02 ul.result {
+    padding: 20px 20px 5px 20px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table02 ul.result li {
+  position: relative;
+  font-size: 15px;
+  padding: 5px 5px 5px 80px;
+  margin: 0 0 10px;
+  color: #555;
+  word-break: keep-all;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table02 ul.result li {
+    padding: 5px 5px 5px 90px;
+    margin: 0 0 15px;
+    font-size: 16px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table02 ul.result li strong {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 70px;
+  background: #EBEBEB;
+  font-weight: 400;
+  color: #111;
+  padding: 5px;
+  text-align: center;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table02 ul.result li strong {
+    width: 80px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table02 div.map {
+  height: 250px;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-right: none;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table02 div.map {
+    height: 298px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table03 {
+  border: 1px solid #CCCCCC;
+  border-bottom: none;
+  font-size: 0;
+}
+body div#content.sub section.sub-farm div.container div.data div.table03 > p {
+  position: relative;
+  border-bottom: 1px solid #CCCCCC;
+  padding: 12px 70px 12px 12px;
+  margin: 0;
+  word-break: keep-all;
+  font-size: 15px;
+  line-height: 1.6;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table03 > p {
+    font-size: 16px;
+    padding: 20px 80px 20px 20px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table03 > p strong {
+  color: #111;
+  display: block;
+  font-weight: 400;
+}
+body div#content.sub section.sub-farm div.container div.data div.table03 > p strong u {
+  text-decoration: none;
+  display: block;
+  color: #555;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table03 > p strong u {
+    display: inline-block;
+    padding: 0 0 0 6px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table03 > p span {
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table03 > p span {
+    right: 20px;
+    top: 20px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table04 {
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  font-size: 0;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table04 {
+    width: 1000px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table04 p {
+  position: relative;
+  border-bottom: 1px solid #CCCCCC;
+  padding: 15px 15px 15px 122px;
+  margin: 0;
+  color: #555;
+  word-break: keep-all;
+  font-size: 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table04 p {
+    vertical-align: top;
+    font-size: 16px;
+    padding: 20px 20px 20px 158px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table04 p strong {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 110px;
+  padding: 15px 10px;
+  border-left: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  background: #F1F5F6;
+  color: #111111;
+  font-weight: 400;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table04 p strong {
+    width: 138px;
+    padding: 20px 15px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table05 {
+  border: 1px solid #CCCCCC;
+  font-size: 0;
+  margin: 0 0 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table05 {
+    width: 1000px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table05 strong {
+  display: block;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  font-size: 15px;
+  padding: 12px;
+  background: #F1F5F6;
+  font-weight: 400;
+  color: #111;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table05 strong {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table05 strong i {
+  display: block;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  font-style: normal;
+  font-weight: 400;
+  color: #4E3DC4;
+  font-size: 14px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table05 strong i {
+    right: 20px;
+    top: 15px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table05 div {
+  white-space: nowrap;
+  overflow-x: auto;
+  padding: 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table05 div {
+    padding: 20px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table05 div span {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 110px;
+  margin-right: 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table05 div span {
+    width: 200px;
+    height: 150px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table05 div span img {
+  width: 150px;
+  height: 110px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table05 div span img {
+    width: 200px;
+    height: 150px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table05 div span:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  cursor: pointer;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='52.98' height='52.98' viewBox='0 0 52.98 52.98'%3E%3Cdefs%3E%3Cfilter id='패스_1325' x='0' y='0' width='52.98' height='52.98' filterUnits='userSpaceOnUse'%3E%3CfeOffset dy='2' input='SourceAlpha'/%3E%3CfeGaussianBlur stdDeviation='3' result='blur'/%3E%3CfeFlood flood-opacity='0.251'/%3E%3CfeComposite operator='in' in2='blur'/%3E%3CfeComposite in='SourceGraphic'/%3E%3C/filter%3E%3Cfilter id='패스_1326' x='8' y='8' width='28' height='28' filterUnits='userSpaceOnUse'%3E%3CfeOffset dy='2' input='SourceAlpha'/%3E%3CfeGaussianBlur stdDeviation='3' result='blur-2'/%3E%3CfeFlood flood-opacity='0.251'/%3E%3CfeComposite operator='in' in2='blur-2'/%3E%3CfeComposite in='SourceGraphic'/%3E%3C/filter%3E%3C/defs%3E%3Cg id='zoom_in_black_24dp' transform='translate(3 1)'%3E%3Cpath id='패스_1324' data-name='패스 1324' d='M0,0H48V48H0Z' fill='none'/%3E%3Cg transform='matrix(1, 0, 0, 1, -3, -1)' filter='url(%23패스_1325)'%3E%3Cpath id='패스_1325-2' data-name='패스 1325' d='M28,25H26.42l-.56-.54a13.02,13.02,0,1,0-1.4,1.4l.54.56V28l10,9.98L37.98,35ZM16,25a9,9,0,1,1,9-9A8.988,8.988,0,0,1,16,25Z' transform='translate(6 4)' fill='%23fff'/%3E%3C/g%3E%3Cg transform='matrix(1, 0, 0, 1, -3, -1)' filter='url(%23패스_1326)'%3E%3Cpath id='패스_1326-2' data-name='패스 1326' d='M17,13H13v4H11V13H7V11h4V7h2v4h4Z' transform='translate(10 8)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") no-repeat rgba(0, 0, 0, 0.5) center/48px auto;
+}
+body div#content.sub section.sub-farm div.container div.data div.table05 div span.active {
+  position: fixed;
+  z-index: 10000000000;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  width: auto;
+  height: auto;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body div#content.sub section.sub-farm div.container div.data div.table05 div span.active::before {
+  content: "아무곳이나 누르면 닫힙니다.";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: none;
+  text-align: center;
+  margin: 40px 0 0;
+}
+body div#content.sub section.sub-farm div.container div.data div.table05 div span.active:hover::before {
+  content: "아무곳이나 누르면 닫힙니다.";
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: none;
+  bottom: auto;
+  text-align: center;
+  margin: 40px 0 0;
+}
+body div#content.sub section.sub-farm div.container div.data div.table05 div span.active img {
+  width: auto;
+  height: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  height: auto;
+  -o-object-fit: normal;
+     object-fit: normal;
+}
+body div#content.sub section.sub-farm div.container div.data div.table05 div.empty {
+  font-size: 15px;
+  text-align: center;
+  color: #555;
+  padding-top: 60px;
+  height: 140px;
 }
 body div#content.sub section.sub-map {
   text-align: center;
@@ -3809,6 +4435,72 @@ body div#content.sub section.sub-datalist div.type1 ul.list li a::before {
   left: -20px;
   bottom: 0;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15.414' height='15.414' viewBox='0 0 15.414 15.414'%3E%3Cg id='그룹_712' data-name='그룹 712' transform='translate(-375.256 -576.18)'%3E%3Cline id='선_1136' data-name='선 1136' x2='7.096' transform='translate(381.254 589.924)' fill='%23fff' stroke='%238082a2' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3Crect id='사각형_1491' data-name='사각형 1491' width='8.28' height='8.28' transform='translate(384.109 576.887) rotate(45)' fill='%23fff' stroke='%238082a2' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3Cpath id='사각형_1492' data-name='사각형 1492' d='M0,0H9.308a0,0,0,0,1,0,0V0A3.239,3.239,0,0,1,6.069,3.239H3.239A3.239,3.239,0,0,1,0,0V0A0,0,0,0,1,0,0Z' transform='translate(378.254 582.015) rotate(45)' fill='%23fff' stroke='%238082a2' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center/100% auto;
+}
+body div#content.pop {
+  padding: 40px 0;
+  text-align: center;
+}
+body div#content.pop div.container {
+  max-width: 1000px;
+}
+body div#content.pop div.container h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #222;
+  border-bottom: 1px solid #555555;
+  padding: 0 0 15px;
+  margin: 0 0 15px;
+}
+body div#content.pop div.container div.table01 {
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  font-size: 0;
+}
+body div#content.pop div.container div.table01 p {
+  position: relative;
+  border-bottom: 1px solid #CCCCCC;
+  padding: 7px 10px 7px 122px;
+  margin: 0;
+  color: #555;
+  word-break: keep-all;
+  font-size: 15px;
+}
+body div#content.pop div.container div.table01 p strong {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 110px;
+  padding: 15px 10px;
+  border-left: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  background: #F1F5F6;
+  color: #111111;
+  font-weight: 400;
+}
+body div#content.pop div.container div.table01 p span {
+  display: block;
+  min-height: 36px;
+  padding: 10px 0;
+}
+body div#content.pop div.container div.table01 p input[type=text],
+body div#content.pop div.container div.table01 p input[type=date],
+body div#content.pop div.container div.table01 p input[type=tel] {
+  width: 100%;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid #BBBBBB;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1) inset;
+  padding: 0 10px;
+}
+body div#content.pop div.container div.table01 p textarea {
+  width: 100%;
+  height: 72px;
+  border-radius: 6px;
+  border: 1px solid #BBBBBB;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1) inset;
+  padding: 0 10px;
 }
 body footer#footer {
   text-align: center;
