@@ -4450,13 +4450,75 @@ body div#content.pop div.container h3 {
   border-bottom: 1px solid #555555;
   padding: 0 0 15px;
   margin: 0 0 15px;
-  font-size: 0;
 }
 @media (min-width: 1195px) {
   body div#content.pop div.container h3 {
     font-size: 18px;
     padding: 0 0 20px;
     margin: 0 0 20px;
+  }
+}
+body div#content.pop div.container h3 small {
+  display: block;
+  line-height: 1.6;
+  margin: 10px 0 0;
+  color: #4E3DC4;
+  font-size: 13px;
+  font-weight: 400;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container h3 small {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 0 0 20px;
+  }
+}
+body div#content.pop div.container h4.btitle {
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 40px 0 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container h4.btitle {
+    margin: 70px 0 20px;
+    font-size: 17px;
+  }
+}
+body div#content.pop div.container h4.btitle small {
+  display: block;
+  line-height: 1.6;
+  margin: 10px 0 0;
+  color: #4E3DC4;
+  font-size: 13px;
+  font-weight: 400;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container h4.btitle small {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 0 0 20px;
+  }
+}
+body div#content.pop div.container h4.btitle button.modify {
+  position: absolute;
+  right: 0;
+  top: -11px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #EC4D47;
+  border: 1px solid #EC4D47;
+  width: 90px;
+  height: 32px;
+  background: #fff;
+  padding: 0;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container h4.btitle button.modify {
+    width: 100px;
+    height: 36px;
+    font-size: 16px;
+    top: -12px;
   }
 }
 body div#content.pop div.container div.table01 {
@@ -4532,6 +4594,418 @@ body div#content.pop div.container div.table01 p textarea {
   border: 1px solid #BBBBBB;
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1) inset;
   padding: 0 10px;
+}
+body div#content.pop div.container div.table03 {
+  border: 1px solid #CCCCCC;
+  border-bottom: none;
+  font-size: 0;
+  margin: 0 0 70px;
+}
+body div#content.pop div.container div.table03 > p {
+  position: relative;
+  border-bottom: 1px solid #CCCCCC;
+  padding: 12px 70px 12px 12px;
+  margin: 0;
+  word-break: keep-all;
+  font-size: 15px;
+  line-height: 1.6;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table03 > p {
+    font-size: 16px;
+    padding: 20px 80px 20px 20px;
+  }
+}
+body div#content.pop div.container div.table03 > p strong {
+  color: #111;
+  display: block;
+  font-weight: 400;
+}
+body div#content.pop div.container div.table03 > p strong u {
+  text-decoration: none;
+  display: block;
+  color: #555;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table03 > p strong u {
+    display: inline-block;
+    padding: 0 0 0 6px;
+  }
+}
+body div#content.pop div.container div.table03 > p select {
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border: none;
+  margin: 0;
+  padding: 0 10px 0 0;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table03 > p select {
+    right: 20px;
+    top: 20px;
+  }
+}
+body div#content.pop div.container div.table05 {
+  border: 1px solid #CCCCCC;
+  font-size: 0;
+  margin: 0 0 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table05 {
+    width: 1000px;
+  }
+}
+body div#content.pop div.container div.table05 strong {
+  display: block;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  font-size: 15px;
+  padding: 12px;
+  background: #F1F5F6;
+  font-weight: 400;
+  color: #111;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table05 strong {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+}
+body div#content.pop div.container div.table05 strong span {
+  display: block;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  font-size: 14px;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table05 strong span {
+    font-size: 15px;
+    right: 20px;
+    top: 15px;
+  }
+}
+body div#content.pop div.container div.table05 strong span u {
+  text-decoration: none;
+  display: none;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table05 strong span u {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+body div#content.pop div.container div.table05 strong span label {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 0 0 4px;
+}
+body div#content.pop div.container div.table05 strong span input {
+  vertical-align: top;
+  position: relative;
+  top: -2px;
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
+body div#content.pop div.container div.table05 button.upload {
+  font-size: 15px;
+  margin: 15px 15px 0;
+  background: #4E3DC4;
+  border: 1px solid #4335A9;
+  border-radius: 4px;
+  color: #fff;
+  width: 110px;
+  height: 38px;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table05 button.upload {
+    font-size: 16px;
+    width: 120px;
+    height: 40px;
+    margin: 20px 20px 0;
+  }
+}
+body div#content.pop div.container div.table05 div {
+  padding: 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table05 div {
+    padding: 25px 5px 5px 25px;
+  }
+}
+body div#content.pop div.container div.table05 div span {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 220px;
+  margin: 0 15px 15px 0;
+  border: 1px solid #CCCCCC;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table05 div span {
+    width: 300px;
+    height: 226px;
+    margin: 0 20px 20px 0;
+  }
+}
+body div#content.pop div.container div.table05 div span img {
+  width: 100%;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table05 div span img {
+    width: 300px;
+    height: 226px;
+  }
+}
+body div#content.pop div.container div.table05 div span button.del {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: #2B2B2B;
+  border: 1px solid #070707;
+  font-size: 14px;
+  color: #FFE600;
+  width: 60px;
+  height: 30px;
+  border-radius: 4px;
+}
+body div#content.pop div.container div.table05 div.empty {
+  font-size: 15px;
+  text-align: center;
+  color: #555;
+  padding-top: 60px;
+  height: 140px;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table06 {
+    position: relative;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    padding-top: 47px;
+  }
+  body div#content.pop div.container div.table06::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 47px;
+    background: #F1F5F6;
+    border-bottom: 1px solid #ccc;
+  }
+}
+body div#content.pop div.container div.table06 div {
+  position: relative;
+  border: 1px solid #CCCCCC;
+  margin: 0 0 15px;
+  padding: 10px 10px 10px 30px;
+  font-size: 0;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table06 div {
+    padding: 10px 10px 10px 40px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+  }
+}
+body div#content.pop div.container div.table06 div i.num {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  font-size: 15px;
+  font-style: normal;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table06 div i.num {
+    left: 15px;
+    top: 17px;
+    font-size: 17px;
+  }
+}
+body div#content.pop div.container div.table06 div p {
+  position: relative;
+  margin: 0 0 10px;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table06 div p {
+    display: inline-block;
+    margin: 0;
+    padding: 0 10px;
+    width: 550px;
+  }
+}
+body div#content.pop div.container div.table06 div p label {
+  display: none;
+}
+body div#content.pop div.container div.table06 div p input[type=text],
+body div#content.pop div.container div.table06 div p input[type=date],
+body div#content.pop div.container div.table06 div p input[type=tel],
+body div#content.pop div.container div.table06 div p select {
+  width: 100%;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid #BBBBBB;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1) inset;
+  padding: 0 10px;
+  font-size: 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table06 div p input[type=text],
+body div#content.pop div.container div.table06 div p input[type=date],
+body div#content.pop div.container div.table06 div p input[type=tel],
+body div#content.pop div.container div.table06 div p select {
+    height: 38px;
+  }
+}
+body div#content.pop div.container div.table06 div p.half {
+  display: inline-block;
+  width: calc(50% - 5px);
+  margin: 0;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table06 div p.half {
+    width: 198px;
+  }
+}
+body div#content.pop div.container div.table06 div p.half.nation {
+  margin-right: 10px;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table06 div p.half.nation {
+    margin: 0;
+  }
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table06 div:first-of-type p label {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -57px;
+    line-height: 46px;
+    font-size: 16px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+  }
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table06 div:first-of-type p:last-of-type label {
+    border-right: none;
+  }
+}
+body div#content.pop div.container div.table07 {
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  font-size: 0;
+}
+body div#content.pop div.container div.table07 p {
+  position: relative;
+  border-bottom: 1px solid #CCCCCC;
+  padding: 40px 10px 7px 100px;
+  margin: 0;
+  color: #555;
+  word-break: keep-all;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table07 p {
+    padding: 7px 10px 7px 110px;
+  }
+}
+body div#content.pop div.container div.table07 p strong {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 90px;
+  padding: 30px 10px;
+  border-left: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  background: #F1F5F6;
+  color: #111111;
+  font-weight: 400;
+  font-size: 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table07 p strong {
+    width: 100px;
+    font-size: 16px;
+    padding: 16px 10px;
+  }
+}
+body div#content.pop div.container div.table07 p > label {
+  display: inline-block;
+  font-size: 15px;
+  width: 90px;
+  padding: 0 0 0 20px;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table07 p > label {
+    font-size: 16px;
+    width: 110px;
+    padding: 0 0 0 30px;
+  }
+}
+body div#content.pop div.container div.table07 p input[type=text] {
+  width: 100%;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid #BBBBBB;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1) inset;
+  padding: 0 10px;
+  font-size: 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table07 p input[type=text] {
+    height: 38px;
+    font-size: 16px;
+  }
+}
+body div#content.pop div.container div.table07 p input[type=text].count {
+  width: 50px;
+  padding: 0 10px 0 0;
+  text-align: right;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table07 p input[type=text].count {
+    width: 100px;
+  }
+}
+body div#content.pop div.container div.table07 p input[type=text].species {
+  width: calc(100% - 140px);
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table07 p input[type=text].species {
+    width: 200px;
+  }
+}
+body div#content.pop div.container div.table07 p button.del {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  color: #22256B;
+  text-decoration: underline;
+  padding: 0 0 0 17px;
+  font-size: 15px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.723' height='15.416' viewBox='0 0 13.723 15.416'%3E%3Cg id='그룹_767' data-name='그룹 767' transform='translate(0.6 0.6)'%3E%3Crect id='사각형_1650' data-name='사각형 1650' width='10.007' height='11.995' transform='translate(1.258 2.221)' fill='%23fff' stroke='%238082a2' stroke-linejoin='round' stroke-width='1.2'/%3E%3Crect id='사각형_1651' data-name='사각형 1651' width='12.523' height='3.233' transform='translate(0 2.129)' fill='%23fff' stroke='%238082a2' stroke-linejoin='round' stroke-width='1.2'/%3E%3Crect id='사각형_1652' data-name='사각형 1652' width='5.987' height='2.435' transform='translate(3.268 0)' fill='%23fff' stroke='%238082a2' stroke-linejoin='round' stroke-width='1.2'/%3E%3Cline id='선_1184' data-name='선 1184' y2='6.964' transform='translate(4.13 5.095)' fill='%23fff' stroke='%238082a2' stroke-linejoin='round' stroke-width='1.2'/%3E%3Cline id='선_1185' data-name='선 1185' y2='6.964' transform='translate(6.261 5.095)' fill='%23fff' stroke='%238082a2' stroke-linejoin='round' stroke-width='1.2'/%3E%3Cline id='선_1186' data-name='선 1186' y2='6.964' transform='translate(8.393 5.095)' fill='%23fff' stroke='%238082a2' stroke-linejoin='round' stroke-width='1.2'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat left center/12.5px auto;
+}
+@media (min-width: 1195px) {
+  body div#content.pop div.container div.table07 p button.del {
+    right: 20px;
+    top: 14px;
+    background-size: 16px auto;
+    line-height: 1.6;
+    padding: 0 0 0 24px;
+  }
 }
 body div#content.pop div.container div.button-set {
   text-align: center;
