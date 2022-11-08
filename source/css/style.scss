@@ -2855,6 +2855,13 @@ body {
           border-bottom:1px solid #555555;
           padding:0 0 15px;
           margin:0 0 15px;
+          font-size:0;
+
+          @media (min-width: $screen-size-pc) {
+            font-size:18px;
+            padding:0 0 20px;
+            margin:0 0 20px;
+          }
         }
 
 
@@ -2862,10 +2869,6 @@ body {
           border-top:1px solid #CCCCCC;
           border-right:1px solid #CCCCCC;
           font-size:0;
-
-          @media (min-width: $screen-size-pc) {
-
-          }
 
           p {
             position:relative;
@@ -2877,6 +2880,8 @@ body {
             font-size:15px;
 
             @media (min-width: $screen-size-pc) {
+              font-size:16px;
+              padding:7px 10px 7px 158px;
             }
 
             strong {
@@ -2894,6 +2899,7 @@ body {
               font-weight:400;
 
               @media (min-width: $screen-size-pc) {
+                width:138px;
               }
             }
 
@@ -2901,7 +2907,13 @@ body {
               display:block;
               min-height:36px;
               padding:10px 0;
+
+              @media (min-width: $screen-size-pc) {
+                min-height:38px;
+              }
+
             }
+
             input[type=text],
             input[type=date],
             input[type=tel] {
@@ -2911,6 +2923,10 @@ body {
               border:1px solid #BBBBBB;
               @include inner-shadow($x:2px,$y: 2px, $blur: 4px, $spread: 0, $alpha: 0.10);
               padding:0 10px;
+
+              @media (min-width: $screen-size-pc) {
+                height:38px;
+              }
             }
 
             textarea {
@@ -2924,6 +2940,39 @@ body {
             
           }
         }
+
+        div.button-set {
+          text-align:center;
+          padding:30px 0;
+          font-size:0;
+
+          button {
+            width:90px;
+            height:40px;
+            border:1px solid #111111;
+            background:#fff;
+            font-size:16px;
+            color:#555555;
+            margin:0 7px;
+
+              @media (min-width: $screen-size-pc) {
+                width:100px;
+                height:46px;
+                font-size:17px;
+                margin:0 10px;
+              }
+
+            &.main {
+              background:#2F2D3B;
+              border-color:#2D2B39;
+              color:#fff;
+              font-weight:600;
+            }
+          }
+
+        }
+
+
       }
 
     }
