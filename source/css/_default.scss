@@ -205,6 +205,19 @@ div.btn-set {
 	  }
 	}
 
+	&.vertical {
+		button,
+		a {
+			display:block;
+			width:200px;
+			margin:0 auto 20px;
+
+			@media (min-width: $screen-size-pc) {
+				width: 260px;
+			}
+		}
+	}
+
   }
 
 /* Modal */
