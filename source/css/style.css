@@ -598,117 +598,6 @@ button {
 }
 
 /* default btn */
-.btn {
-  display: inline-block;
-  vertical-align: baseline;
-  outline: none;
-  border: 1px solid #999;
-  background: #E9E9E9;
-  line-height: 46px;
-  padding: 0 20px;
-  margin: 0 2px 4px;
-  font-size: 18px;
-  color: #555;
-  font-weight: 500;
-}
-@media (min-width: 1200px) {
-  .btn {
-    line-height: 52px;
-    font-size: 20px;
-    min-width: 140px;
-  }
-}
-.btn.main {
-  background: #029AD4;
-  border: 1px solid transparent;
-  color: #fff;
-  border-color: transparent;
-}
-.btn.sub {
-  background: #1f222d;
-  color: #fff;
-  border-color: transparent;
-}
-.btn.btn-ms {
-  line-height: 26px;
-  font-size: 13px;
-  padding: 0 15px;
-}
-.btn.btn-xs {
-  line-height: 20px;
-  font-size: 12px;
-  padding: 0 10px;
-}
-.btn u {
-  display: inline-block;
-  text-decoration: none;
-  padding: 0 0 0 4px;
-  opacity: 0.8;
-  font-size: 0.8em;
-  font-weight: 200;
-}
-.btn i {
-  position: relative;
-  top: 2px;
-  margin: 0 4px 0 0;
-  font-size: 16px;
-}
-
-.btn-set {
-  margin: 20px 0;
-  font-size: 0;
-}
-.btn-set.center {
-  text-align: center;
-}
-.btn-set.right {
-  text-align: right;
-}
-.btn-set.big .btn {
-  line-height: 46px;
-  padding: 0 20px;
-  min-width: 140px;
-  font-size: 16px;
-}
-@media (min-width: 1200px) {
-  .btn-set.big .btn {
-    line-height: 60px;
-    padding: 0 50px;
-    font-size: 20px;
-    min-width: 160px;
-  }
-}
-.btn-set.full .btn {
-  width: 100%;
-}
-@media (min-width: 1200px) {
-  .btn-set.full .btn {
-    width: auto;
-    min-width: 200px;
-  }
-}
-.btn-set.align div {
-  display: inline-block;
-  width: 100%;
-  vertical-align: top;
-  text-align: center;
-}
-@media (min-width: 1200px) {
-  .btn-set.align div {
-    width: 50%;
-  }
-}
-@media (min-width: 1200px) {
-  .btn-set.align div.left {
-    text-align: left;
-  }
-}
-@media (min-width: 1200px) {
-  .btn-set.align div.right {
-    text-align: right;
-  }
-}
-
 /* Modal */
 .modal {
   display: none;
@@ -2745,6 +2634,84 @@ body div#content.sub h3.stitle small {
     font-size: 14px;
   }
 }
+body div#content.sub h3.atitle {
+  font-size: 17px;
+  font-weight: 600;
+  color: #222;
+  border-bottom: 1px solid #555555;
+  padding: 0 0 15px;
+  margin: 0 0 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub h3.atitle {
+    font-size: 18px;
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+  }
+}
+body div#content.sub h3.atitle small {
+  display: block;
+  line-height: 1.6;
+  margin: 10px 0 0;
+  color: #4E3DC4;
+  font-size: 13px;
+  font-weight: 400;
+}
+@media (min-width: 1195px) {
+  body div#content.sub h3.atitle small {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 0 0 20px;
+  }
+}
+body div#content.sub h4.ctitle {
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 40px 0 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub h4.ctitle {
+    margin: 70px 0 20px;
+    font-size: 17px;
+  }
+}
+body div#content.sub h4.ctitle small {
+  display: block;
+  line-height: 1.6;
+  margin: 10px 0 0;
+  color: #4E3DC4;
+  font-size: 13px;
+  font-weight: 400;
+}
+@media (min-width: 1195px) {
+  body div#content.sub h4.ctitle small {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 0 0 20px;
+  }
+}
+body div#content.sub h4.ctitle button.modify {
+  position: absolute;
+  right: 0;
+  top: -11px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #EC4D47;
+  border: 1px solid #EC4D47;
+  width: 90px;
+  height: 32px;
+  background: #fff;
+  padding: 0;
+}
+@media (min-width: 1195px) {
+  body div#content.sub h4.ctitle button.modify {
+    width: 100px;
+    height: 36px;
+    font-size: 16px;
+    top: -12px;
+  }
+}
 @media (max-width: 1194px) {
   body div#content.sub section.sub-head {
     position: relative;
@@ -4184,6 +4151,520 @@ body div#content.sub section.sub-farm div.container div.data div.table05 div.emp
   padding-top: 60px;
   height: 140px;
 }
+body div#content.sub section.sub-farm div.container div.data div.table_field01 {
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  font-size: 0;
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field01 p {
+  position: relative;
+  border-bottom: 1px solid #CCCCCC;
+  padding: 7px 10px 7px 122px;
+  margin: 0;
+  color: #555;
+  word-break: keep-all;
+  font-size: 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field01 p {
+    font-size: 16px;
+    padding: 7px 10px 7px 158px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field01 p strong {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 110px;
+  padding: 15px 10px;
+  border-left: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  background: #F1F5F6;
+  color: #111111;
+  font-weight: 400;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field01 p strong {
+    width: 138px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field01 p span {
+  display: block;
+  min-height: 36px;
+  padding: 10px 0;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field01 p span {
+    min-height: 38px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field01 p input[type=text],
+body div#content.sub section.sub-farm div.container div.data div.table_field01 p input[type=date],
+body div#content.sub section.sub-farm div.container div.data div.table_field01 p input[type=tel] {
+  width: 100%;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid #BBBBBB;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1) inset;
+  padding: 0 10px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field01 p input[type=text],
+body div#content.sub section.sub-farm div.container div.data div.table_field01 p input[type=date],
+body div#content.sub section.sub-farm div.container div.data div.table_field01 p input[type=tel] {
+    height: 38px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field01 p textarea {
+  width: 100%;
+  height: 72px;
+  border-radius: 6px;
+  border: 1px solid #BBBBBB;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1) inset;
+  padding: 0 10px;
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field02 {
+  border: 1px solid #CCCCCC;
+  border-bottom: none;
+  font-size: 0;
+  margin: 0 0 70px;
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field02 > p {
+  position: relative;
+  border-bottom: 1px solid #CCCCCC;
+  padding: 12px 70px 12px 12px;
+  margin: 0;
+  word-break: keep-all;
+  font-size: 15px;
+  line-height: 1.6;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field02 > p {
+    font-size: 16px;
+    padding: 20px 80px 20px 20px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field02 > p strong {
+  color: #111;
+  display: block;
+  font-weight: 400;
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field02 > p strong u {
+  text-decoration: none;
+  display: block;
+  color: #555;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field02 > p strong u {
+    display: inline-block;
+    padding: 0 0 0 6px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field02 > p select {
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border: none;
+  margin: 0;
+  padding: 0 10px 0 0;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field02 > p select {
+    right: 20px;
+    top: 20px;
+  }
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field03 {
+    position: relative;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    padding-top: 47px;
+  }
+  body div#content.sub section.sub-farm div.container div.data div.table_field03::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 47px;
+    background: #F1F5F6;
+    border-bottom: 1px solid #ccc;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field03 div {
+  position: relative;
+  border: 1px solid #CCCCCC;
+  margin: 0 0 15px;
+  padding: 10px 10px 10px 30px;
+  font-size: 0;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field03 div {
+    padding: 10px 10px 10px 40px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field03 div i.num {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  font-size: 15px;
+  font-style: normal;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field03 div i.num {
+    left: 15px;
+    top: 17px;
+    font-size: 17px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field03 div p {
+  position: relative;
+  margin: 0 0 10px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field03 div p {
+    display: inline-block;
+    margin: 0;
+    padding: 0 10px;
+    width: 550px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field03 div p label {
+  display: none;
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field03 div p input[type=text],
+body div#content.sub section.sub-farm div.container div.data div.table_field03 div p input[type=date],
+body div#content.sub section.sub-farm div.container div.data div.table_field03 div p input[type=tel],
+body div#content.sub section.sub-farm div.container div.data div.table_field03 div p select {
+  width: 100%;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid #BBBBBB;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1) inset;
+  padding: 0 10px;
+  font-size: 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field03 div p input[type=text],
+body div#content.sub section.sub-farm div.container div.data div.table_field03 div p input[type=date],
+body div#content.sub section.sub-farm div.container div.data div.table_field03 div p input[type=tel],
+body div#content.sub section.sub-farm div.container div.data div.table_field03 div p select {
+    height: 38px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field03 div p.half {
+  display: inline-block;
+  width: calc(50% - 5px);
+  margin: 0;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field03 div p.half {
+    width: 198px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field03 div p.half.nation {
+  margin-right: 10px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field03 div p.half.nation {
+    margin: 0;
+  }
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field03 div:first-of-type p label {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -57px;
+    line-height: 46px;
+    font-size: 16px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+  }
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field03 div:first-of-type p:last-of-type label {
+    border-right: none;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field04 {
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  font-size: 0;
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field04 p {
+  position: relative;
+  border-bottom: 1px solid #CCCCCC;
+  padding: 40px 10px 7px 100px;
+  margin: 0;
+  color: #555;
+  word-break: keep-all;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field04 p {
+    padding: 7px 10px 7px 110px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field04 p strong {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 90px;
+  padding: 30px 10px;
+  border-left: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  background: #F1F5F6;
+  color: #111111;
+  font-weight: 400;
+  font-size: 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field04 p strong {
+    width: 100px;
+    font-size: 16px;
+    padding: 16px 10px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field04 p > label {
+  display: inline-block;
+  font-size: 15px;
+  width: 90px;
+  padding: 0 0 0 20px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field04 p > label {
+    font-size: 16px;
+    width: 110px;
+    padding: 0 0 0 30px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field04 p input[type=text] {
+  width: 100%;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid #BBBBBB;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1) inset;
+  padding: 0 10px;
+  font-size: 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field04 p input[type=text] {
+    height: 38px;
+    font-size: 16px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field04 p input[type=text].count {
+  width: 50px;
+  padding: 0 10px 0 0;
+  text-align: right;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field04 p input[type=text].count {
+    width: 100px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field04 p input[type=text].species {
+  width: calc(100% - 140px);
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field04 p input[type=text].species {
+    width: 200px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field04 p button.del {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: none;
+  color: #22256B;
+  text-decoration: underline;
+  padding: 0 0 0 17px;
+  font-size: 15px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.723' height='15.416' viewBox='0 0 13.723 15.416'%3E%3Cg id='그룹_767' data-name='그룹 767' transform='translate(0.6 0.6)'%3E%3Crect id='사각형_1650' data-name='사각형 1650' width='10.007' height='11.995' transform='translate(1.258 2.221)' fill='%23fff' stroke='%238082a2' stroke-linejoin='round' stroke-width='1.2'/%3E%3Crect id='사각형_1651' data-name='사각형 1651' width='12.523' height='3.233' transform='translate(0 2.129)' fill='%23fff' stroke='%238082a2' stroke-linejoin='round' stroke-width='1.2'/%3E%3Crect id='사각형_1652' data-name='사각형 1652' width='5.987' height='2.435' transform='translate(3.268 0)' fill='%23fff' stroke='%238082a2' stroke-linejoin='round' stroke-width='1.2'/%3E%3Cline id='선_1184' data-name='선 1184' y2='6.964' transform='translate(4.13 5.095)' fill='%23fff' stroke='%238082a2' stroke-linejoin='round' stroke-width='1.2'/%3E%3Cline id='선_1185' data-name='선 1185' y2='6.964' transform='translate(6.261 5.095)' fill='%23fff' stroke='%238082a2' stroke-linejoin='round' stroke-width='1.2'/%3E%3Cline id='선_1186' data-name='선 1186' y2='6.964' transform='translate(8.393 5.095)' fill='%23fff' stroke='%238082a2' stroke-linejoin='round' stroke-width='1.2'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat left center/12.5px auto;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field04 p button.del {
+    right: 20px;
+    top: 14px;
+    background-size: 16px auto;
+    line-height: 1.6;
+    padding: 0 0 0 24px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field05 {
+  border: 1px solid #CCCCCC;
+  font-size: 0;
+  margin: 0 0 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field05 {
+    width: 1000px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field05 strong {
+  display: block;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  font-size: 15px;
+  padding: 12px;
+  background: #F1F5F6;
+  font-weight: 400;
+  color: #111;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field05 strong {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field05 strong span {
+  display: block;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  font-size: 14px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field05 strong span {
+    font-size: 15px;
+    right: 20px;
+    top: 15px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field05 strong span u {
+  text-decoration: none;
+  display: none;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field05 strong span u {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field05 strong span label {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 0 0 4px;
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field05 strong span input {
+  vertical-align: top;
+  position: relative;
+  top: -2px;
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field05 button.upload {
+  font-size: 15px;
+  margin: 15px 15px 0;
+  background: #4E3DC4;
+  border: 1px solid #4335A9;
+  border-radius: 4px;
+  color: #fff;
+  width: 110px;
+  height: 38px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field05 button.upload {
+    font-size: 16px;
+    width: 120px;
+    height: 40px;
+    margin: 20px 20px 0;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field05 div {
+  padding: 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field05 div {
+    padding: 25px 5px 5px 25px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field05 div span {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 220px;
+  margin: 0 15px 15px 0;
+  border: 1px solid #CCCCCC;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field05 div span {
+    width: 300px;
+    height: 226px;
+    margin: 0 20px 20px 0;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field05 div span img {
+  width: 100%;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field05 div span img {
+    width: 300px;
+    height: 226px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field05 div span button.del {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: #2B2B2B;
+  border: 1px solid #070707;
+  font-size: 14px;
+  color: #FFE600;
+  width: 60px;
+  height: 30px;
+  border-radius: 4px;
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field05 div.empty {
+  font-size: 15px;
+  text-align: center;
+  color: #555;
+  padding-top: 60px;
+  height: 140px;
+}
+body div#content.sub section.sub-farm div.container div.data div.btn-set {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 0;
+}
+body div#content.sub section.sub-farm div.container div.data div.btn-set button {
+  width: 90px;
+  height: 40px;
+  border: 1px solid #111111;
+  background: #fff;
+  font-size: 16px;
+  color: #555555;
+  margin: 0 7px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.btn-set button {
+    width: 100px;
+    height: 46px;
+    font-size: 17px;
+    margin: 0 10px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.btn-set button.main {
+  background: #2F2D3B;
+  border-color: #2D2B39;
+  color: #fff;
+  font-weight: 600;
+}
 body div#content.sub section.sub-map {
   text-align: center;
 }
@@ -4827,12 +5308,23 @@ body div#content.sub section.find div.container fieldset a.login {
     font-size: 16px;
   }
 }
+body div#content.sub section.sign {
+  text-align: center;
+}
 body div#content.sub section.sign div.container ul.step {
   background: #F5F5F5;
   border-radius: 10px;
   padding: 15px;
+  margin: 0 0 40px;
   font-size: 0;
   list-style: none;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sign div.container ul.step {
+    border-radius: 170px;
+    padding: 40px 80px;
+    margin: 0 0 60px;
+  }
 }
 body div#content.sub section.sign div.container ul.step li {
   display: inline-block;
@@ -4846,6 +5338,14 @@ body div#content.sub section.sign div.container ul.step li {
   width: calc((100% - 105px) / 4);
   padding: 37px 0 0;
 }
+@media (min-width: 1195px) {
+  body div#content.sub section.sign div.container ul.step li {
+    width: calc((100% - 300px) / 4);
+    margin-right: 100px;
+    padding: 72px 0 0;
+    font-size: 16px;
+  }
+}
 body div#content.sub section.sign div.container ul.step li::after {
   content: "";
   display: block;
@@ -4855,7 +5355,14 @@ body div#content.sub section.sign div.container ul.step li::after {
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='16' height='16' viewBox='0 0 16 16'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_1990' data-name='사각형 1990' width='16' height='16' transform='translate(-1 -1)' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_1684' data-name='그룹 1684' transform='translate(0.667 0.667)'%3E%3Cg id='그룹_1683' data-name='그룹 1683' transform='translate(0.333 0.333)' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_1594' data-name='패스 1594' d='M7.292,14.584a7.292,7.292,0,1,1,7.292-7.292,7.292,7.292,0,0,1-7.292,7.292' transform='translate(-0.292 -0.291)' fill='%23e3e3e3'/%3E%3Crect id='사각형_1986' data-name='사각형 1986' width='4.828' height='1.871' transform='matrix(0.707, -0.707, 0.707, 0.707, 2.98, 9.093)' fill='%231e345b'/%3E%3Crect id='사각형_1987' data-name='사각형 1987' width='1.871' height='4.828' transform='translate(2.98 4.908) rotate(-45)' fill='%231e345b'/%3E%3Crect id='사각형_1988' data-name='사각형 1988' width='4.828' height='1.871' transform='matrix(0.707, -0.707, 0.707, 0.707, 6.627, 9.093)' fill='%231e345b'/%3E%3Crect id='사각형_1989' data-name='사각형 1989' width='1.871' height='4.828' transform='translate(6.627 4.908) rotate(-45)' fill='%231e345b'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center/100% auto;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='16' height='16' viewBox='0 0 16 16'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_1990' data-name='사각형 1990' width='16' height='16' transform='translate(-1 -1)' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_1717' data-name='그룹 1717' transform='translate(0.667 0.667)'%3E%3Cg id='그룹_1683' data-name='그룹 1683' transform='translate(0.333 0.333)' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_1594' data-name='패스 1594' d='M7.292,14.584a7.292,7.292,0,1,1,7.292-7.292,7.292,7.292,0,0,1-7.292,7.292' transform='translate(-0.292 -0.291)' fill='%23e3e3e3'/%3E%3Crect id='사각형_1986' data-name='사각형 1986' width='4.828' height='1.871' transform='matrix(0.707, -0.707, 0.707, 0.707, 2.98, 9.093)' fill='%23bcbcbc'/%3E%3Crect id='사각형_1987' data-name='사각형 1987' width='1.871' height='4.828' transform='translate(2.98 4.908) rotate(-45)' fill='%23bcbcbc'/%3E%3Crect id='사각형_1988' data-name='사각형 1988' width='4.828' height='1.871' transform='matrix(0.707, -0.707, 0.707, 0.707, 6.627, 9.093)' fill='%23bcbcbc'/%3E%3Crect id='사각형_1989' data-name='사각형 1989' width='1.871' height='4.828' transform='translate(6.627 4.908) rotate(-45)' fill='%23bcbcbc'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center/100% auto;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sign div.container ul.step li::after {
+    width: 36px;
+    height: 36px;
+    right: -70px;
+  }
 }
 body div#content.sub section.sign div.container ul.step li:last-of-type {
   margin-right: 0;
@@ -4866,613 +5373,57 @@ body div#content.sub section.sign div.container ul.step li:last-of-type::after {
 body div#content.sub section.sign div.container ul.step li:nth-child(1) {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='51.027' height='55.916' viewBox='0 0 51.027 55.916'%3E%3Cg id='그룹_1694' data-name='그룹 1694' transform='translate(-508 -340)'%3E%3Crect id='사각형_1998' data-name='사각형 1998' width='46' height='8' transform='translate(511 354)' fill='%23f5f5f5'/%3E%3Crect id='사각형_1999' data-name='사각형 1999' width='6' height='16' transform='translate(531 342)' fill='%23f5f5f5'/%3E%3Crect id='사각형_2000' data-name='사각형 2000' width='47' height='33' transform='translate(510 362)' fill='%23f5f5f5'/%3E%3Cg id='그룹_1688' data-name='그룹 1688' transform='translate(508 340)'%3E%3Cpath id='패스_1603' data-name='패스 1603' d='M857.867,68.3h-42.5a4.266,4.266,0,0,1-4.262-4.262v-35.5a4.267,4.267,0,0,1,4.262-4.262h17.372a1.714,1.714,0,1,1,0,3.429H815.365a.845.845,0,0,0-.834.833v35.5a.845.845,0,0,0,.834.833h42.5a.845.845,0,0,0,.834-.833v-35.5a.845.845,0,0,0-.834-.833H840.19a1.714,1.714,0,0,1,0-3.429h17.677a4.267,4.267,0,0,1,4.263,4.262v35.5a4.267,4.267,0,0,1-4.263,4.262' transform='translate(-811.103 -12.385)' fill='%23aaa'/%3E%3Cpath id='패스_1604' data-name='패스 1604' d='M860.894,67.42h-24.6a1.714,1.714,0,0,1,0-3.429h24.6a1.714,1.714,0,0,1,0,3.429' transform='translate(-823.08 -32.648)' fill='%23aaa'/%3E%3Cpath id='패스_1605' data-name='패스 1605' d='M860.894,86.593h-24.6a1.714,1.714,0,0,1,0-3.429h24.6a1.714,1.714,0,0,1,0,3.429' transform='translate(-823.08 -42.429)' fill='%23aaa'/%3E%3Cpath id='패스_1606' data-name='패스 1606' d='M860.416,45.566h-47.6a1.714,1.714,0,0,1,0-3.429h47.6a1.714,1.714,0,0,1,0,3.429' transform='translate(-811.103 -21.498)' fill='%23aaa'/%3E%3Cpath id='패스_1607' data-name='패스 1607' d='M859.566,18.758h-3.493a3.416,3.416,0,0,1-3.412-3.412V3.412A3.416,3.416,0,0,1,856.073,0h3.493a3.416,3.416,0,0,1,3.413,3.412V15.346a3.416,3.416,0,0,1-3.413,3.412M859.55,3.412l-3.477.016.017,11.917,3.463-.016Z' transform='translate(-832.306 0)' fill='%23aaa'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center top/24px auto;
 }
+@media (min-width: 1195px) {
+  body div#content.sub section.sign div.container ul.step li:nth-child(1) {
+    background-size: 51px;
+  }
+}
 body div#content.sub section.sign div.container ul.step li:nth-child(2) {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='51.456' height='53.134' viewBox='0 0 51.456 53.134'%3E%3Cg id='그룹_1691' data-name='그룹 1691' transform='translate(-296 -345.866)'%3E%3Crect id='사각형_1992' data-name='사각형 1992' width='42' height='47' transform='translate(298 348)' fill='%23f5f5f5'/%3E%3Ccircle id='타원_38' data-name='타원 38' cx='11' cy='11' r='11' transform='translate(325 377)' fill='%23f5f5f5'/%3E%3Cg id='그룹_1687' data-name='그룹 1687' transform='translate(296 345.866)'%3E%3Cpath id='패스_1595' data-name='패스 1595' d='M76.184,403.382H72.756v-27.25a.745.745,0,0,0-.735-.735h-8.96v-3.429h8.96a4.168,4.168,0,0,1,4.163,4.163Z' transform='translate(-32.174 -371.968)' fill='%23aaa'/%3E%3Cpath id='패스_1596' data-name='패스 1596' d='M34.62,423.411H4.163A4.168,4.168,0,0,1,0,419.247V376.131a4.168,4.168,0,0,1,4.163-4.163h9.118V375.4H4.163a.745.745,0,0,0-.735.735v43.116a.744.744,0,0,0,.735.735H34.62Z' transform='translate(0 -371.968)' fill='%23aaa'/%3E%3Cpath id='패스_1597' data-name='패스 1597' d='M68.869,455.391a11.736,11.736,0,1,1,11.736-11.736,11.75,11.75,0,0,1-11.736,11.736m0-20.044a8.308,8.308,0,1,0,8.308,8.308,8.317,8.317,0,0,0-8.308-8.308' transform='translate(-29.149 -402.555)' fill='%23aaa'/%3E%3Cpath id='패스_1598' data-name='패스 1598' d='M72.842,456.572a1.71,1.71,0,0,1-1.212-.5l-3.743-3.744a1.714,1.714,0,0,1,2.424-2.424l2.531,2.531,5.045-5.045a1.714,1.714,0,1,1,2.424,2.424l-6.257,6.258a1.711,1.711,0,0,1-1.212.5' transform='translate(-34.379 -410.191)' fill='%23aaa'/%3E%3Cpath id='패스_1599' data-name='패스 1599' d='M42.956,381.835H26.329a1.714,1.714,0,0,1-1.714-1.714v-6.439a1.715,1.715,0,0,1,1.714-1.714H42.956a1.715,1.715,0,0,1,1.714,1.714v6.439a1.714,1.714,0,0,1-1.714,1.714m-14.913-3.429h13.2V375.4h-13.2Z' transform='translate(-12.558 -371.968)' fill='%23aaa'/%3E%3Cpath id='패스_1600' data-name='패스 1600' d='M37.756,425.169H16.662a1.714,1.714,0,0,1,0-3.429H37.756a1.714,1.714,0,0,1,0,3.429' transform='translate(-7.627 -397.361)' fill='%23aaa'/%3E%3Cpath id='패스_1601' data-name='패스 1601' d='M42.763,407.5h-26.1a1.714,1.714,0,0,1,0-3.429h26.1a1.714,1.714,0,0,1,0,3.429' transform='translate(-7.626 -388.348)' fill='%23aaa'/%3E%3Cpath id='패스_1602' data-name='패스 1602' d='M31.074,442.512H16.661a1.714,1.714,0,1,1,0-3.429H31.074a1.714,1.714,0,1,1,0,3.429' transform='translate(-7.626 -406.21)' fill='%23aaa'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center top/24px auto;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sign div.container ul.step li:nth-child(2) {
+    background-size: 51px;
+  }
 }
 body div#content.sub section.sign div.container ul.step li:nth-child(3) {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='49.372' height='48.553' viewBox='0 0 49.372 48.553'%3E%3Cg id='그룹_1689' data-name='그룹 1689' transform='translate(0 0)'%3E%3Cpath id='패스_1608' data-name='패스 1608' d='M862.012,417.125a1.714,1.714,0,0,1-1.714-1.714V378.456a.844.844,0,0,0-.833-.834H824.949a.845.845,0,0,0-.834.834V414a1.714,1.714,0,1,1-3.429,0V378.456a4.267,4.267,0,0,1,4.263-4.262h34.516a4.267,4.267,0,0,1,4.262,4.262v36.954a1.715,1.715,0,0,1-1.714,1.714' transform='translate(-814.354 -374.194)' fill='%23aaa'/%3E%3Cpath id='패스_1609' data-name='패스 1609' d='M850.641,463.142H814.507a6.113,6.113,0,0,1-4.465-1.779c-2.266-2.295-2.287-5.9-2.282-6.3a1.715,1.715,0,0,1,1.714-1.693H844.7a1.713,1.713,0,0,1,1.709,1.837,5.179,5.179,0,0,0,1.1,3.414,4.047,4.047,0,0,0,3.114,1.092h.01a1.714,1.714,0,0,1,0,3.429M811.41,456.8a4.665,4.665,0,0,0,1.079,2.162,2.7,2.7,0,0,0,2.018.752h29.579a8.364,8.364,0,0,1-1-2.914Z' transform='translate(-807.76 -414.589)' fill='%23aaa'/%3E%3Cpath id='패스_1610' data-name='패스 1610' d='M886.526,424.886a7.2,7.2,0,0,1-5.816-2.335,7.87,7.87,0,0,1-1.477-6.017,1.714,1.714,0,0,1,3.379.58,4.557,4.557,0,0,0,.734,3.244,4,4,0,0,0,3.181,1.1,3.712,3.712,0,0,0,2.7-.837c.91-.919.9-2.62.886-3.534V380.1a1.714,1.714,0,1,1,3.429,0v36.955c.013,1.312.037,4.044-1.88,5.978a6.94,6.94,0,0,1-5.139,1.852' transform='translate(-844.175 -376.334)' fill='%23aaa'/%3E%3Cpath id='패스_1611' data-name='패스 1611' d='M862.49,397.946H842.949a1.714,1.714,0,1,1,0-3.429H862.49a1.714,1.714,0,1,1,0,3.429' transform='translate(-824.839 -384.563)' fill='%23aaa'/%3E%3Cpath id='패스_1612' data-name='패스 1612' d='M862.49,418.331H842.949a1.714,1.714,0,1,1,0-3.429H862.49a1.714,1.714,0,1,1,0,3.429' transform='translate(-824.839 -394.963)' fill='%23aaa'/%3E%3Cpath id='패스_1613' data-name='패스 1613' d='M862.49,438.715H842.949a1.714,1.714,0,1,1,0-3.429H862.49a1.714,1.714,0,1,1,0,3.429' transform='translate(-824.839 -405.363)' fill='%23aaa'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center top/24px auto;
 }
+@media (min-width: 1195px) {
+  body div#content.sub section.sign div.container ul.step li:nth-child(3) {
+    background-size: 51px;
+  }
+}
+body div#content.sub section.sign div.container ul.step li:nth-child(4) {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44.927' height='53.082' viewBox='0 0 44.927 53.082'%3E%3Cg id='그룹_1690' data-name='그룹 1690' transform='translate(0 0)'%3E%3Cpath id='사각형_1991' data-name='사각형 1991' d='M4.2,0H37.3a4.2,4.2,0,0,1,4.2,4.2V45.456a4.2,4.2,0,0,1-4.2,4.2H4.2a4.2,4.2,0,0,1-4.2-4.2V4.2A4.2,4.2,0,0,1,4.2,0Z' transform='translate(1.713 1.715)' fill='%23f5f5f5'/%3E%3Cpath id='패스_1614' data-name='패스 1614' d='M1265.927,59.469H1228.54a3.774,3.774,0,0,1-3.77-3.771V10.157a3.774,3.774,0,0,1,3.77-3.77h37.387a3.774,3.774,0,0,1,3.77,3.77V55.7a3.774,3.774,0,0,1-3.77,3.771M1228.54,9.816a.345.345,0,0,0-.341.341V55.7a.346.346,0,0,0,.341.342h37.387a.346.346,0,0,0,.341-.342V10.157a.345.345,0,0,0-.341-.341Z' transform='translate(-1224.77 -6.387)' fill='%23aaa'/%3E%3Cpath id='패스_1615' data-name='패스 1615' d='M1250.961,21.41a2.624,2.624,0,1,1-2.625-2.624,2.625,2.625,0,0,1,2.625,2.624' transform='translate(-1235.455 -12.712)' fill='%23aaa'/%3E%3Cpath id='패스_1616' data-name='패스 1616' d='M1250.021,17.877a1.008,1.008,0,0,1-1.008-1.008V10.892a1.008,1.008,0,0,1,2.016,0v5.977a1.008,1.008,0,0,1-1.009,1.008' transform='translate(-1237.139 -8.17)' fill='%23aaa'/%3E%3Cpath id='패스_1617' data-name='패스 1617' d='M1270.522,21.41a2.624,2.624,0,1,1-2.624-2.624,2.624,2.624,0,0,1,2.624,2.624' transform='translate(-1245.436 -12.712)' fill='%23aaa'/%3E%3Cpath id='패스_1618' data-name='패스 1618' d='M1269.581,17.877a1.007,1.007,0,0,1-1.008-1.008V10.892a1.008,1.008,0,1,1,2.016,0v5.977a1.008,1.008,0,0,1-1.008,1.008' transform='translate(-1247.119 -8.17)' fill='%23aaa'/%3E%3Cpath id='패스_1619' data-name='패스 1619' d='M1290.083,21.41a2.624,2.624,0,1,1-2.624-2.624,2.625,2.625,0,0,1,2.624,2.624' transform='translate(-1255.415 -12.712)' fill='%23aaa'/%3E%3Cpath id='패스_1620' data-name='패스 1620' d='M1289.142,17.877a1.007,1.007,0,0,1-1.008-1.008V10.892a1.008,1.008,0,1,1,2.016,0v5.977a1.008,1.008,0,0,1-1.008,1.008' transform='translate(-1257.098 -8.17)' fill='%23aaa'/%3E%3Cline id='선_1279' data-name='선 1279' x2='19.325' transform='translate(12.801 40.003)' fill='%23fff'/%3E%3Cpath id='패스_1621' data-name='패스 1621' d='M1268.7,87.995h-19.325a1.469,1.469,0,1,1,0-2.939H1268.7a1.469,1.469,0,1,1,0,2.939' transform='translate(-1236.573 -46.523)' fill='%23aaa'/%3E%3Cpath id='패스_1622' data-name='패스 1622' d='M1258.877,54.89l5.038,6.837,8.515-11.154' transform='translate(-1242.171 -28.93)' fill='%23fff'/%3E%3Cpath id='패스_1623' data-name='패스 1623' d='M1262.129,61.655h-.014a1.712,1.712,0,0,1-1.365-.7l-5.038-6.837a1.714,1.714,0,1,1,2.76-2.034l3.682,5,7.128-9.338a1.714,1.714,0,1,1,2.725,2.081l-8.515,11.154a1.715,1.715,0,0,1-1.363.674' transform='translate(-1240.386 -27.143)' fill='%23aaa'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center top/24px auto;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sign div.container ul.step li:nth-child(4) {
+    background-size: 51px;
+  }
+}
+body div#content.sub section.sign div.container ul.step li.on::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='16' height='16' viewBox='0 0 16 16'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_1990' data-name='사각형 1990' width='16' height='16' transform='translate(-1 -1)' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_1684' data-name='그룹 1684' transform='translate(0.667 0.667)'%3E%3Cg id='그룹_1683' data-name='그룹 1683' transform='translate(0.333 0.333)' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_1594' data-name='패스 1594' d='M7.292,14.584a7.292,7.292,0,1,1,7.292-7.292,7.292,7.292,0,0,1-7.292,7.292' transform='translate(-0.292 -0.291)' fill='%23e3e3e3'/%3E%3Crect id='사각형_1986' data-name='사각형 1986' width='4.828' height='1.871' transform='matrix(0.707, -0.707, 0.707, 0.707, 2.98, 9.093)' fill='%231e345b'/%3E%3Crect id='사각형_1987' data-name='사각형 1987' width='1.871' height='4.828' transform='translate(2.98 4.908) rotate(-45)' fill='%231e345b'/%3E%3Crect id='사각형_1988' data-name='사각형 1988' width='4.828' height='1.871' transform='matrix(0.707, -0.707, 0.707, 0.707, 6.627, 9.093)' fill='%231e345b'/%3E%3Crect id='사각형_1989' data-name='사각형 1989' width='1.871' height='4.828' transform='translate(6.627 4.908) rotate(-45)' fill='%231e345b'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+body div#content.sub section.sign div.container ul.step li.on:nth-child(1) {
+  background-image: url("data:image/svg+xml,%3Csvg id='그룹_1694' data-name='그룹 1694' xmlns='http://www.w3.org/2000/svg' width='24.259' height='26.583' viewBox='0 0 24.259 26.583'%3E%3Crect id='사각형_1998' data-name='사각형 1998' width='21.869' height='3.803' transform='translate(1.426 6.656)' fill='%23c3bafc'/%3E%3Crect id='사각형_1999' data-name='사각형 1999' width='2.852' height='7.607' transform='translate(10.934 0.951)' fill='%23c3bafc'/%3E%3Crect id='사각형_2000' data-name='사각형 2000' width='22.344' height='15.688' transform='translate(0.951 10.459)' fill='%23fff'/%3E%3Cg id='그룹_1688' data-name='그룹 1688' transform='translate(0 0)'%3E%3Cpath id='패스_1603' data-name='패스 1603' d='M833.335,45.205H813.129a2.028,2.028,0,0,1-2.026-2.026V26.3a2.028,2.028,0,0,1,2.026-2.026h8.259a.815.815,0,1,1,0,1.63h-8.259a.4.4,0,0,0-.4.4V43.179a.4.4,0,0,0,.4.4h20.206a.4.4,0,0,0,.4-.4V26.3a.4.4,0,0,0-.4-.4h-8.4a.815.815,0,1,1,0-1.63h8.4a2.029,2.029,0,0,1,2.026,2.026V43.179a2.028,2.028,0,0,1-2.026,2.026' transform='translate(-811.103 -18.622)' fill='%231e345b'/%3E%3Cpath id='패스_1604' data-name='패스 1604' d='M847.088,65.621h-11.7a.815.815,0,1,1,0-1.63h11.7a.815.815,0,0,1,0,1.63' transform='translate(-829.111 -49.09)' fill='%231e345b'/%3E%3Cpath id='패스_1605' data-name='패스 1605' d='M847.088,84.794h-11.7a.815.815,0,0,1,0-1.63h11.7a.815.815,0,0,1,0,1.63' transform='translate(-829.111 -63.798)' fill='%231e345b'/%3E%3Cpath id='패스_1606' data-name='패스 1606' d='M834.547,43.767H811.918a.815.815,0,0,1,0-1.63h22.629a.815.815,0,0,1,0,1.63' transform='translate(-811.103 -32.325)' fill='%231e345b'/%3E%3Cpath id='패스_1607' data-name='패스 1607' d='M855.944,8.918h-1.66A1.624,1.624,0,0,1,852.661,7.3V1.622A1.624,1.624,0,0,1,854.283,0h1.66a1.624,1.624,0,0,1,1.622,1.622V7.3a1.624,1.624,0,0,1-1.622,1.622m-.008-7.3-1.653.008.008,5.665,1.646-.008Z' transform='translate(-842.984 0)' fill='%231e345b'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+body div#content.sub section.sign div.container ul.step li.on:nth-child(2) {
+  background-image: url("data:image/svg+xml,%3Csvg id='그룹_1691' data-name='그룹 1691' xmlns='http://www.w3.org/2000/svg' width='24.463' height='25.26' viewBox='0 0 24.463 25.26'%3E%3Cpath id='패스_1662' data-name='패스 1662' d='M0,0H19.967V22.344H0Z' transform='translate(0.951 1.014)' fill='%23fff'/%3E%3Ccircle id='타원_38' data-name='타원 38' cx='5.229' cy='5.229' r='5.229' transform='translate(13.787 14.801)' fill='%23c3bafc'/%3E%3Cg id='그룹_1687' data-name='그룹 1687' transform='translate(0)'%3E%3Cpath id='패스_1595' data-name='패스 1595' d='M69.3,386.9H67.67V373.947a.354.354,0,0,0-.349-.349h-4.26v-1.63h4.26a1.982,1.982,0,0,1,1.979,1.979Z' transform='translate(-48.377 -371.968)' fill='%231e345b'/%3E%3Cpath id='패스_1596' data-name='패스 1596' d='M16.459,396.424H1.979A1.982,1.982,0,0,1,0,394.445v-20.5a1.982,1.982,0,0,1,1.979-1.979H6.314v1.63H1.979a.354.354,0,0,0-.349.349v20.5a.354.354,0,0,0,.349.349h14.48Z' transform='translate(0 -371.968)' fill='%231e345b'/%3E%3Cpath id='패스_1597' data-name='패스 1597' d='M62.712,443.078a5.579,5.579,0,1,1,5.579-5.579,5.586,5.586,0,0,1-5.579,5.579m0-9.529a3.949,3.949,0,1,0,3.949,3.95,3.954,3.954,0,0,0-3.949-3.95' transform='translate(-43.829 -417.959)' fill='%231e345b'/%3E%3Cpath id='패스_1598' data-name='패스 1598' d='M69.979,451.491a.813.813,0,0,1-.576-.239l-1.779-1.78a.815.815,0,1,1,1.152-1.152l1.2,1.2,2.4-2.4a.815.815,0,1,1,1.152,1.152l-2.975,2.975a.813.813,0,0,1-.576.239' transform='translate(-51.694 -429.441)' fill='%231e345b'/%3E%3Cpath id='패스_1599' data-name='패스 1599' d='M33.335,376.659h-7.9a.815.815,0,0,1-.815-.815v-3.061a.815.815,0,0,1,.815-.815h7.9a.815.815,0,0,1,.815.815v3.061a.815.815,0,0,1-.815.815m-7.09-1.63h6.274V373.6H26.245Z' transform='translate(-18.883 -371.968)' fill='%231e345b'/%3E%3Cpath id='패스_1600' data-name='패스 1600' d='M25.791,423.37H15.763a.815.815,0,0,1,0-1.63H25.791a.815.815,0,0,1,0,1.63' transform='translate(-11.467 -410.15)' fill='%231e345b'/%3E%3Cpath id='패스_1601' data-name='패스 1601' d='M28.171,405.7H15.762a.815.815,0,0,1,0-1.63H28.171a.815.815,0,0,1,0,1.63' transform='translate(-11.466 -396.596)' fill='%231e345b'/%3E%3Cpath id='패스_1602' data-name='패스 1602' d='M22.614,440.713H15.762a.815.815,0,0,1,0-1.63h6.852a.815.815,0,0,1,0,1.63' transform='translate(-11.466 -423.455)' fill='%231e345b'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+body div#content.sub section.sign div.container ul.step li.on:nth-child(3) {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23.472' height='23.082' viewBox='0 0 23.472 23.082'%3E%3Cg id='그룹_1722' data-name='그룹 1722' transform='translate(-218 -210)'%3E%3Crect id='사각형_2043' data-name='사각형 2043' width='18' height='21' transform='translate(222 211)' fill='%23fff'/%3E%3Cpath id='패스_1663' data-name='패스 1663' d='M-4436.25,15166.938l1.313,1.938,1.938.5s15.063-.312,14.813-.5-1.375-1.812-1.25-2.5-16.375,0-16.375,0Z' transform='translate(4655 -14937)' fill='%23c3bafc'/%3E%3Cg id='그룹_1689' data-name='그룹 1689' transform='translate(218 210)'%3E%3Cpath id='패스_1608' data-name='패스 1608' d='M840.333,394.6a.815.815,0,0,1-.815-.815V376.22a.4.4,0,0,0-.4-.4H822.713a.4.4,0,0,0-.4.4v16.9a.815.815,0,1,1-1.63,0v-16.9a2.029,2.029,0,0,1,2.026-2.026h16.409a2.029,2.029,0,0,1,2.026,2.026v17.568a.815.815,0,0,1-.815.815' transform='translate(-817.676 -374.194)' fill='%231e345b'/%3E%3Cpath id='패스_1609' data-name='패스 1609' d='M828.145,458.015H810.967a2.906,2.906,0,0,1-2.122-.846,4.538,4.538,0,0,1-1.085-3,.815.815,0,0,1,.815-.8h16.748a.814.814,0,0,1,.813.873,2.462,2.462,0,0,0,.525,1.623,1.924,1.924,0,0,0,1.48.519h0a.815.815,0,0,1,0,1.63M809.495,455a2.218,2.218,0,0,0,.513,1.028,1.281,1.281,0,0,0,.959.357h14.062a3.978,3.978,0,0,1-.474-1.385Z' transform='translate(-807.759 -434.933)' fill='%231e345b'/%3E%3Cpath id='패스_1610' data-name='패스 1610' d='M882.649,400.493a3.422,3.422,0,0,1-2.765-1.11,3.741,3.741,0,0,1-.7-2.861.815.815,0,0,1,1.607.276,2.166,2.166,0,0,0,.349,1.542,1.9,1.9,0,0,0,1.512.523,1.765,1.765,0,0,0,1.285-.4,2.437,2.437,0,0,0,.421-1.68V379.2a.815.815,0,1,1,1.63,0v17.569a3.84,3.84,0,0,1-.894,2.842,3.3,3.3,0,0,1-2.443.88' transform='translate(-862.515 -377.411)' fill='%231e345b'/%3E%3Cpath id='패스_1611' data-name='패스 1611' d='M851.34,396.147h-9.29a.815.815,0,0,1,0-1.63h9.29a.815.815,0,1,1,0,1.63' transform='translate(-833.44 -389.785)' fill='%231e345b'/%3E%3Cpath id='패스_1612' data-name='패스 1612' d='M851.34,416.532h-9.29a.815.815,0,0,1,0-1.63h9.29a.815.815,0,0,1,0,1.63' transform='translate(-833.44 -405.423)' fill='%231e345b'/%3E%3Cpath id='패스_1613' data-name='패스 1613' d='M851.34,436.916h-9.29a.815.815,0,0,1,0-1.63h9.29a.815.815,0,0,1,0,1.63' transform='translate(-833.44 -421.06)' fill='%231e345b'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+body div#content.sub section.sign div.container ul.step li.on:nth-child(4) {
+  background-image: url("data:image/svg+xml,%3Csvg id='그룹_1690' data-name='그룹 1690' xmlns='http://www.w3.org/2000/svg' width='21.359' height='25.236' viewBox='0 0 21.359 25.236'%3E%3Cpath id='사각형_1991' data-name='사각형 1991' d='M4.2,0H15.531a4.2,4.2,0,0,1,4.2,4.2v15.21a4.2,4.2,0,0,1-4.2,4.2H4.2a4.2,4.2,0,0,1-4.2-4.2V4.2A4.2,4.2,0,0,1,4.2,0Z' transform='translate(0.815 0.815)' fill='%23fff'/%3E%3Cpath id='패스_1614' data-name='패스 1614' d='M1244.336,31.623h-17.774a1.794,1.794,0,0,1-1.792-1.793V8.179a1.794,1.794,0,0,1,1.792-1.792h17.774a1.794,1.794,0,0,1,1.792,1.792V29.83a1.794,1.794,0,0,1-1.792,1.793M1226.562,8.017a.164.164,0,0,0-.162.162V29.83a.164.164,0,0,0,.162.163h17.774a.164.164,0,0,0,.162-.163V8.179a.164.164,0,0,0-.162-.162Z' transform='translate(-1224.77 -6.387)' fill='%231e345b'/%3E%3Cpath id='패스_1615' data-name='패스 1615' d='M1248.208,20.034a1.248,1.248,0,1,1-1.248-1.248,1.248,1.248,0,0,1,1.248,1.248' transform='translate(-1240.837 -15.899)' fill='%231e345b'/%3E%3Cpath id='패스_1616' data-name='패스 1616' d='M1249.492,13.684a.479.479,0,0,1-.479-.479V10.363a.479.479,0,0,1,.959,0V13.2a.479.479,0,0,1-.479.479' transform='translate(-1243.368 -9.069)' fill='%231e345b'/%3E%3Cpath id='패스_1617' data-name='패스 1617' d='M1267.77,20.034a1.247,1.247,0,1,1-1.247-1.248,1.248,1.248,0,0,1,1.247,1.248' transform='translate(-1255.843 -15.899)' fill='%231e345b'/%3E%3Cpath id='패스_1618' data-name='패스 1618' d='M1269.053,13.684a.479.479,0,0,1-.479-.479V10.363a.479.479,0,1,1,.958,0V13.2a.479.479,0,0,1-.479.479' transform='translate(-1258.374 -9.069)' fill='%231e345b'/%3E%3Cpath id='패스_1619' data-name='패스 1619' d='M1287.331,20.034a1.247,1.247,0,1,1-1.248-1.248,1.248,1.248,0,0,1,1.248,1.248' transform='translate(-1270.849 -15.899)' fill='%231e345b'/%3E%3Cpath id='패스_1620' data-name='패스 1620' d='M1288.613,13.684a.479.479,0,0,1-.479-.479V10.363a.479.479,0,0,1,.958,0V13.2a.479.479,0,0,1-.479.479' transform='translate(-1273.379 -9.069)' fill='%231e345b'/%3E%3Cline id='선_1279' data-name='선 1279' x2='9.187' transform='translate(6.086 19.017)' fill='%23fff'/%3E%3Cpath id='패스_1621' data-name='패스 1621' d='M1257.79,86.453H1248.6a.7.7,0,1,1,0-1.4h9.187a.7.7,0,0,1,0,1.4' transform='translate(-1242.517 -66.737)' fill='%23c3bafc'/%3E%3Cpath id='패스_1622' data-name='패스 1622' d='M1258.877,52.625l2.395,3.25,4.048-5.3' transform='translate(-1250.935 -40.283)' fill='%23fff'/%3E%3Cpath id='패스_1623' data-name='패스 1623' d='M1258.587,54h-.007a.814.814,0,0,1-.649-.332l-2.4-3.25a.815.815,0,1,1,1.312-.967l1.751,2.375,3.389-4.439a.815.815,0,1,1,1.3.989l-4.048,5.3a.815.815,0,0,1-.648.32' transform='translate(-1248.25 -37.597)' fill='%231e345b'/%3E%3C/svg%3E%0A");
+}
 body div#content.sub section.sign div.container ul.step li span {
   display: block;
 }
-body div#content.pop {
-  padding: 40px 0;
-  text-align: center;
-}
-body div#content.pop div.container {
-  max-width: 1000px;
-}
-body div#content.pop div.container h3 {
-  font-size: 17px;
-  font-weight: 600;
-  color: #222;
-  border-bottom: 1px solid #555555;
-  padding: 0 0 15px;
-  margin: 0 0 15px;
-}
 @media (min-width: 1195px) {
-  body div#content.pop div.container h3 {
-    font-size: 18px;
-    padding: 0 0 20px;
-    margin: 0 0 20px;
+  body div#content.sub section.sign div.container ul.step li span {
+    display: inline;
   }
-}
-body div#content.pop div.container h3 small {
-  display: block;
-  line-height: 1.6;
-  margin: 10px 0 0;
-  color: #4E3DC4;
-  font-size: 13px;
-  font-weight: 400;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container h3 small {
-    display: inline-block;
-    font-size: 14px;
-    margin: 0 0 0 20px;
-  }
-}
-body div#content.pop div.container h4.btitle {
-  position: relative;
-  font-size: 16px;
-  font-weight: 600;
-  margin: 40px 0 15px;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container h4.btitle {
-    margin: 70px 0 20px;
-    font-size: 17px;
-  }
-}
-body div#content.pop div.container h4.btitle small {
-  display: block;
-  line-height: 1.6;
-  margin: 10px 0 0;
-  color: #4E3DC4;
-  font-size: 13px;
-  font-weight: 400;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container h4.btitle small {
-    display: inline-block;
-    font-size: 14px;
-    margin: 0 0 0 20px;
-  }
-}
-body div#content.pop div.container h4.btitle button.modify {
-  position: absolute;
-  right: 0;
-  top: -11px;
-  font-size: 15px;
-  font-weight: 600;
-  color: #EC4D47;
-  border: 1px solid #EC4D47;
-  width: 90px;
-  height: 32px;
-  background: #fff;
-  padding: 0;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container h4.btitle button.modify {
-    width: 100px;
-    height: 36px;
-    font-size: 16px;
-    top: -12px;
-  }
-}
-body div#content.pop div.container div.table01 {
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #CCCCCC;
-  font-size: 0;
-}
-body div#content.pop div.container div.table01 p {
-  position: relative;
-  border-bottom: 1px solid #CCCCCC;
-  padding: 7px 10px 7px 122px;
-  margin: 0;
-  color: #555;
-  word-break: keep-all;
-  font-size: 15px;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table01 p {
-    font-size: 16px;
-    padding: 7px 10px 7px 158px;
-  }
-}
-body div#content.pop div.container div.table01 p strong {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 110px;
-  padding: 15px 10px;
-  border-left: 1px solid #CCCCCC;
-  border-right: 1px solid #CCCCCC;
-  background: #F1F5F6;
-  color: #111111;
-  font-weight: 400;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table01 p strong {
-    width: 138px;
-  }
-}
-body div#content.pop div.container div.table01 p span {
-  display: block;
-  min-height: 36px;
-  padding: 10px 0;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table01 p span {
-    min-height: 38px;
-  }
-}
-body div#content.pop div.container div.table01 p input[type=text],
-body div#content.pop div.container div.table01 p input[type=date],
-body div#content.pop div.container div.table01 p input[type=tel] {
-  width: 100%;
-  height: 36px;
-  border-radius: 6px;
-  border: 1px solid #BBBBBB;
-  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1) inset;
-  padding: 0 10px;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table01 p input[type=text],
-body div#content.pop div.container div.table01 p input[type=date],
-body div#content.pop div.container div.table01 p input[type=tel] {
-    height: 38px;
-  }
-}
-body div#content.pop div.container div.table01 p textarea {
-  width: 100%;
-  height: 72px;
-  border-radius: 6px;
-  border: 1px solid #BBBBBB;
-  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1) inset;
-  padding: 0 10px;
-}
-body div#content.pop div.container div.table03 {
-  border: 1px solid #CCCCCC;
-  border-bottom: none;
-  font-size: 0;
-  margin: 0 0 70px;
-}
-body div#content.pop div.container div.table03 > p {
-  position: relative;
-  border-bottom: 1px solid #CCCCCC;
-  padding: 12px 70px 12px 12px;
-  margin: 0;
-  word-break: keep-all;
-  font-size: 15px;
-  line-height: 1.6;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table03 > p {
-    font-size: 16px;
-    padding: 20px 80px 20px 20px;
-  }
-}
-body div#content.pop div.container div.table03 > p strong {
-  color: #111;
-  display: block;
-  font-weight: 400;
-}
-body div#content.pop div.container div.table03 > p strong u {
-  text-decoration: none;
-  display: block;
-  color: #555;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table03 > p strong u {
-    display: inline-block;
-    padding: 0 0 0 6px;
-  }
-}
-body div#content.pop div.container div.table03 > p select {
-  display: block;
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  border: none;
-  margin: 0;
-  padding: 0 10px 0 0;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table03 > p select {
-    right: 20px;
-    top: 20px;
-  }
-}
-body div#content.pop div.container div.table05 {
-  border: 1px solid #CCCCCC;
-  font-size: 0;
-  margin: 0 0 15px;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table05 {
-    width: 1000px;
-  }
-}
-body div#content.pop div.container div.table05 strong {
-  display: block;
-  position: relative;
-  border-bottom: 1px solid #ccc;
-  font-size: 15px;
-  padding: 12px;
-  background: #F1F5F6;
-  font-weight: 400;
-  color: #111;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table05 strong {
-    font-size: 16px;
-    padding: 15px 20px;
-  }
-}
-body div#content.pop div.container div.table05 strong span {
-  display: block;
-  position: absolute;
-  right: 12px;
-  top: 12px;
-  font-size: 14px;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table05 strong span {
-    font-size: 15px;
-    right: 20px;
-    top: 15px;
-  }
-}
-body div#content.pop div.container div.table05 strong span u {
-  text-decoration: none;
-  display: none;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table05 strong span u {
-    display: inline-block;
-    vertical-align: top;
-  }
-}
-body div#content.pop div.container div.table05 strong span label {
-  display: inline-block;
-  vertical-align: top;
-  padding: 0 0 0 4px;
-}
-body div#content.pop div.container div.table05 strong span input {
-  vertical-align: top;
-  position: relative;
-  top: -2px;
-  width: 20px;
-  height: 20px;
-  margin-left: 20px;
-}
-body div#content.pop div.container div.table05 button.upload {
-  font-size: 15px;
-  margin: 15px 15px 0;
-  background: #4E3DC4;
-  border: 1px solid #4335A9;
-  border-radius: 4px;
-  color: #fff;
-  width: 110px;
-  height: 38px;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table05 button.upload {
-    font-size: 16px;
-    width: 120px;
-    height: 40px;
-    margin: 20px 20px 0;
-  }
-}
-body div#content.pop div.container div.table05 div {
-  padding: 15px;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table05 div {
-    padding: 25px 5px 5px 25px;
-  }
-}
-body div#content.pop div.container div.table05 div span {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  height: 220px;
-  margin: 0 15px 15px 0;
-  border: 1px solid #CCCCCC;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table05 div span {
-    width: 300px;
-    height: 226px;
-    margin: 0 20px 20px 0;
-  }
-}
-body div#content.pop div.container div.table05 div span img {
-  width: 100%;
-  height: 220px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table05 div span img {
-    width: 300px;
-    height: 226px;
-  }
-}
-body div#content.pop div.container div.table05 div span button.del {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  background: #2B2B2B;
-  border: 1px solid #070707;
-  font-size: 14px;
-  color: #FFE600;
-  width: 60px;
-  height: 30px;
-  border-radius: 4px;
-}
-body div#content.pop div.container div.table05 div.empty {
-  font-size: 15px;
-  text-align: center;
-  color: #555;
-  padding-top: 60px;
-  height: 140px;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table06 {
-    position: relative;
-    border: 1px solid #ccc;
-    border-bottom: none;
-    padding-top: 47px;
-  }
-  body div#content.pop div.container div.table06::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 47px;
-    background: #F1F5F6;
-    border-bottom: 1px solid #ccc;
-  }
-}
-body div#content.pop div.container div.table06 div {
-  position: relative;
-  border: 1px solid #CCCCCC;
-  margin: 0 0 15px;
-  padding: 10px 10px 10px 30px;
-  font-size: 0;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table06 div {
-    padding: 10px 10px 10px 40px;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    margin: 0;
-  }
-}
-body div#content.pop div.container div.table06 div i.num {
-  position: absolute;
-  left: 10px;
-  top: 12px;
-  font-size: 15px;
-  font-style: normal;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table06 div i.num {
-    left: 15px;
-    top: 17px;
-    font-size: 17px;
-  }
-}
-body div#content.pop div.container div.table06 div p {
-  position: relative;
-  margin: 0 0 10px;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table06 div p {
-    display: inline-block;
-    margin: 0;
-    padding: 0 10px;
-    width: 550px;
-  }
-}
-body div#content.pop div.container div.table06 div p label {
-  display: none;
-}
-body div#content.pop div.container div.table06 div p input[type=text],
-body div#content.pop div.container div.table06 div p input[type=date],
-body div#content.pop div.container div.table06 div p input[type=tel],
-body div#content.pop div.container div.table06 div p select {
-  width: 100%;
-  height: 36px;
-  border-radius: 6px;
-  border: 1px solid #BBBBBB;
-  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1) inset;
-  padding: 0 10px;
-  font-size: 15px;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table06 div p input[type=text],
-body div#content.pop div.container div.table06 div p input[type=date],
-body div#content.pop div.container div.table06 div p input[type=tel],
-body div#content.pop div.container div.table06 div p select {
-    height: 38px;
-  }
-}
-body div#content.pop div.container div.table06 div p.half {
-  display: inline-block;
-  width: calc(50% - 5px);
-  margin: 0;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table06 div p.half {
-    width: 198px;
-  }
-}
-body div#content.pop div.container div.table06 div p.half.nation {
-  margin-right: 10px;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table06 div p.half.nation {
-    margin: 0;
-  }
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table06 div:first-of-type p label {
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -57px;
-    line-height: 46px;
-    font-size: 16px;
-    text-align: center;
-    border-right: 1px solid #ccc;
-  }
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table06 div:first-of-type p:last-of-type label {
-    border-right: none;
-  }
-}
-body div#content.pop div.container div.table07 {
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #CCCCCC;
-  font-size: 0;
-}
-body div#content.pop div.container div.table07 p {
-  position: relative;
-  border-bottom: 1px solid #CCCCCC;
-  padding: 40px 10px 7px 100px;
-  margin: 0;
-  color: #555;
-  word-break: keep-all;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table07 p {
-    padding: 7px 10px 7px 110px;
-  }
-}
-body div#content.pop div.container div.table07 p strong {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 90px;
-  padding: 30px 10px;
-  border-left: 1px solid #CCCCCC;
-  border-right: 1px solid #CCCCCC;
-  background: #F1F5F6;
-  color: #111111;
-  font-weight: 400;
-  font-size: 15px;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table07 p strong {
-    width: 100px;
-    font-size: 16px;
-    padding: 16px 10px;
-  }
-}
-body div#content.pop div.container div.table07 p > label {
-  display: inline-block;
-  font-size: 15px;
-  width: 90px;
-  padding: 0 0 0 20px;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table07 p > label {
-    font-size: 16px;
-    width: 110px;
-    padding: 0 0 0 30px;
-  }
-}
-body div#content.pop div.container div.table07 p input[type=text] {
-  width: 100%;
-  height: 36px;
-  border-radius: 6px;
-  border: 1px solid #BBBBBB;
-  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1) inset;
-  padding: 0 10px;
-  font-size: 15px;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table07 p input[type=text] {
-    height: 38px;
-    font-size: 16px;
-  }
-}
-body div#content.pop div.container div.table07 p input[type=text].count {
-  width: 50px;
-  padding: 0 10px 0 0;
-  text-align: right;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table07 p input[type=text].count {
-    width: 100px;
-  }
-}
-body div#content.pop div.container div.table07 p input[type=text].species {
-  width: calc(100% - 140px);
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table07 p input[type=text].species {
-    width: 200px;
-  }
-}
-body div#content.pop div.container div.table07 p button.del {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  border: none;
-  color: #22256B;
-  text-decoration: underline;
-  padding: 0 0 0 17px;
-  font-size: 15px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.723' height='15.416' viewBox='0 0 13.723 15.416'%3E%3Cg id='그룹_767' data-name='그룹 767' transform='translate(0.6 0.6)'%3E%3Crect id='사각형_1650' data-name='사각형 1650' width='10.007' height='11.995' transform='translate(1.258 2.221)' fill='%23fff' stroke='%238082a2' stroke-linejoin='round' stroke-width='1.2'/%3E%3Crect id='사각형_1651' data-name='사각형 1651' width='12.523' height='3.233' transform='translate(0 2.129)' fill='%23fff' stroke='%238082a2' stroke-linejoin='round' stroke-width='1.2'/%3E%3Crect id='사각형_1652' data-name='사각형 1652' width='5.987' height='2.435' transform='translate(3.268 0)' fill='%23fff' stroke='%238082a2' stroke-linejoin='round' stroke-width='1.2'/%3E%3Cline id='선_1184' data-name='선 1184' y2='6.964' transform='translate(4.13 5.095)' fill='%23fff' stroke='%238082a2' stroke-linejoin='round' stroke-width='1.2'/%3E%3Cline id='선_1185' data-name='선 1185' y2='6.964' transform='translate(6.261 5.095)' fill='%23fff' stroke='%238082a2' stroke-linejoin='round' stroke-width='1.2'/%3E%3Cline id='선_1186' data-name='선 1186' y2='6.964' transform='translate(8.393 5.095)' fill='%23fff' stroke='%238082a2' stroke-linejoin='round' stroke-width='1.2'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat left center/12.5px auto;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.table07 p button.del {
-    right: 20px;
-    top: 14px;
-    background-size: 16px auto;
-    line-height: 1.6;
-    padding: 0 0 0 24px;
-  }
-}
-body div#content.pop div.container div.button-set {
-  text-align: center;
-  padding: 30px 0;
-  font-size: 0;
-}
-body div#content.pop div.container div.button-set button {
-  width: 90px;
-  height: 40px;
-  border: 1px solid #111111;
-  background: #fff;
-  font-size: 16px;
-  color: #555555;
-  margin: 0 7px;
-}
-@media (min-width: 1195px) {
-  body div#content.pop div.container div.button-set button {
-    width: 100px;
-    height: 46px;
-    font-size: 17px;
-    margin: 0 10px;
-  }
-}
-body div#content.pop div.container div.button-set button.main {
-  background: #2F2D3B;
-  border-color: #2D2B39;
-  color: #fff;
-  font-weight: 600;
 }
 body footer#footer {
   text-align: center;
