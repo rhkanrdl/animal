@@ -147,6 +147,65 @@ button {
 
 /* default btn */
 
+    
+div.btn-set {
+	text-align:center;
+	padding:30px 0;
+	font-size:0;
+
+	button,
+	a {
+	  display:inline-block;
+	  vertical-align:top;
+	  width:90px;
+	  line-height:40px;
+	  border:1px solid #111111;
+	  background:#fff;
+	  font-size:16px;
+	  color:#555555;
+	  margin:0 7px;
+
+		@media (min-width: $screen-size-pc) {
+		  width:100px;
+		  height:46px;
+		  font-size:17px;
+		  margin:0 10px;
+		}
+
+		&.big {
+			line-height:44px;
+			font-size:17px;
+	  
+			  @media (min-width: $screen-size-pc) {
+				line-height:46px;
+				font-size:18px;
+
+			  }
+		}
+
+	  &.main {
+		background:#2F2D3B;
+		border-color:#2D2B39;
+		color:#fff;
+		font-weight:600;
+	  }
+
+	  &.next {
+		background:#4E3DC4;
+		border-color:#4335A9;
+		width:auto;
+		color:#fff;
+		padding:0 20px;
+		font-weight:600;
+	  
+		@media (min-width: $screen-size-pc) {
+			padding:0 40px;
+
+		}
+	  }
+	}
+
+  }
 
 /* Modal */
 .modal {
