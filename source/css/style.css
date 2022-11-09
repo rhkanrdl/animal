@@ -2968,6 +2968,7 @@ body div#content.sub h4.ctitle button.modify {
     opacity: 0;
     font-size: 0;
     transition: all 0.2s ease;
+    overflow: hidden;
   }
   body div#content.sub section.sub-head div.container div.depth2 div ul {
     display: inline-block;

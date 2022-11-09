@@ -1138,6 +1138,7 @@ body {
                 opacity:0;
                 font-size:0;
                 @include ani();
+                overflow:hidden;
   
                 ul {
                   display:inline-block;
