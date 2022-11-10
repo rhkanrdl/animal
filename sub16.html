@@ -172,79 +172,244 @@
                         <input name="type" id="type02" type="radio"><label for="type02">사업자</label>
                     </div>
 
-
-                    <h3>
-                        인적사항
-                    </h3>
                     <div class="report-form">
 
-                                <p>
-                                    <strong><label for="id"><i>*</i> 아이디</label></strong>
-                                    <input id="id" type="text">
-                                    <button class="sub">중복확인</button>
-                                </p>
-                                <p>
-                                    <strong><label for="password"><i>*</i> 비밀번호</label></strong>
-                                    <input id="password" type="password">
-                                </p>
-                                <p>
-                                    <strong><label for="password-re"><i>*</i> 비밀번호 확인</label></strong>
-                                    <input id="password-re" type="password">
-                                    
-                                    <i>일치하지 않습니다.</i>
-                                    <!-- <i class="ok">확인</i> -->
-                                </p>
-                                <p>
-                                    <strong><label for="farm"><i>*</i> 농가명</label></strong>
-                                    <button class="search">농가검색</button>
-                                    <input id="farm" type="text" readonly>
-                                </p>
-                                <p>
-                                    <strong><label for="phone">전화번호</label></strong>
-                                    <input id="phone" type="tel" placeholder="'-' 생략">
-                                </p>
-                                <p>
-                                    <strong><label for="tel1"><i>*</i> 핸드폰 번호</label></strong>
+                        <h3>
+                            인적사항
+                        </h3>
+                        <div class="table">
+                            <p>
+                                <strong><label for="name">신고인 성명</label></strong>
+                                <input id="name" type="text">
+                            </p>
 
-                                    <select id="tel1" class="tel">
-                                        <option>010</option>
-                                        <option>011</option>
-                                    </select>
-                                    <input id="tel2" class="tel" type="text">
-                                    <input id="tel3" class="tel" type="text">
-                                </p>
-                                <p>
-                                    <strong><label for="check"><i>*</i> 인증번호 입력</label></strong>
-                                    <input id="check" type="text">
+                            <!--사업장의 경우-->
+                            <p>
+                                <strong><label for="name">신고인 성명</label></strong>
+                                <input id="business" class="business" type="text" placeholder="사업장명">
+                                <input id="name" class="ceo" type="text" placeholder="대표자">
+                            </p>
+                            <!---->
 
-                                    <u class="counter">05:21</u>
-                                    
-                                    <i>일치하지 않습니다.</i>
-                                    <!-- <i class="ok">확인</i> -->
-                                </p>
-                                <p>
-                                    <strong><label for="name">대표자명</label></strong>
-                                    <input id="name" type="text">
-                                </p>
-                                <p>
-                                    <strong><label for="address1">농가소재지</label></strong>
-                                    <button class="search post">우편번호찾기</button>
-                                    <input id="address1" type="text" readonly>
-                                    <input id="address2" type="text" placeholder="나머지 주소">
-                                </p>
-                                <p>
-                                    <strong><label for="ex-tel">비상연락처</label></strong>
-                                    <input id="ex-tel" type="text" placeholder="'_' 생략'">
-                                </p>
+                            <p>
+                                <strong><label for="birth">생년월일</label></strong>
+                                <input id="birth" type="text" placeholder="생년월일 8자리">
+                            </p>
+                            <p>
+                                <strong><label for="address">주소</label></strong>
+                                <textarea></textarea>
+                            </p>
+                            <p>
+                                <strong><label for="phone">전화번호</label></strong>
+                                <input id="phone" type="tel" placeholder="'-' 생략">
+                            </p>
+                            <p>
+                                <strong><label for="tel1">핸드폰 번호</label></strong>
 
-
-    
+                                <select id="tel1" class="tel">
+                                    <option>010</option>
+                                    <option>011</option>
+                                </select>
+                                <input id="tel2" class="tel" type="text">
+                                <input id="tel3" class="tel" type="text">
+                            </p>
                         </div>
+
+                        <h3>
+                            반입사항
+                        </h3>
+                        <div class="table">
+                            <p>
+                                <strong><label for="item1">반입품목</label></strong>
+                                <select id="item1" class="type">
+                                    <option>생축(가축)류</option>
+                                </select>
+                                <select id="item2" class="type">
+                                    <option>가금류</option>
+                                </select>
+                                <select id="item3" class="type">
+                                    <option>중분류</option>
+                                </select>
+                                <select id="item4" class="type">
+                                    <option>소분류</option>
+                                </select>
+
+                                <label for="ex">기타</label>
+                                <input id="ex" type="text" placeholder="품목을 기재하세요">
+                            </p>
+                            <p>
+                                <strong><label for="package">수량</label></strong>
+                                <select id="package" class="type">
+                                    <option>박스</option>
+                                </select>
+
+                                <input id="count" class="half" type="text" placeholder="수량">
+                                <input id="weight" class="half" type="text" placeholder="무게">
+                            </p>
+                            <p>
+                                <strong><label for="location1">생산지</label></strong>
+                                <select id="location1" class="type">
+                                    <option>대전광역시</option>
+                                </select>
+                                <select id="location2" class="type">
+                                    <option>서구</option>
+                                </select>
+
+                                <button class="add">+ 추가</button>
+
+                                <span class="item">
+                                    대전광역시 서구
+
+                                    <button class="del">삭제</button>
+                                </span>
+                                <span class="item">
+                                    대전광역시 서구
+
+                                    <button class="del">삭제</button>
+                                </span>
+                            </p>
+                        </div>
+
+                        <h3>
+                            운송정보
+                        </h3>
+
+                        <div class="transport-type">
+                            <input name="transport-type" id="transport01" type="radio" checked><label for="transport01">선박</label>
+                            <input name="transport-type" id="transport02" type="radio"><label for="transport02">항공</label>
+                        </div>
+                        <div class="table">
+                            <p>
+                                <strong><label for="s-day">출발일</label></strong>
+                                <input id="s-day" type="date" class="type">
+                            </p>
+                            <p>
+                                <strong><label for="s-time">출발시간</label></strong>
+                                <select id="s-time" class="time">
+                                    <option>12시</option>
+                                </select>
+
+                                <input id="s-min" class="min" type="text" placeholder="00">
+                                <span class="inline">분</span>
+                            </p>
+                            <p>
+                                <strong><label for="s-location">출발항</label></strong>
+                                <select id="s-location" class="type">
+                                    <option>인천항</option>
+                                </select>
+
+                            </p>
+                            <p class="long-title">
+                                <strong><label for="a-day">반입일 (도착일)</label></strong>
+
+                                <input id="a-day" type="date" class="type">
+                            </p>
+                            <p>
+                                <strong><label for="a-time">도착시간</label></strong>
+                                <select id="a-time" class="time">
+                                    <option>12시</option>
+                                </select>
+
+                                <input id="a-min" class="min" type="text" placeholder="00">
+                                <span class="inline">분</span>
+                            </p>
+                            <p>
+                                <strong><label for="a-location">도착항</label></strong>
+                                <select id="a-location" class="type">
+                                    <option>인천항</option>
+                                </select>
+
+                            </p>
+                            <p class="long-title">
+                                <strong><label for="vessel">운송편명 (선박)</label></strong>
+                                <select id="vessel" class="type">
+                                    <option>퀴네주니호</option>
+                                </select>
+
+                            </p>
+                            <p>
+                                <strong><label for="tel1">운송자 연락처</label></strong>
+
+                                <select id="tel1" class="tel">
+                                    <option>010</option>
+                                    <option>011</option>
+                                </select>
+                                <input id="tel2" class="tel" type="text">
+                                <input id="tel3" class="tel" type="text">
+                            </p>
+                        </div>
+
+                        <h3>
+                            첨부파일
+                            <small>A,B 반입 관련 서류를 필수로 첨부하셔야 됩니다.</small>
+                        </h3>
+                        <div class="table">
+                            <p>
+                                <strong><label for="file1">첨부</label></strong>
+
+                                <button class="sub">파일업로드</button>
+
+                                <span class="file">
+                                    <u>첨부1</u>
+
+                                    <a href="">사업자등록증.txt(15mb)</a>
+
+                                    <button class="del">삭제</button>
+                                </span>
+
+                                <span class="file">
+                                    <u>첨부2</u>
+
+                                    <a href="">사업자등록증.txt(15mb)</a>
+
+                                    <button class="del">삭제</button>
+                                </span>
+                                
+
+                            </p>
+                            </p>
+                        </div>
+
+                        <h3>
+                            동의 및 서명
+                        </h3>
+
+                        <div class="agree-box">
+                            <p>
+                                1. 상기 본인은 기재내용과 같이 반출·반입 가축 및 그 생산물 등에 관한 방역요령에 따라 반입할 계획임을 신고하며,
+                            </p>
+                            <p>
+                                2. 반입물품이 신고내용과 다르거나 가축전염병 발생 농장과 역학적으로 연관성이 확인되어 반송 또는 폐기 등의 방역 조치가 필요한 경우 조건없이 적극 협조하겠습니다.
+                            </p>
+                        </div>
+
+                        <div class="agree-box">
+                            <strong>
+                                ○ 개인정보 수집이용 동의 <span>(동의일로부터 문서보존기간까지)</span>
+                            </strong>
+                            <p>
+                                상기 물품 반입 사항에 대해 가축전염병 유지방지를 위한 목적으로 반입관리대장 등 원할한 방역관리를 위해 개인정보를 수집 이용하는데 동의합니다.
+                            </p>
+                        </div>
+
+                        <p class="agree">
+                            <input id="agree" type="checkbox">
+                            <label for="agree">위 내용을 확인했으며 동의합니다.</label>
+                        </p>
+
+                        <div class="signature">
+                            <strong>서명</strong>
+                            <button>서명하기</button>
+                            <div>
+
+
+                            </div>
+                        </div>
+                    </div>
 
 
                         <div class="btn-set">
-                            <a class="big" href="">취소</a>
-                            <a class="big next" href="">가입하기 →</a>
+                            <a class="heavy next" href="">신고서 제출하기</a>
                         </div>
     
                     </div>

@@ -614,6 +614,7 @@ div.btn-set a {
   font-size: 16px;
   color: #555555;
   margin: 0 7px;
+  border-radius: 2px;
 }
 @media (min-width: 1200px) {
   div.btn-set button,
@@ -622,18 +623,6 @@ div.btn-set a {
     height: 46px;
     font-size: 17px;
     margin: 0 10px;
-  }
-}
-div.btn-set button.big,
-div.btn-set a.big {
-  line-height: 44px;
-  font-size: 17px;
-}
-@media (min-width: 1200px) {
-  div.btn-set button.big,
-div.btn-set a.big {
-    line-height: 46px;
-    font-size: 18px;
   }
 }
 div.btn-set button.main,
@@ -656,6 +645,31 @@ div.btn-set a.next {
   div.btn-set button.next,
 div.btn-set a.next {
     padding: 0 40px;
+  }
+}
+div.btn-set button.big,
+div.btn-set a.big {
+  line-height: 44px;
+  font-size: 17px;
+}
+@media (min-width: 1200px) {
+  div.btn-set button.big,
+div.btn-set a.big {
+    line-height: 46px;
+    font-size: 18px;
+  }
+}
+div.btn-set button.heavy,
+div.btn-set a.heavy {
+  line-height: 48px;
+  font-size: 17px;
+  padding: 0 40px;
+}
+@media (min-width: 1200px) {
+  div.btn-set button.heavy,
+div.btn-set a.heavy {
+    line-height: 46px;
+    font-size: 18px;
   }
 }
 div.btn-set.vertical button,
@@ -6186,12 +6200,38 @@ body div#content.sub section.report div.container div.report-type label + input 
     margin-left: 50px;
   }
 }
-body div#content.sub section.report div.container div.report-form {
+body div#content.sub section.report div.container div.report-form div.transport-type {
+  font-size: 15px;
+  padding: 0 0 20px;
+  font-weight: 400;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.report div.container div.report-form div.transport-type {
+    font-size: 18px;
+  }
+}
+body div#content.sub section.report div.container div.report-form div.transport-type input {
+  width: 20px;
+  height: 20px;
+  margin: 0 6px 0 0;
+  position: relative;
+  top: 4px;
+}
+body div#content.sub section.report div.container div.report-form div.transport-type label + input {
+  margin-left: 20px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.report div.container div.report-form div.transport-type label + input {
+    margin-left: 50px;
+  }
+}
+body div#content.sub section.report div.container div.report-form div.table {
   border-top: 1px solid #CCCCCC;
   border-right: 1px solid #CCCCCC;
   font-size: 0;
+  margin: 0 0 50px;
 }
-body div#content.sub section.report div.container div.report-form p {
+body div#content.sub section.report div.container div.report-form div.table p {
   position: relative;
   border-bottom: 1px solid #CCCCCC;
   padding: 10px 10px 10px 122px;
@@ -6201,18 +6241,22 @@ body div#content.sub section.report div.container div.report-form p {
   font-size: 0;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.report div.container div.report-form p {
+  body div#content.sub section.report div.container div.report-form div.table p {
     padding: 7px 10px 7px 168px;
   }
 }
-body div#content.sub section.report div.container div.report-form p strong {
+body div#content.sub section.report div.container div.report-form div.table p.long-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+body div#content.sub section.report div.container div.report-form div.table p strong {
   display: block;
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
   width: 110px;
-  padding: 15px 10px 15px 25px;
+  padding: 15px 10px;
   line-height: 1.6;
   border-left: 1px solid #CCCCCC;
   border-right: 1px solid #CCCCCC;
@@ -6222,12 +6266,12 @@ body div#content.sub section.report div.container div.report-form p strong {
   font-size: 15px;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.report div.container div.report-form p strong {
+  body div#content.sub section.report div.container div.report-form div.table p strong {
     width: 148px;
     font-size: 16px;
   }
 }
-body div#content.sub section.report div.container div.report-form p strong i {
+body div#content.sub section.report div.container div.report-form div.table p strong i {
   position: absolute;
   left: 10px;
   top: 18px;
@@ -6235,7 +6279,7 @@ body div#content.sub section.report div.container div.report-form p strong i {
   color: #4E3DC4;
   padding-right: 4px;
 }
-body div#content.sub section.report div.container div.report-form p > i {
+body div#content.sub section.report div.container div.report-form div.table p > i {
   display: block;
   text-align: right;
   margin: 10px 0 0;
@@ -6244,16 +6288,16 @@ body div#content.sub section.report div.container div.report-form p > i {
   font-style: normal;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.report div.container div.report-form p > i {
+  body div#content.sub section.report div.container div.report-form div.table p > i {
     font-size: 14px;
     display: inline-block;
     margin: 0 0 0 10px;
   }
 }
-body div#content.sub section.report div.container div.report-form p > i.ok {
+body div#content.sub section.report div.container div.report-form div.table p > i.ok {
   color: #4E3DC4;
 }
-body div#content.sub section.report div.container div.report-form p > i.ok::before {
+body div#content.sub section.report div.container div.report-form div.table p > i.ok::before {
   content: "";
   display: inline-block;
   width: 10px;
@@ -6261,19 +6305,23 @@ body div#content.sub section.report div.container div.report-form p > i.ok::befo
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='10.091' height='8.666' viewBox='0 0 10.091 8.666'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_2034' data-name='사각형 2034' width='10.091' height='8.666' fill='%234e3dc4'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_1710' data-name='그룹 1710' transform='translate(0 0)'%3E%3Cg id='그룹_1709' data-name='그룹 1709' transform='translate(0 0)'%3E%3Cg id='그룹_1708' data-name='그룹 1708' transform='translate(0 0)' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_1657' data-name='패스 1657' d='M4.013,8.666H4a1.017,1.017,0,0,1-.811-.414L.2,4.189A1.019,1.019,0,1,1,1.839,2.98L4.027,5.95,8.263.4A1.019,1.019,0,1,1,9.883,1.637L4.823,8.266a1.019,1.019,0,0,1-.81.4' transform='translate(0 0)' fill='%234e3dc4'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center/100% auto;
   margin: 0 4px 0 0;
 }
-body div#content.sub section.report div.container div.report-form p span {
+body div#content.sub section.report div.container div.report-form div.table p span {
   display: block;
   min-height: 36px;
   padding: 10px 0;
   font-size: 15px;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.report div.container div.report-form p span {
+  body div#content.sub section.report div.container div.report-form div.table p span {
     min-height: 38px;
     font-size: 16px;
   }
 }
-body div#content.sub section.report div.container div.report-form p button.sub {
+body div#content.sub section.report div.container div.report-form div.table p span.inline {
+  display: inline;
+  padding: 0 10px;
+}
+body div#content.sub section.report div.container div.report-form div.table p button.sub {
   font-size: 14px;
   color: #fff;
   width: 110px;
@@ -6283,12 +6331,12 @@ body div#content.sub section.report div.container div.report-form p button.sub {
   border-radius: 4px;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.report div.container div.report-form p button.sub {
+  body div#content.sub section.report div.container div.report-form div.table p button.sub {
     height: 38px;
     font-size: 15px;
   }
 }
-body div#content.sub section.report div.container div.report-form p button.search {
+body div#content.sub section.report div.container div.report-form div.table p button.search {
   font-size: 14px;
   color: #555555;
   width: 130px;
@@ -6299,26 +6347,29 @@ body div#content.sub section.report div.container div.report-form p button.searc
   border-radius: 4px;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.report div.container div.report-form p button.search {
+  body div#content.sub section.report div.container div.report-form div.table p button.search {
     height: 38px;
     font-size: 15px;
     width: 160px;
     margin: 0 26px 0 0;
   }
-  body div#content.sub section.report div.container div.report-form p button.search.post {
+  body div#content.sub section.report div.container div.report-form div.table p button.search.post {
     display: block;
     margin: 0 0 10px;
   }
 }
-body div#content.sub section.report div.container div.report-form p input + button,
-body div#content.sub section.report div.container div.report-form p button + input {
+body div#content.sub section.report div.container div.report-form div.table p input + button,
+body div#content.sub section.report div.container div.report-form div.table p button + input {
   margin-top: 5px;
 }
-body div#content.sub section.report div.container div.report-form p input[type=text],
-body div#content.sub section.report div.container div.report-form p input[type=date],
-body div#content.sub section.report div.container div.report-form p input[type=tel],
-body div#content.sub section.report div.container div.report-form p input[type=password],
-body div#content.sub section.report div.container div.report-form p select {
+body div#content.sub section.report div.container div.report-form div.table p select + select {
+  margin-top: 10px;
+}
+body div#content.sub section.report div.container div.report-form div.table p input[type=text],
+body div#content.sub section.report div.container div.report-form div.table p input[type=date],
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel],
+body div#content.sub section.report div.container div.report-form div.table p input[type=password],
+body div#content.sub section.report div.container div.report-form div.table p select {
   width: 100%;
   height: 36px;
   border-radius: 6px;
@@ -6329,104 +6380,274 @@ body div#content.sub section.report div.container div.report-form p select {
   font-size: 15px;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.report div.container div.report-form p input[type=text],
-body div#content.sub section.report div.container div.report-form p input[type=date],
-body div#content.sub section.report div.container div.report-form p input[type=tel],
-body div#content.sub section.report div.container div.report-form p input[type=password],
-body div#content.sub section.report div.container div.report-form p select {
+  body div#content.sub section.report div.container div.report-form div.table p input[type=text],
+body div#content.sub section.report div.container div.report-form div.table p input[type=date],
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel],
+body div#content.sub section.report div.container div.report-form div.table p input[type=password],
+body div#content.sub section.report div.container div.report-form div.table p select {
     height: 38px;
     font-size: 16px;
-    width: 428px;
     margin: 0 10px 0 0;
   }
+  body div#content.sub section.report div.container div.report-form div.table p input[type=text].business,
+body div#content.sub section.report div.container div.report-form div.table p input[type=date].business,
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel].business,
+body div#content.sub section.report div.container div.report-form div.table p input[type=password].business,
+body div#content.sub section.report div.container div.report-form div.table p select.business {
+    width: 278px;
+  }
+  body div#content.sub section.report div.container div.report-form div.table p input[type=text].ceo,
+body div#content.sub section.report div.container div.report-form div.table p input[type=date].ceo,
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel].ceo,
+body div#content.sub section.report div.container div.report-form div.table p input[type=password].ceo,
+body div#content.sub section.report div.container div.report-form div.table p select.ceo {
+    width: 140px;
+  }
+  body div#content.sub section.report div.container div.report-form div.table p input[type=text].type,
+body div#content.sub section.report div.container div.report-form div.table p input[type=date].type,
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel].type,
+body div#content.sub section.report div.container div.report-form div.table p input[type=password].type,
+body div#content.sub section.report div.container div.report-form div.table p select.type {
+    width: 180px;
+  }
 }
-body div#content.sub section.report div.container div.report-form p input[type=text].tel,
-body div#content.sub section.report div.container div.report-form p input[type=date].tel,
-body div#content.sub section.report div.container div.report-form p input[type=tel].tel,
-body div#content.sub section.report div.container div.report-form p input[type=password].tel,
-body div#content.sub section.report div.container div.report-form p select.tel {
+body div#content.sub section.report div.container div.report-form div.table p input[type=text].time,
+body div#content.sub section.report div.container div.report-form div.table p input[type=date].time,
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel].time,
+body div#content.sub section.report div.container div.report-form div.table p input[type=password].time,
+body div#content.sub section.report div.container div.report-form div.table p select.time {
+  width: 100px;
+  margin-right: 10px;
+}
+body div#content.sub section.report div.container div.report-form div.table p input[type=text].min,
+body div#content.sub section.report div.container div.report-form div.table p input[type=date].min,
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel].min,
+body div#content.sub section.report div.container div.report-form div.table p input[type=password].min,
+body div#content.sub section.report div.container div.report-form div.table p select.min {
+  width: 70px;
+}
+body div#content.sub section.report div.container div.report-form div.table p input[type=text].tel,
+body div#content.sub section.report div.container div.report-form div.table p input[type=date].tel,
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel].tel,
+body div#content.sub section.report div.container div.report-form div.table p input[type=password].tel,
+body div#content.sub section.report div.container div.report-form div.table p select.tel {
   width: calc(50% - 5px);
 }
-body div#content.sub section.report div.container div.report-form p input[type=text].tel#tel2,
-body div#content.sub section.report div.container div.report-form p input[type=date].tel#tel2,
-body div#content.sub section.report div.container div.report-form p input[type=tel].tel#tel2,
-body div#content.sub section.report div.container div.report-form p input[type=password].tel#tel2,
-body div#content.sub section.report div.container div.report-form p select.tel#tel2 {
+body div#content.sub section.report div.container div.report-form div.table p input[type=text].tel#tel2,
+body div#content.sub section.report div.container div.report-form div.table p input[type=date].tel#tel2,
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel].tel#tel2,
+body div#content.sub section.report div.container div.report-form div.table p input[type=password].tel#tel2,
+body div#content.sub section.report div.container div.report-form div.table p select.tel#tel2 {
   margin-right: 10px;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.report div.container div.report-form p input[type=text].tel,
-body div#content.sub section.report div.container div.report-form p input[type=date].tel,
-body div#content.sub section.report div.container div.report-form p input[type=tel].tel,
-body div#content.sub section.report div.container div.report-form p input[type=password].tel,
-body div#content.sub section.report div.container div.report-form p select.tel {
+  body div#content.sub section.report div.container div.report-form div.table p input[type=text].tel,
+body div#content.sub section.report div.container div.report-form div.table p input[type=date].tel,
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel].tel,
+body div#content.sub section.report div.container div.report-form div.table p input[type=password].tel,
+body div#content.sub section.report div.container div.report-form div.table p select.tel {
     display: inline-block;
     width: 140px;
   }
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.report div.container div.report-form p input[type=text]#farm,
-body div#content.sub section.report div.container div.report-form p input[type=date]#farm,
-body div#content.sub section.report div.container div.report-form p input[type=tel]#farm,
-body div#content.sub section.report div.container div.report-form p input[type=password]#farm,
-body div#content.sub section.report div.container div.report-form p select#farm {
+  body div#content.sub section.report div.container div.report-form div.table p input[type=text]#farm,
+body div#content.sub section.report div.container div.report-form div.table p input[type=date]#farm,
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel]#farm,
+body div#content.sub section.report div.container div.report-form div.table p input[type=password]#farm,
+body div#content.sub section.report div.container div.report-form div.table p select#farm {
     width: calc(100% - 196px);
   }
 }
-body div#content.sub section.report div.container div.report-form p input[type=text]#address1,
-body div#content.sub section.report div.container div.report-form p input[type=date]#address1,
-body div#content.sub section.report div.container div.report-form p input[type=tel]#address1,
-body div#content.sub section.report div.container div.report-form p input[type=password]#address1,
-body div#content.sub section.report div.container div.report-form p select#address1 {
+body div#content.sub section.report div.container div.report-form div.table p input[type=text]#address1,
+body div#content.sub section.report div.container div.report-form div.table p input[type=date]#address1,
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel]#address1,
+body div#content.sub section.report div.container div.report-form div.table p input[type=password]#address1,
+body div#content.sub section.report div.container div.report-form div.table p select#address1 {
   margin-bottom: 10px;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.report div.container div.report-form p input[type=text]#address1,
-body div#content.sub section.report div.container div.report-form p input[type=date]#address1,
-body div#content.sub section.report div.container div.report-form p input[type=tel]#address1,
-body div#content.sub section.report div.container div.report-form p input[type=password]#address1,
-body div#content.sub section.report div.container div.report-form p select#address1 {
+  body div#content.sub section.report div.container div.report-form div.table p input[type=text]#address1,
+body div#content.sub section.report div.container div.report-form div.table p input[type=date]#address1,
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel]#address1,
+body div#content.sub section.report div.container div.report-form div.table p input[type=password]#address1,
+body div#content.sub section.report div.container div.report-form div.table p select#address1 {
     margin-bottom: 0;
     width: 460px;
   }
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.report div.container div.report-form p input[type=text]#address2,
-body div#content.sub section.report div.container div.report-form p input[type=date]#address2,
-body div#content.sub section.report div.container div.report-form p input[type=tel]#address2,
-body div#content.sub section.report div.container div.report-form p input[type=password]#address2,
-body div#content.sub section.report div.container div.report-form p select#address2 {
+  body div#content.sub section.report div.container div.report-form div.table p input[type=text]#address2,
+body div#content.sub section.report div.container div.report-form div.table p input[type=date]#address2,
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel]#address2,
+body div#content.sub section.report div.container div.report-form div.table p input[type=password]#address2,
+body div#content.sub section.report div.container div.report-form div.table p select#address2 {
     width: 340px;
   }
 }
-body div#content.sub section.report div.container div.report-form p input[type=text]#check,
-body div#content.sub section.report div.container div.report-form p input[type=date]#check,
-body div#content.sub section.report div.container div.report-form p input[type=tel]#check,
-body div#content.sub section.report div.container div.report-form p input[type=password]#check,
-body div#content.sub section.report div.container div.report-form p select#check {
+body div#content.sub section.report div.container div.report-form div.table p input[type=text]#check,
+body div#content.sub section.report div.container div.report-form div.table p input[type=date]#check,
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel]#check,
+body div#content.sub section.report div.container div.report-form div.table p input[type=password]#check,
+body div#content.sub section.report div.container div.report-form div.table p select#check {
   padding-right: 60px;
 }
-body div#content.sub section.report div.container div.report-form p select.tel {
+body div#content.sub section.report div.container div.report-form div.table p input[type=text].half,
+body div#content.sub section.report div.container div.report-form div.table p input[type=date].half,
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel].half,
+body div#content.sub section.report div.container div.report-form div.table p input[type=password].half,
+body div#content.sub section.report div.container div.report-form div.table p select.half {
+  width: calc(50% - 5px);
+  margin-top: 10px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.report div.container div.report-form div.table p input[type=text].half,
+body div#content.sub section.report div.container div.report-form div.table p input[type=date].half,
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel].half,
+body div#content.sub section.report div.container div.report-form div.table p input[type=password].half,
+body div#content.sub section.report div.container div.report-form div.table p select.half {
+    width: 120px;
+  }
+}
+body div#content.sub section.report div.container div.report-form div.table p input[type=text].half#weight,
+body div#content.sub section.report div.container div.report-form div.table p input[type=date].half#weight,
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel].half#weight,
+body div#content.sub section.report div.container div.report-form div.table p input[type=password].half#weight,
+body div#content.sub section.report div.container div.report-form div.table p select.half#weight {
+  margin-left: 10px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.report div.container div.report-form div.table p input[type=text].half#weight,
+body div#content.sub section.report div.container div.report-form div.table p input[type=date].half#weight,
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel].half#weight,
+body div#content.sub section.report div.container div.report-form div.table p input[type=password].half#weight,
+body div#content.sub section.report div.container div.report-form div.table p select.half#weight {
+    margin-left: 0;
+  }
+}
+body div#content.sub section.report div.container div.report-form div.table p button.add {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid #4E3DC4;
+  background: none;
+  width: 80px;
+  height: 38px;
+  margin: 12px auto 20px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.report div.container div.report-form div.table p button.add {
+    display: inline-block;
+  }
+}
+body div#content.sub section.report div.container div.report-form div.table p > label {
+  display: block;
+  margin: 15px 0 5px;
+  font-size: 15px;
+}
+body div#content.sub section.report div.container div.report-form div.table p span.item {
+  display: block;
+  position: relative;
+  font-size: 15px;
+  color: #555;
+  background: #F3F3F3;
+  border: 1px solid #555;
+  padding: 12px 50px 12px 12px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.report div.container div.report-form div.table p span.item {
+    width: 558px;
+  }
+}
+body div#content.sub section.report div.container div.report-form div.table p span.item button.del {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: none;
+  font-size: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg id='그룹_1657' data-name='그룹 1657' transform='translate(-2 -2)'%3E%3Cg id='그룹_1656' data-name='그룹 1656'%3E%3Cpath id='패스_1590' data-name='패스 1590' d='M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm5,11H7V11H17Z' fill='%234e3dc4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center/100% auto;
+}
+body div#content.sub section.report div.container div.report-form div.table p span.file {
+  display: block;
+  position: relative;
+  font-size: 15px;
+  color: #555;
+  background: #F3F3F3;
+  border: 1px solid #555;
+  padding: 12px 50px 12px 12px;
+  margin-top: 10px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.report div.container div.report-form div.table p span.file {
+    font-size: 16px;
+  }
+}
+body div#content.sub section.report div.container div.report-form div.table p span.file u {
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  color: #4E3DC4;
+  margin: 0 0 10px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.report div.container div.report-form div.table p span.file u {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    font-size: 15px;
+  }
+}
+body div#content.sub section.report div.container div.report-form div.table p span.file a {
+  text-decoration: underline;
+  color: #555555;
+}
+body div#content.sub section.report div.container div.report-form div.table p span.file button.del {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: none;
+  font-size: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cg id='그룹_1657' data-name='그룹 1657' transform='translate(-2 -2)'%3E%3Cg id='그룹_1656' data-name='그룹 1656'%3E%3Cpath id='패스_1590' data-name='패스 1590' d='M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm5,11H7V11H17Z' fill='%234e3dc4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center/auto 100%;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.report div.container div.report-form div.table p span.file button.del {
+    background-position: right center;
+    font-size: 14px;
+    width: auto;
+    padding-right: 26px;
+    color: #4E3DC4;
+  }
+}
+body div#content.sub section.report div.container div.report-form div.table p span.item + span.item {
+  margin-top: 10px;
+}
+body div#content.sub section.report div.container div.report-form div.table p select.tel {
   display: block;
   margin: 0 0 8px;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.report div.container div.report-form p select.tel {
+  body div#content.sub section.report div.container div.report-form div.table p select.tel {
     display: inline-block;
     margin: 0 10px 0 0;
   }
 }
-body div#content.sub section.report div.container div.report-form p input:-moz-read-only {
+body div#content.sub section.report div.container div.report-form div.table p input:-moz-read-only {
   background: #F2F1F1;
 }
-body div#content.sub section.report div.container div.report-form p input:read-only {
+body div#content.sub section.report div.container div.report-form div.table p input:read-only {
   background: #F2F1F1;
 }
-body div#content.sub section.report div.container div.report-form p input + button,
-body div#content.sub section.report div.container div.report-form p button + input {
-  margin-top: 5px;
+body div#content.sub section.report div.container div.report-form div.table p input + button,
+body div#content.sub section.report div.container div.report-form div.table p button + input,
+body div#content.sub section.report div.container div.report-form div.table p input + input {
+  margin-top: 10px;
 }
-body div#content.sub section.report div.container div.report-form p u.counter {
+body div#content.sub section.report div.container div.report-form div.table p u.counter {
   font-size: 12px;
   color: #4E3DC4;
   text-decoration: none;
@@ -6435,20 +6656,129 @@ body div#content.sub section.report div.container div.report-form p u.counter {
   top: 22px;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.report div.container div.report-form p u.counter {
+  body div#content.sub section.report div.container div.report-form div.table p u.counter {
     right: auto;
     left: 550px;
     top: 20px;
     font-size: 13px;
   }
 }
-body div#content.sub section.report div.container div.report-form p textarea {
+body div#content.sub section.report div.container div.report-form div.table p textarea {
   width: 100%;
   height: 72px;
   border-radius: 6px;
   border: 1px solid #BBBBBB;
   box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1) inset;
   padding: 0 10px;
+}
+body div#content.sub section.report div.container div.report-form div.agree-box {
+  border: 1px solid #A5D2E1;
+  background: #F8FBFC;
+  padding: 20px;
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.6;
+  margin: 0 0 15px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.report div.container div.report-form div.agree-box {
+    font-size: 16px;
+  }
+}
+body div#content.sub section.report div.container div.report-form div.agree-box p {
+  margin: 0;
+}
+body div#content.sub section.report div.container div.report-form div.agree-box strong {
+  color: #111111;
+  font-weight: 400;
+}
+body div#content.sub section.report div.container div.report-form div.agree-box strong span {
+  display: block;
+}
+body div#content.sub section.report div.container div.report-form p.agree {
+  text-align: right;
+  margin: 0 0 40px;
+}
+body div#content.sub section.report div.container div.report-form p.agree input {
+  display: none;
+}
+body div#content.sub section.report div.container div.report-form p.agree label {
+  font-size: 15px;
+  color: #111111;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.report div.container div.report-form p.agree label {
+    font-size: 16px;
+  }
+}
+body div#content.sub section.report div.container div.report-form p.agree label::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  margin: 0 6px 0 0;
+  top: 6px;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #BBBBBB;
+  box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1) inset;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.report div.container div.report-form p.agree label::before {
+    margin: 0 10px 0 0;
+    top: 8px;
+  }
+}
+body div#content.sub section.report div.container div.report-form p.agree input:checked + label::before {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20.396' height='15' viewBox='0 0 20.396 15'%3E%3Cpath id='패스_1591' data-name='패스 1591' d='M455.242,317.6l-6.69-6.69,2.678-2.678,4.167,4.167,11.037-9.8,2.514,2.832Z' transform='translate(-448.552 -302.596)' fill='%234e3dc4'/%3E%3C/svg%3E%0A") no-repeat center/20px auto;
+}
+body div#content.sub section.report div.container div.report-form div.signature {
+  position: relative;
+  padding: 0 0 0 120px;
+  margin: 0 0 30px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.report div.container div.report-form div.signature {
+    padding: 0 0 0 700px;
+  }
+}
+body div#content.sub section.report div.container div.report-form div.signature strong {
+  display: block;
+  font-size: 17px;
+  color: #111111;
+  font-weight: 600;
+  margin: 0 0 18px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.report div.container div.report-form div.signature strong {
+    font-size: 18px;
+  }
+}
+body div#content.sub section.report div.container div.report-form div.signature button {
+  position: absolute;
+  right: 0;
+  top: -7px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  border: 1px solid #222222;
+  background: #4D4D4D;
+  border-radius: 4px;
+  width: 100px;
+  height: 34px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.report div.container div.report-form div.signature button {
+    font-size: 16px;
+  }
+}
+body div#content.sub section.report div.container div.report-form div.signature div {
+  border: 1px solid #ccc;
+  height: 90px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.report div.container div.report-form div.signature div {
+    height: 140px;
+  }
 }
 body footer#footer {
   text-align: center;
