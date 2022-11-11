@@ -167,16 +167,13 @@
             <section class="report">
                 <div class="container">
 
-                    <div class="report-type">
-                        <input name="type" id="type01" type="radio" checked><label for="type01">일반</label>
-                        <input name="type" id="type02" type="radio"><label for="type02">사업자</label>
-                    </div>
 
                     <div class="report-form">
 
                         <h3>
                             인적사항
                         </h3>
+
                         <div class="table">
                             <p>
                                 <strong><label for="name">신고인 성명</label></strong>
@@ -217,58 +214,55 @@
 
                         <h3>
                             반입사항
+
+                            <button>품목추가</button>
                         </h3>
-                        <div class="table">
-                            <p>
-                                <strong><label for="item1">반입품목</label></strong>
-                                <select id="item1" class="type">
-                                    <option>생축(가축)류</option>
-                                </select>
-                                <select id="item2" class="type">
-                                    <option>가금류</option>
-                                </select>
-                                <select id="item3" class="type">
-                                    <option>중분류</option>
-                                </select>
-                                <select id="item4" class="type">
-                                    <option>소분류</option>
-                                </select>
 
-                                <label for="ex">기타</label>
-                                <input id="ex" type="text" placeholder="품목을 기재하세요">
+
+
+                        <!-- 품목 없을경우 -->
+                        <div class="table_null">
+                            <p>품목추가 버튼을 눌러</p>
+                            <p>반입하려는 품목을 추가해 주세요</p>
+                        </div>
+
+                        <div class="table_list">
+                            <p>
+                                <u>품목1</u>
+                                <strong>생축(가축)류 > 가금류 > 앵무새 > 옐로우사이드 코뉴어</strong>
+                                <span>(박스) 1EA , 15kg</span>
+                                <span>원산지1 : 국내(대전광역시 서구)</span>
+                                <span>원산지2: 국내(대전광역시 중구</span>
+
+
+
+                                <button class="del">삭제</button>
                             </p>
                             <p>
-                                <strong><label for="package">수량</label></strong>
-                                <select id="package" class="type">
-                                    <option>박스</option>
-                                </select>
+                                <u>품목2</u>
+                                <strong>생축(가축)류 > 가금류 > 앵무새 > 옐로우사이드 코뉴어</strong>
+                                <span>(박스) 1EA , 15kg</span>
+                                <span>원산지1 : 국내(대전광역시 서구)</span>
+                                <span>원산지2: 국내(대전광역시 중구</span>
 
-                                <input id="count" class="half" type="text" placeholder="수량">
-                                <input id="weight" class="half" type="text" placeholder="무게">
+
+
+                                <button class="del">삭제</button>
                             </p>
                             <p>
-                                <strong><label for="location1">생산지</label></strong>
-                                <select id="location1" class="type">
-                                    <option>대전광역시</option>
-                                </select>
-                                <select id="location2" class="type">
-                                    <option>서구</option>
-                                </select>
+                                <u>품목3</u>
+                                <strong>생축(가축)류 > 가금류 > 앵무새 > 옐로우사이드 코뉴어</strong>
+                                <span>(박스) 1EA , 15kg</span>
+                                <span>원산지1 : 국내(대전광역시 서구)</span>
+                                <span>원산지2: 국내(대전광역시 중구</span>
 
-                                <button class="add">+ 추가</button>
 
-                                <span class="item">
-                                    대전광역시 서구
 
-                                    <button class="del">삭제</button>
-                                </span>
-                                <span class="item">
-                                    대전광역시 서구
-
-                                    <button class="del">삭제</button>
-                                </span>
+                                <button class="del">삭제</button>
                             </p>
                         </div>
+
+
 
                         <h3>
                             운송정보
@@ -423,6 +417,85 @@
         </div> 
         <!-- E:mainContent -->
 
+        <div class="form-pop on">
+            <div class="outline">
+
+                
+
+                <h3>
+                    반입사항
+
+                </h3>
+
+
+
+
+
+
+                <div class="table">
+                    <p>
+                        <strong><label for="item1">반입품목</label></strong>
+                        <select id="item1" class="type">
+                            <option>생축(가축)류</option>
+                        </select>
+                        <select id="item2" class="type">
+                            <option>가금류</option>
+                        </select>
+                        <select id="item3" class="type">
+                            <option>중분류</option>
+                        </select>
+                        <select id="item4" class="type">
+                            <option>소분류</option>
+                        </select>
+
+                        <label for="ex">기타</label>
+                        <input id="ex" type="text" placeholder="품목을 기재하세요">
+                    </p>
+                    <p>
+                        <strong><label for="package">수량</label></strong>
+                        <select id="package" class="type">
+                            <option>박스</option>
+                        </select>
+
+                        <input id="count" class="half" type="text" placeholder="수량">
+                        <input id="weight" class="half" type="text" placeholder="무게">
+                    </p>
+                    <p>
+                        <strong><label for="location1">생산지</label></strong>
+                        <select id="location1" class="type">
+                            <option>대전광역시</option>
+                        </select>
+                        <select id="location2" class="type">
+                            <option>서구</option>
+                        </select>
+
+                        <button class="add">+ 추가</button>
+
+                        <span class="item">
+                            대전광역시 서구
+
+                            <button class="del">삭제</button>
+                        </span>
+                        <span class="item">
+                            대전광역시 서구
+
+                            <button class="del">삭제</button>
+                        </span>
+                    </p>
+                </div>
+
+
+
+
+
+                <div class="buttons">
+                    <button>취소</button>
+                    <button class="main">저장</button>
+                </div>
+
+                <button class="close">닫기</button>
+            </div>
+        </div>
 
         <div class="shadow"></div>
         <!-- S:footer -->
