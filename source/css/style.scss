@@ -4475,22 +4475,6 @@ body {
                     }
                   }
 
-                  &.address1 {
-                    margin-bottom:10px;
-
-                    @media (min-width: $screen-size-pc) {
-                      margin-bottom:0;
-                      width:460px;
-                    }
-                  }
-
-                  &.address2 {
-
-                    @media (min-width: $screen-size-pc) {
-                      width:340px;
-                    }
-                  }
-
                   &#check {
                     padding-right:60px;
                   }
@@ -5015,7 +4999,7 @@ body {
                     }
                   }
     
-                  &#address1 {
+                  &.address1 {
                     margin-bottom:10px;
     
                     @media (min-width: $screen-size-pc) {
@@ -5024,7 +5008,7 @@ body {
                     }
                   }
     
-                  &#address2 {
+                  &.address2 {
     
                     @media (min-width: $screen-size-pc) {
                       width:340px;

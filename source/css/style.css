@@ -5952,32 +5952,6 @@ body div#content.sub section.sign div.container div.step03 div.table p select#fa
     width: calc(100% - 196px);
   }
 }
-body div#content.sub section.sign div.container div.step03 div.table p input[type=text].address1,
-body div#content.sub section.sign div.container div.step03 div.table p input[type=date].address1,
-body div#content.sub section.sign div.container div.step03 div.table p input[type=tel].address1,
-body div#content.sub section.sign div.container div.step03 div.table p input[type=password].address1,
-body div#content.sub section.sign div.container div.step03 div.table p select.address1 {
-  margin-bottom: 10px;
-}
-@media (min-width: 1195px) {
-  body div#content.sub section.sign div.container div.step03 div.table p input[type=text].address1,
-body div#content.sub section.sign div.container div.step03 div.table p input[type=date].address1,
-body div#content.sub section.sign div.container div.step03 div.table p input[type=tel].address1,
-body div#content.sub section.sign div.container div.step03 div.table p input[type=password].address1,
-body div#content.sub section.sign div.container div.step03 div.table p select.address1 {
-    margin-bottom: 0;
-    width: 460px;
-  }
-}
-@media (min-width: 1195px) {
-  body div#content.sub section.sign div.container div.step03 div.table p input[type=text].address2,
-body div#content.sub section.sign div.container div.step03 div.table p input[type=date].address2,
-body div#content.sub section.sign div.container div.step03 div.table p input[type=tel].address2,
-body div#content.sub section.sign div.container div.step03 div.table p input[type=password].address2,
-body div#content.sub section.sign div.container div.step03 div.table p select.address2 {
-    width: 340px;
-  }
-}
 body div#content.sub section.sign div.container div.step03 div.table p input[type=text]#check,
 body div#content.sub section.sign div.container div.step03 div.table p input[type=date]#check,
 body div#content.sub section.sign div.container div.step03 div.table p input[type=tel]#check,
@@ -6489,29 +6463,29 @@ body div#content.sub section.report div.container div.report-form div.table p se
     width: calc(100% - 196px);
   }
 }
-body div#content.sub section.report div.container div.report-form div.table p input[type=text]#address1,
-body div#content.sub section.report div.container div.report-form div.table p input[type=date]#address1,
-body div#content.sub section.report div.container div.report-form div.table p input[type=tel]#address1,
-body div#content.sub section.report div.container div.report-form div.table p input[type=password]#address1,
-body div#content.sub section.report div.container div.report-form div.table p select#address1 {
+body div#content.sub section.report div.container div.report-form div.table p input[type=text].address1,
+body div#content.sub section.report div.container div.report-form div.table p input[type=date].address1,
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel].address1,
+body div#content.sub section.report div.container div.report-form div.table p input[type=password].address1,
+body div#content.sub section.report div.container div.report-form div.table p select.address1 {
   margin-bottom: 10px;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.report div.container div.report-form div.table p input[type=text]#address1,
-body div#content.sub section.report div.container div.report-form div.table p input[type=date]#address1,
-body div#content.sub section.report div.container div.report-form div.table p input[type=tel]#address1,
-body div#content.sub section.report div.container div.report-form div.table p input[type=password]#address1,
-body div#content.sub section.report div.container div.report-form div.table p select#address1 {
+  body div#content.sub section.report div.container div.report-form div.table p input[type=text].address1,
+body div#content.sub section.report div.container div.report-form div.table p input[type=date].address1,
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel].address1,
+body div#content.sub section.report div.container div.report-form div.table p input[type=password].address1,
+body div#content.sub section.report div.container div.report-form div.table p select.address1 {
     margin-bottom: 0;
     width: 460px;
   }
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.report div.container div.report-form div.table p input[type=text]#address2,
-body div#content.sub section.report div.container div.report-form div.table p input[type=date]#address2,
-body div#content.sub section.report div.container div.report-form div.table p input[type=tel]#address2,
-body div#content.sub section.report div.container div.report-form div.table p input[type=password]#address2,
-body div#content.sub section.report div.container div.report-form div.table p select#address2 {
+  body div#content.sub section.report div.container div.report-form div.table p input[type=text].address2,
+body div#content.sub section.report div.container div.report-form div.table p input[type=date].address2,
+body div#content.sub section.report div.container div.report-form div.table p input[type=tel].address2,
+body div#content.sub section.report div.container div.report-form div.table p input[type=password].address2,
+body div#content.sub section.report div.container div.report-form div.table p select.address2 {
     width: 340px;
   }
 }
