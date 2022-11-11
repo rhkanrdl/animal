@@ -5177,12 +5177,23 @@ body {
                   font-size:14px;
                   font-weight:400;
                   color:#111;
+  
+                  @media (min-width: $screen-size-pc) {
+                    display:inline;
+                    font-size:15px;
+                    padding:0 10px 0 0;
+                  }
                 }
 
                 span {
                   display:block;
                   font-size:14px;
                   color:#4E3DC4;
+  
+                  @media (min-width: $screen-size-pc) {
+                    display:inline;
+                    font-size:15px;
+                  }
                 }
               }
 

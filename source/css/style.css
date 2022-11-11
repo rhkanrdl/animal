@@ -7327,10 +7327,23 @@ body div#content.sub section.mypage div.container div.list > div div strong {
   font-weight: 400;
   color: #111;
 }
+@media (min-width: 1195px) {
+  body div#content.sub section.mypage div.container div.list > div div strong {
+    display: inline;
+    font-size: 15px;
+    padding: 0 10px 0 0;
+  }
+}
 body div#content.sub section.mypage div.container div.list > div div span {
   display: block;
   font-size: 14px;
   color: #4E3DC4;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.mypage div.container div.list > div div span {
+    display: inline;
+    font-size: 15px;
+  }
 }
 body div#content.sub section.mypage div.container div.list > div > i {
   display: block;
