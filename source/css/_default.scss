@@ -1467,6 +1467,20 @@ div.form-pop {
 			  select + select {
 				margin-top:10px;
 			  }
+
+			  &>u{
+				display:inline-block;
+				vertical-align:top;
+				line-height:36px;
+				font-size:16px;
+				text-decoration:none;
+				width:20px;
+				text-align:center;
+
+				@media (min-width:  800px) {
+				  line-height:38px;
+				}
+			  }
   
 			  input[type=text],
 			  input[type=date],
@@ -1507,6 +1521,10 @@ div.form-pop {
 
 				&.min {
 				  width:70px;
+				}
+
+				&.period {
+					width:190px;
 				}
   
 				&.tel {

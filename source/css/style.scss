@@ -857,6 +857,26 @@ body {
             margin:0 0 0 20px;
           }
         }
+        
+        button {
+          position:absolute;
+          right:0;
+          top:-4px;
+          font-size:15px;
+          width:100px;
+          height:34px;
+          color:#fff;
+          border: 1px solid #222222;
+          background:#4D4D4D;
+          border-radius:5px;
+          font-weight:400;
+
+          @media (min-width: $screen-size-pc) {
+            font-size:16px;
+          }
+
+        }
+
 
       }
 
@@ -2834,11 +2854,19 @@ body {
 
                   &.period {
                     width:calc(100% - 20px);
+    
+                    @media (min-width: $screen-size-pc) {
+                      width:220px;
+                    }
 
-                    &#stay1,
-                    &#contract1 {
+                    &.stay1,
+                    &.contract1 {
                       display:block;
                       margin-bottom:10px;
+    
+                      @media (min-width: $screen-size-pc) {
+                        display:inline-block;
+                      }
                     }
                   }
                 }

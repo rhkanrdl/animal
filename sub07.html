@@ -164,7 +164,11 @@
 
             <section class="sub-farm">
                 <div class="container">
-                <h3 class="atitle">외국인노동자정보</h3>
+                <h3 class="atitle">
+                    외국인노동자정보
+                    
+                    <button>추가</button>
+                </h3>
     
                 <div class="data">
 
@@ -224,59 +228,6 @@
                     </p>
                 </div>
 
-                <h4 class="btitle">
-                    추가
-                </h4>
-
-
-
-                <div class="table_field03">
-                    <p>
-                        <strong><label for="name">이름(영어)</label></strong>
-                        <input id="name" type="text">
-                    </p>
-                    <p>
-                        <strong><label for="nation">국적</label></strong>
-                        <input id="nation" type="text">
-                    </p>
-                    <p>
-                        <strong><label for="r-number">외국인 등록번호</label></strong>
-                        <input id="r-number" type="text">
-                    </p>
-                    <p>
-                        <strong><label for="passport">여권번호</label></strong>
-                        <input id="passport" type="text">
-                    </p>
-                    <p>
-                        <strong><label for="birth">생년월일</label></strong>
-                        <input id="birth" type="date">
-                    </p>
-                    <p>
-                        <strong><label for="entry">입국일자</label></strong>
-                        <input id="entry" type="date">
-                    </p>
-                    <p>
-                        <strong><label for="stay1">체류기간</label></strong>
-                        <input id="stay1" class="period" type="date">
-                        <u>-</u>
-                        <input id="stay2" class="period" type="date">
-                    </p>
-                    <p>
-                        <strong><label for="contract1">계약기간</label></strong>
-                        <input id="contract1" class="period" type="date">
-                        <u>-</u>
-                        <input id="contract2" class="period" type="date">
-                    </p>
-                    <div class="btn">
-                        <button>추가하기 +</button>
-                    </div>
-
-            </div>
-
-                <div class="btn-set">
-                    <button>취소</button>
-                    <button class="main">저장</button>
-                </div>
 
             </div>
         </div>
@@ -287,6 +238,72 @@
 
 </div> 
 <!-- E:mainContent -->
+
+<div class="form-pop on">
+
+    <div class="outline">
+
+
+
+        <h3>
+            추가
+        </h3>
+
+        <button class="close">창닫기</button>
+
+
+
+        <div class="table">
+            <p>
+                <strong><label for="name">이름(영어)</label></strong>
+                <input id="name" type="text">
+            </p>
+            <p>
+                <strong><label for="nation">국적</label></strong>
+                <input id="nation" type="text">
+            </p>
+            <p>
+                <strong><label for="r-number">외국인 등록번호</label></strong>
+                <input id="r-number" type="text">
+            </p>
+            <p>
+                <strong><label for="passport">여권번호</label></strong>
+                <input id="passport" type="text">
+            </p>
+            <p>
+                <strong><label for="birth">생년월일</label></strong>
+                <input id="birth" class="period" type="date">
+            </p>
+            <p>
+                <strong><label for="entry">입국일자</label></strong>
+                <input id="entry" class="period" type="date">
+            </p>
+            <p>
+                <strong><label for="stay1">체류기간</label></strong>
+                <input id="stay1" class="period stay1" type="date">
+                <u>-</u>
+                <input id="stay2" class="period stay2" type="date">
+            </p>
+            <p>
+                <strong><label for="contract1">계약기간</label></strong>
+                <input id="contract1" class="period contract1" type="date">
+                <u>-</u>
+                <input id="contract2" class="period contract2" type="date">
+            </p>
+
+        </div>
+
+        <div class="buttons">
+            <button>취소</button>
+            <button class="main">저장</button>
+        </div>
+
+
+
+
+        
+    </div>
+</div>
 
 
 <div class="shadow"></div>

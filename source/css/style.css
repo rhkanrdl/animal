@@ -1813,6 +1813,20 @@ div.form-pop div.outline div.table p button + input {
 div.form-pop div.outline div.table p select + select {
   margin-top: 10px;
 }
+div.form-pop div.outline div.table p > u {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 36px;
+  font-size: 16px;
+  text-decoration: none;
+  width: 20px;
+  text-align: center;
+}
+@media (min-width: 800px) {
+  div.form-pop div.outline div.table p > u {
+    line-height: 38px;
+  }
+}
 div.form-pop div.outline div.table p input[type=text],
 div.form-pop div.outline div.table p input[type=date],
 div.form-pop div.outline div.table p input[type=tel],
@@ -1873,6 +1887,13 @@ div.form-pop div.outline div.table p input[type=tel].min,
 div.form-pop div.outline div.table p input[type=password].min,
 div.form-pop div.outline div.table p select.min {
   width: 70px;
+}
+div.form-pop div.outline div.table p input[type=text].period,
+div.form-pop div.outline div.table p input[type=date].period,
+div.form-pop div.outline div.table p input[type=tel].period,
+div.form-pop div.outline div.table p input[type=password].period,
+div.form-pop div.outline div.table p select.period {
+  width: 190px;
 }
 div.form-pop div.outline div.table p input[type=text].tel,
 div.form-pop div.outline div.table p input[type=date].tel,
@@ -3459,6 +3480,24 @@ body div#content.sub h3.atitle small {
     display: inline-block;
     font-size: 14px;
     margin: 0 0 0 20px;
+  }
+}
+body div#content.sub h3.atitle button {
+  position: absolute;
+  right: 0;
+  top: -4px;
+  font-size: 15px;
+  width: 100px;
+  height: 34px;
+  color: #fff;
+  border: 1px solid #222222;
+  background: #4D4D4D;
+  border-radius: 5px;
+  font-weight: 400;
+}
+@media (min-width: 1195px) {
+  body div#content.sub h3.atitle button {
+    font-size: 16px;
   }
 }
 body div#content.sub h4.ctitle {
@@ -5149,13 +5188,29 @@ body div#content.sub section.sub-farm div.container div.data div.table_field03 p
 body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=tel].period {
   width: calc(100% - 20px);
 }
-body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=text].period#stay1, body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=text].period#contract1,
-body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=date].period#stay1,
-body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=date].period#contract1,
-body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=tel].period#stay1,
-body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=tel].period#contract1 {
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=text].period,
+body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=date].period,
+body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=tel].period {
+    width: 220px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=text].period.stay1, body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=text].period.contract1,
+body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=date].period.stay1,
+body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=date].period.contract1,
+body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=tel].period.stay1,
+body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=tel].period.contract1 {
   display: block;
   margin-bottom: 10px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=text].period.stay1, body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=text].period.contract1,
+body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=date].period.stay1,
+body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=date].period.contract1,
+body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=tel].period.stay1,
+body div#content.sub section.sub-farm div.container div.data div.table_field03 p input[type=tel].period.contract1 {
+    display: inline-block;
+  }
 }
 body div#content.sub section.sub-farm div.container div.data div.table_field03 p u {
   display: inline-block;
