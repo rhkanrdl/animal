@@ -3452,6 +3452,24 @@ body div#content.sub h3.stitle small {
     font-size: 14px;
   }
 }
+body div#content.sub h3.stitle button {
+  position: absolute;
+  right: 0;
+  top: -4px;
+  font-size: 15px;
+  width: 100px;
+  height: 34px;
+  color: #fff;
+  border: 1px solid #222222;
+  background: #4D4D4D;
+  border-radius: 5px;
+  font-weight: 400;
+}
+@media (min-width: 1195px) {
+  body div#content.sub h3.stitle button {
+    font-size: 16px;
+  }
+}
 body div#content.sub h3.atitle {
   font-size: 17px;
   font-weight: 600;
@@ -4593,6 +4611,174 @@ body div#content.sub section.sub-farm div.container div.data h4.btitle button.mo
     height: 36px;
     font-size: 16px;
     top: -12px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data ul.list {
+  list-style: none;
+  border-top: 1px solid #111111;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data ul.list {
+    position: relative;
+    padding-top: 50px;
+    border-top: none;
+  }
+  body div#content.sub section.sub-farm div.container div.data ul.list::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    border-bottom: 1px solid #555555;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data ul.list li {
+  border-bottom: 1px solid #CCCCCC;
+  padding: 12px 0;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data ul.list li {
+    padding: 28px 0;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data ul.list li div.box {
+  display: flex;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data ul.list li div.box {
+    display: block;
+    font-size: 0;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data ul.list li div.box div {
+  margin: auto 0;
+  word-break: keep-all;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data ul.list li div.box div {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data ul.list li div.box div.num {
+  display: none;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data ul.list li div.box div.num {
+    display: inline-block;
+    flex: none;
+    text-align: center;
+    font-size: 15px;
+    width: 100px;
+  }
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data ul.list li div.box div.text {
+    width: calc(100% - 520px);
+  }
+}
+body div#content.sub section.sub-farm div.container div.data ul.list li div.box div.text h5 {
+  margin: 0;
+  font-size: 15px;
+  color: #111111;
+  font-weight: 400;
+  line-height: 1.6;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data ul.list li div.box div.text h5 {
+    display: block;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data ul.list li div.box div.date {
+  margin-left: auto;
+  text-align: center;
+  font-size: 13px;
+  color: #555555;
+  padding: 0 10px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data ul.list li div.box div.date {
+    font-size: 15px;
+    width: 140px;
+    color: #555555;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data ul.list li div.box div.count {
+  margin-left: auto;
+  text-align: center;
+  font-size: 13px;
+  color: #555555;
+  padding: 0 10px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data ul.list li div.box div.count {
+    font-size: 15px;
+    width: 140px;
+    color: #555555;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data ul.list li div.box div.modify {
+  margin-left: auto;
+  text-align: center;
+  font-size: 13px;
+  color: #555555;
+  padding: 0 10px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data ul.list li div.box div.modify {
+    display: inline-block;
+    flex: none;
+    width: 140px;
+    font-size: 15px;
+    margin-left: auto;
+    text-align: center;
+    color: #555555;
+    padding: 0 10px;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data ul.list li div.box div.modify button {
+  position: relative;
+  font-size: 14px;
+  color: #22256B;
+  text-decoration: underline;
+  border: none;
+  background: none;
+}
+body div#content.sub section.sub-farm div.container div.data ul.list li div.box div.modify button::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: -20px;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15.414' height='15.414' viewBox='0 0 15.414 15.414'%3E%3Cg id='그룹_712' data-name='그룹 712' transform='translate(-375.256 -576.18)'%3E%3Cline id='선_1136' data-name='선 1136' x2='7.096' transform='translate(381.254 589.924)' fill='%23fff' stroke='%238082a2' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3Crect id='사각형_1491' data-name='사각형 1491' width='8.28' height='8.28' transform='translate(384.109 576.887) rotate(45)' fill='%23fff' stroke='%238082a2' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3Cpath id='사각형_1492' data-name='사각형 1492' d='M0,0H9.308a0,0,0,0,1,0,0V0A3.239,3.239,0,0,1,6.069,3.239H3.239A3.239,3.239,0,0,1,0,0V0A0,0,0,0,1,0,0Z' transform='translate(378.254 582.015) rotate(45)' fill='%23fff' stroke='%238082a2' stroke-linecap='round' stroke-linejoin='round' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center/100% auto;
+}
+body div#content.sub section.sub-farm div.container div.data ul.list li div.box div strong {
+  display: none;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data ul.list li:first-of-type div.box div {
+    position: relative;
+  }
+  body div#content.sub section.sub-farm div.container div.data ul.list li:first-of-type div.box div strong {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -56px;
+    text-align: center;
+    font-weight: 400;
+    color: #555555;
+    font-size: 15px;
   }
 }
 body div#content.sub section.sub-farm div.container div.data div.table01 {
