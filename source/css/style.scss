@@ -1401,6 +1401,45 @@ body {
         }
       }
 
+      section.intro {
+        text-align:center;
+
+        div.container {
+          text-align:center;
+          min-height:500px;
+
+          strong {
+            display:block;
+            font-size:18px;
+            font-weight:900;
+            margin:0 0 25px;
+            color:#111111;
+            padding:156px 0 0;
+            background:url(../images/img-intro.svg) no-repeat center top / 205px auto;
+
+            @media (min-width: $screen-size-pc) {
+              background-size:236px auto;
+              padding:176px 0 0;
+              font-size:20px;
+              margin:28px;
+
+            }
+          }
+
+          p {
+            font-size:15px;
+            color:#555555;
+            word-break:keep-all;
+            line-height:1.6;
+
+            @media (min-width: $screen-size-pc) {
+              font-size:16px;
+
+            }
+          }
+        }
+      }
+
       section.sub-board {
 
         padding:0 0 30px;
@@ -6231,6 +6270,275 @@ body {
 
 
       
+      }
+
+      section.procedure {
+
+        text-align:center;
+
+        div.container {
+          word-break:keep-all;
+          line-height:1.6;
+
+          h3 {
+            font-weight:700;
+            color:#111;
+            margin:0 0 30px;
+            font-size:18px;
+
+            @media (min-width: $screen-size-pc) {
+              font-size:19px;
+              margin:0 0 40px;
+            }
+          }
+
+          h4 {
+            position:relative;
+            padding:0 0 0 22px;
+            font-weight:700;
+            color:#111;
+            margin:0 0 20px;
+            font-size:16px;
+
+            @media (min-width: $screen-size-pc) {
+              font-size:17px;
+              margin:0 0 25px;
+            }
+
+            &::before {
+              content:"○";
+              position:absolute;
+              left:0;
+            }
+
+            small {
+              font-weight:400;
+              font-size:16px;
+            }
+
+            strong {
+              color:#4E3DC4;
+            }
+          }
+
+          h5 {
+            font-size:15px;
+            font-weight:400;
+            color:#111111;
+            margin:0 0 15px;
+
+            @media (min-width: $screen-size-pc) {
+              font-size:16px;
+            }
+          }
+
+          div.box {
+            border:1px solid #BBBBBB;
+            border-radius:8px;
+            background:#FBFBFC;
+            padding:15px;
+            color:#555555;
+            margin:0 0 30px;
+
+            @media (min-width: $screen-size-pc) {
+              padding:20px;
+              font-size:16px;
+              margin:0 0 40px;
+            }
+
+            strong {
+              font-weight:inherit;
+              color:#4E3DC4;
+            }
+          }
+
+          p.text {
+            position:relative;
+            padding:0 0 0 14px;
+            margin:0 0 20px 10px;
+            font-size:14px;
+            
+
+            @media (min-width: $screen-size-pc) {
+              font-size:16px;
+              margin:0 0 30px 10px;
+            }
+
+            &::before {
+              content:"·";
+              position:absolute;
+              left:0;
+            }
+          }
+
+          div.links {
+            text-align:center;
+            margin:0 0 60px;
+            font-size:0;
+            
+
+            @media (min-width: $screen-size-pc) {
+              margin:0 0 100px;
+            }
+
+
+            a {
+              display:block;
+              border:1px solid #999999;
+              padding:10px 20px;
+              border-radius:4px;
+              margin:0 auto 10px;
+              font-weight:600;
+              font-size:14px;
+              width:230px;
+            
+
+              @media (min-width: $screen-size-pc) {
+                display:inline-block;
+                font-size:15px;
+                padding:14px 25px;
+                margin:0 10px;
+              }
+
+              span {
+                display:block;
+                color:#4E3DC4;
+              }
+            }
+          }
+
+          ul.step {
+            list-style:none;
+            margin:0;
+            padding:0;
+
+            li {
+              position:relative;
+              border:1px solid #999999;
+              text-align:center;
+              margin:0 0 34px;
+              border-radius:20px;
+              word-break:keep-all;
+              padding:98px 18px 20px;
+            
+              @media (min-width: $screen-size-pc) {
+                border-radius:1000px;
+                margin:0 0 48px;
+                height:200px;
+                text-align:left;
+                padding:0;
+              }
+
+              &::before {
+                content:"";
+                display:block;
+                position:absolute;
+                left:50%;
+                bottom:-48px;
+                transform:translateX(-50%);
+                border:16px solid transparent;
+                border-top-width:24px;
+                border-bottom-width:24px;
+                border-top-color:#999;
+              }
+
+              &::after {
+                content:"";
+                display:block;
+                position:absolute;
+                left:50%;
+                bottom:-47px;
+                transform:translateX(-50%);
+                border:16px solid transparent;
+                border-top-width:24px;
+                border-bottom-width:24px;
+                border-top-color:#fff;
+              }
+
+              &:last-child {
+                &::before,
+                &::after {
+                  display:none;
+                }
+              }
+  
+
+              &:nth-child(1) {
+                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='65.826' height='64.064' viewBox='0 0 65.826 64.064'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_2144' data-name='사각형 2144' width='65.826' height='64.064' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_1773' data-name='그룹 1773' transform='translate(0 0)'%3E%3Cg id='그룹_1770' data-name='그룹 1770' transform='translate(0 0)'%3E%3Cg id='그룹_1769' data-name='그룹 1769' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_1672' data-name='패스 1672' d='M59.741,39.338A29.87,29.87,0,1,1,29.87,9.468a29.871,29.871,0,0,1,29.871,29.87' transform='translate(0 -5.145)' fill='%23d6dff3'/%3E%3C/g%3E%3C/g%3E%3Cg id='그룹_1772' data-name='그룹 1772' transform='translate(0 0)'%3E%3Cg id='그룹_1771' data-name='그룹 1771' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_1673' data-name='패스 1673' d='M36.906,76.342V58.178s4.158-5.982,8.171-6.347,10.432,7.3,10.432,7.3v9.556a4.766,4.766,0,0,1-2.334,4.45v5.033Z' transform='translate(-20.054 -28.157)' fill='%23fff'/%3E%3Cpath id='패스_1674' data-name='패스 1674' d='M52.224,78.015a.644.644,0,0,1-.089-.005L35.866,76.187a.8.8,0,0,1-.71-.794V57.228a.8.8,0,0,1,.143-.456c.179-.256,4.421-6.293,8.755-6.686,4.3-.392,10.432,6.761,11.117,7.578a.8.8,0,0,1,.187.513v9.514a5.532,5.532,0,0,1-2.334,4.918v4.607a.8.8,0,0,1-.8.8m-15.47-3.338,14.671,1.645v-4.14A.8.8,0,0,1,51.8,71.5a3.959,3.959,0,0,0,1.964-3.672.886.886,0,0,1-.006-.1V58.47c-1.87-2.172-6.722-7.053-9.561-6.792-2.869.26-6.211,4.1-7.444,5.805Z' transform='translate(-19.103 -27.207)' fill='%2337588e'/%3E%3Cpath id='패스_1675' data-name='패스 1675' d='M60.032,1.75,48.9,12.886V38.767H78.283V1.75Z' transform='translate(-26.569 -0.951)' fill='%23fff'/%3E%3Cpath id='패스_1676' data-name='패스 1676' d='M77.332,38.615H47.945a.8.8,0,0,1-.8-.8V11.935a.8.8,0,0,1,.234-.565L58.516.234A.8.8,0,0,1,59.081,0h18.25a.8.8,0,0,1,.8.8V37.816a.8.8,0,0,1-.8.8m-28.587-1.6H76.533V1.6H59.412L48.744,12.266Z' transform='translate(-25.618)' fill='%2337588e'/%3E%3Cpath id='패스_1677' data-name='패스 1677' d='M60.032,12.886V1.75L48.9,12.886Z' transform='translate(-26.569 -0.951)' fill='%23fff'/%3E%3Cpath id='패스_1678' data-name='패스 1678' d='M59.082,12.735H47.945a.8.8,0,0,1-.565-1.364L58.517.235A.8.8,0,0,1,59.881.8V11.936a.8.8,0,0,1-.8.8m-9.207-1.6h8.408V2.729Z' transform='translate(-25.618 0)' fill='%2337588e'/%3E%3Cpath id='패스_1679' data-name='패스 1679' d='M49.933,80.49A3.475,3.475,0,1,1,46.479,77.4a3.289,3.289,0,0,1,3.454,3.093' transform='translate(-23.378 -42.055)' fill='%23fff'/%3E%3Cpath id='패스_1680' data-name='패스 1680' d='M45.283,65.006l9.9-9.074s1.959-1.547,3.2.412-.825,4.743-.825,4.743l-4.64,4.949s2.474,1.547.928,7.011' transform='translate(-24.605 -30.077)' fill='%23fff'/%3E%3Cpath id='패스_1681' data-name='패스 1681' d='M52.891,72.9a.787.787,0,0,1-.218-.031.8.8,0,0,1-.551-.986c1.337-4.725-.517-6.07-.6-6.126a.819.819,0,0,1-.348-.578.8.8,0,0,1,.2-.637l4.606-4.913c.492-.686,1.523-2.608.767-3.806a1.174,1.174,0,0,0-.762-.605,1.874,1.874,0,0,0-1.247.381l-9.871,9.048a.8.8,0,0,1-1.08-1.178l9.9-9.074c.015-.013.029-.026.045-.038a3.474,3.474,0,0,1,2.517-.716A2.715,2.715,0,0,1,58.1,54.967c1.512,2.395-.761,5.514-.858,5.646a.727.727,0,0,1-.059.071L53.073,65.07c.766.973,1.75,3.134.586,7.245a.8.8,0,0,1-.769.582' transform='translate(-23.655 -29.126)' fill='%2337588e'/%3E%3Cpath id='패스_1682' data-name='패스 1682' d='M32.863,114.234V105.4h20v8.837' transform='translate(-17.857 -57.27)' fill='%23a9ccff'/%3E%3Cpath id='패스_1683' data-name='패스 1683' d='M51.915,114.082a.8.8,0,0,1-.8-.8v-8.038H32.71v8.038a.8.8,0,1,1-1.6,0v-8.837a.8.8,0,0,1,.8-.8h20a.8.8,0,0,1,.8.8v8.837a.8.8,0,0,1-.8.8' transform='translate(-16.905 -56.319)' fill='%2337588e'/%3E%3Crect id='사각형_2145' data-name='사각형 2145' width='16.188' height='1.598' transform='translate(29.029 14.333)' fill='%2337588e'/%3E%3Crect id='사각형_2146' data-name='사각형 2146' width='16.188' height='1.598' transform='translate(29.029 17.632)' fill='%2337588e'/%3E%3Crect id='사각형_2147' data-name='사각형 2147' width='9.486' height='1.598' transform='translate(29.029 20.932)' fill='%2337588e'/%3E%3Crect id='사각형_2148' data-name='사각형 2148' width='1.598' height='1.649' transform='translate(17.404 51.531)' fill='%2337588e'/%3E%3Cpath id='패스_1684' data-name='패스 1684' d='M88.561,67.855v17.63a5.522,5.522,0,0,0,3.4,5.1h17.419V67.855Z' transform='translate(-48.121 -36.87)' fill='%23fff'/%3E%3Cpath id='패스_1685' data-name='패스 1685' d='M108.426,90.432H91.007a.8.8,0,0,1-.308-.062,6.306,6.306,0,0,1-3.89-5.835V66.9a.8.8,0,0,1,.8-.8h20.816a.8.8,0,0,1,.8.8V89.632a.8.8,0,0,1-.8.8m-17.252-1.6h16.453V67.7H88.408V84.535a4.712,4.712,0,0,0,2.765,4.3' transform='translate(-47.17 -35.919)' fill='%2337588e'/%3E%3Cpath id='패스_1686' data-name='패스 1686' d='M103.472,105.634v.379a5.522,5.522,0,0,1-3.4,5.1H116a5.523,5.523,0,0,0,3.4-5.1v-.379Z' transform='translate(-54.377 -57.398)' fill='%23fff'/%3E%3Cpath id='패스_1687' data-name='패스 1687' d='M115.053,110.959H99.121a.8.8,0,0,1-.308-1.537,4.712,4.712,0,0,0,2.908-4.36v-.379a.8.8,0,0,1,.8-.8h15.931a.8.8,0,0,1,.8.8v.379a6.306,6.306,0,0,1-3.89,5.835.8.8,0,0,1-.308.062m-13.417-1.6h13.251a4.709,4.709,0,0,0,2.747-3.879H103.305a6.3,6.3,0,0,1-1.669,3.879' transform='translate(-53.425 -56.447)' fill='%2337588e'/%3E%3Crect id='사각형_2149' data-name='사각형 2149' width='2.549' height='2.549' transform='translate(43.413 33.745)' fill='%23fff'/%3E%3Cpath id='패스_1688' data-name='패스 1688' d='M96.671,76.3H94.122a.8.8,0,0,1-.8-.8V72.95a.8.8,0,0,1,.8-.8h2.549a.8.8,0,0,1,.8.8V75.5a.8.8,0,0,1-.8.8m-1.75-1.6h.951v-.951h-.951Z' transform='translate(-50.709 -39.205)' fill='%2337588e'/%3E%3Cline id='선_1339' data-name='선 1339' x2='11.682' transform='translate(47.025 35.02)' fill='%23fff'/%3E%3Crect id='사각형_2150' data-name='사각형 2150' width='11.682' height='1.598' transform='translate(47.024 34.221)' fill='%2337588e'/%3E%3Crect id='사각형_2151' data-name='사각형 2151' width='2.549' height='2.548' transform='translate(43.413 37.994)' fill='%23fff'/%3E%3Cpath id='패스_1689' data-name='패스 1689' d='M96.671,85.6H94.122a.8.8,0,0,1-.8-.8V82.255a.8.8,0,0,1,.8-.8h2.549a.8.8,0,0,1,.8.8V84.8a.8.8,0,0,1-.8.8M94.921,84h.951v-.95h-.951Z' transform='translate(-50.709 -44.261)' fill='%2337588e'/%3E%3Cline id='선_1340' data-name='선 1340' x2='11.682' transform='translate(47.025 39.269)' fill='%23fff'/%3E%3Crect id='사각형_2152' data-name='사각형 2152' width='11.682' height='1.598' transform='translate(47.024 38.47)' fill='%2337588e'/%3E%3Crect id='사각형_2153' data-name='사각형 2153' width='2.549' height='2.549' transform='translate(43.413 42.242)' fill='%23fff'/%3E%3Cpath id='패스_1690' data-name='패스 1690' d='M96.671,94.906H94.122a.8.8,0,0,1-.8-.8V91.558a.8.8,0,0,1,.8-.8h2.549a.8.8,0,0,1,.8.8v2.549a.8.8,0,0,1-.8.8m-1.75-1.6h.951v-.951h-.951Z' transform='translate(-50.709 -49.316)' fill='%2337588e'/%3E%3Cline id='선_1341' data-name='선 1341' x2='11.682' transform='translate(47.025 43.517)' fill='%23fff'/%3E%3Crect id='사각형_2154' data-name='사각형 2154' width='11.682' height='1.598' transform='translate(47.024 42.718)' fill='%2337588e'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center top 18px / 66px auto;
+              
+                @media (min-width: $screen-size-pc) {
+                  background-size:98px auto;
+                  background-position:left 42px center;
+                }
+              }
+
+              &:nth-child(2) {
+                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='59.751' height='59.75' viewBox='0 0 59.751 59.75'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_2166' data-name='사각형 2166' width='59.751' height='59.75' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_1782' data-name='그룹 1782' transform='translate(0)'%3E%3Cg id='그룹_1781' data-name='그룹 1781' transform='translate(0 0)' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_1691' data-name='패스 1691' d='M59.751,29.875A29.876,29.876,0,1,1,29.875,0,29.875,29.875,0,0,1,59.751,29.875' fill='%23d6dff3'/%3E%3Cpath id='패스_1692' data-name='패스 1692' d='M62.664,21.831H33.65v39.81H62.664V21.831Z' transform='translate(-18.281 -11.86)' fill='%23fff'/%3E%3Cpath id='패스_1693' data-name='패스 1693' d='M61.714,61.489H32.7a.8.8,0,0,1-.8-.8V20.879a.8.8,0,0,1,.8-.8H61.714a.8.8,0,0,1,.8.8v39.81a.8.8,0,0,1-.8.8M33.5,59.89H60.914V21.678H33.5Z' transform='translate(-17.33 -10.909)' fill='%2337588e'/%3E%3Cline id='선_1342' data-name='선 1342' x2='14.929' transform='translate(22.411 25.086)' fill='%23fff'/%3E%3Crect id='사각형_2158' data-name='사각형 2158' width='14.929' height='1.598' transform='translate(22.411 24.286)' fill='%2337588e'/%3E%3Cline id='선_1343' data-name='선 1343' x2='14.929' transform='translate(22.411 27.325)' fill='%23fff'/%3E%3Crect id='사각형_2159' data-name='사각형 2159' width='14.929' height='1.598' transform='translate(22.411 26.525)' fill='%2337588e'/%3E%3Cline id='선_1344' data-name='선 1344' x2='14.929' transform='translate(22.411 32.737)' fill='%23fff'/%3E%3Crect id='사각형_2160' data-name='사각형 2160' width='14.929' height='1.598' transform='translate(22.411 31.938)' fill='%2337588e'/%3E%3Cline id='선_1345' data-name='선 1345' x2='14.929' transform='translate(22.411 34.976)' fill='%23fff'/%3E%3Crect id='사각형_2161' data-name='사각형 2161' width='14.929' height='1.598' transform='translate(22.411 34.177)' fill='%2337588e'/%3E%3Cline id='선_1346' data-name='선 1346' x2='14.929' transform='translate(22.411 40.387)' fill='%23fff'/%3E%3Crect id='사각형_2162' data-name='사각형 2162' width='14.929' height='1.598' transform='translate(22.411 39.588)' fill='%2337588e'/%3E%3Cline id='선_1347' data-name='선 1347' x2='14.929' transform='translate(22.411 42.627)' fill='%23fff'/%3E%3Crect id='사각형_2163' data-name='사각형 2163' width='14.929' height='1.598' transform='translate(22.411 41.828)' fill='%2337588e'/%3E%3Cpath id='사각형_2164' data-name='사각형 2164' d='M9.061,0h3.6a9.06,9.06,0,0,1,9.06,9.06v3.6a9.061,9.061,0,0,1-9.061,9.061h-3.6A9.061,9.061,0,0,1,0,12.661v-3.6A9.061,9.061,0,0,1,9.061,0Z' transform='translate(35.935 2.944)' fill='%23a9ccff'/%3E%3Cpath id='패스_1694' data-name='패스 1694' d='M95.315,28.016H81.869a4.943,4.943,0,0,1-4.938-4.937V9.632A4.943,4.943,0,0,1,81.869,4.7H95.315a4.943,4.943,0,0,1,4.938,4.937V23.078a4.943,4.943,0,0,1-4.938,4.937M81.869,6.293A3.343,3.343,0,0,0,78.53,9.632V23.078a3.343,3.343,0,0,0,3.339,3.339H95.315a3.343,3.343,0,0,0,3.339-3.339V9.632a3.342,3.342,0,0,0-3.339-3.339Z' transform='translate(-41.796 -2.551)' fill='%2337588e'/%3E%3Cpath id='패스_1695' data-name='패스 1695' d='M98.02,17.18a4.692,4.692,0,1,1-6.636,0,4.692,4.692,0,0,1,6.636,0' transform='translate(-48.901 -8.587)' fill='%23fff'/%3E%3Cpath id='패스_1696' data-name='패스 1696' d='M93.754,25.036a5.488,5.488,0,1,1,3.883-1.605,5.476,5.476,0,0,1-3.883,1.605m0-9.381a3.893,3.893,0,1,0,2.753,1.14,3.868,3.868,0,0,0-2.753-1.14' transform='translate(-47.954 -7.636)' fill='%2337588e'/%3E%3Crect id='사각형_2165' data-name='사각형 2165' width='1.598' height='7.098' transform='translate(48.696 15.937) rotate(-44.997)' fill='%2337588e'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center top 18px / 60px auto;
+              
+                @media (min-width: $screen-size-pc) {
+                  background-size:89px auto;
+                  background-position:left 42px center;
+                }
+              }
+
+              &:nth-child(3) {
+                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='59.751' height='59.75' viewBox='0 0 59.751 59.75'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_2167' data-name='사각형 2167' width='59.751' height='59.75' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_1787' data-name='그룹 1787' transform='translate(0)'%3E%3Cg id='그룹_1784' data-name='그룹 1784' transform='translate(0 0)'%3E%3Cg id='그룹_1783' data-name='그룹 1783' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_1697' data-name='패스 1697' d='M59.751,29.875A29.876,29.876,0,1,1,29.875,0,29.875,29.875,0,0,1,59.751,29.875' fill='%23d6dff3'/%3E%3C/g%3E%3C/g%3E%3Cpath id='패스_1698' data-name='패스 1698' d='M45.121,11.991l-16.3,16.446v.83l16.9,17.055,16.3-16.446v-.83Z' transform='translate(-15.659 -6.515)' fill='%23a9ccff'/%3E%3Cg id='그룹_1786' data-name='그룹 1786' transform='translate(0 0)'%3E%3Cg id='그룹_1785' data-name='그룹 1785' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_1699' data-name='패스 1699' d='M44.774,46.182a.8.8,0,0,1-.568-.237L27.3,28.89a.8.8,0,0,1-.232-.562V27.5a.8.8,0,0,1,.232-.562L43.6,10.489a.823.823,0,0,1,1.136,0l16.9,17.055a.8.8,0,0,1,.231.562v.831a.8.8,0,0,1-.231.562l-16.3,16.446a.8.8,0,0,1-.568.237M28.671,28l16.1,16.248,15.5-15.639v-.172L44.17,12.187l-15.5,15.639Z' transform='translate(-14.708 -5.575)' fill='%2337588e'/%3E%3Cpath id='패스_1700' data-name='패스 1700' d='M58.4,24.327H39.1V50.485H62.913V28.841Z' transform='translate(-21.244 -13.217)' fill='%23fff'/%3E%3Cpath id='패스_1701' data-name='패스 1701' d='M61.962,50.333H38.152a.8.8,0,0,1-.8-.8V23.376a.8.8,0,0,1,.8-.8h19.3a.8.8,0,0,1,.565.234l4.515,4.514a.8.8,0,0,1,.234.565V49.534a.8.8,0,0,1-.8.8m-23.011-1.6H61.163V28.221l-4.046-4.045H38.951Z' transform='translate(-20.293 -12.266)' fill='%2337588e'/%3E%3Cpath id='패스_1702' data-name='패스 1702' d='M81.353,28.84h4.515l-4.515-4.514Z' transform='translate(-44.198 -13.217)' fill='%23fff'/%3E%3Cpath id='패스_1703' data-name='패스 1703' d='M84.916,28.689H80.4a.8.8,0,0,1-.8-.8V23.377a.8.8,0,0,1,1.364-.565l4.514,4.514a.8.8,0,0,1-.565,1.364m-3.715-1.6h1.785L81.2,25.306Z' transform='translate(-43.247 -12.266)' fill='%2337588e'/%3E%3Cpath id='패스_1704' data-name='패스 1704' d='M45.725,66.873l-16.9-17.055V74.595h33.2V50.427Z' transform='translate(-15.659 -27.066)' fill='%23fff'/%3E%3Cpath id='패스_1705' data-name='패스 1705' d='M61.871,73.084h-34.8V45.566l17.7,17.861,17.1-17.252Zm-33.2-1.6h31.6V50.059L44.774,65.7,28.671,49.45Z' transform='translate(-14.708 -24.756)' fill='%2337588e'/%3E%3Crect id='사각형_2168' data-name='사각형 2168' width='16.701' height='1.598' transform='translate(21.413 19.165)' fill='%2337588e'/%3E%3Crect id='사각형_2169' data-name='사각형 2169' width='16.701' height='1.598' transform='translate(21.413 23.39)' fill='%2337588e'/%3E%3Crect id='사각형_2170' data-name='사각형 2170' width='16.701' height='1.598' transform='translate(21.413 27.616)' fill='%2337588e'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center top 18px / 60px auto;
+                @media (min-width: $screen-size-pc) {
+                  background-size:89px auto;
+                  background-position:left 42px center;
+                }
+              }
+
+              div {
+                @media (min-width: $screen-size-pc) {
+                  position:absolute;
+                  left:0;
+                  right:0;
+                  top:50%;
+                  transform: translateY(-50%);
+              
+                  padding:20px 158px;
+                }
+
+                strong {
+                  display:block;
+                  font-size:16px;
+                  font-weight:700;
+                  margin:0 0 15px;
+              
+                  @media (min-width: $screen-size-pc) {
+                    font-size:17px;
+                  }
+                }
+  
+                p {
+                  position:relative;
+                  text-align:left;
+                  padding:0 0 0 14px;
+                  margin:0 0 10px 0;
+              
+                  @media (min-width: $screen-size-pc) {
+                    font-size:16px;
+                  }
+      
+                  &::before {
+                    content:"·";
+                    position:absolute;
+                    left:0;
+                  }
+  
+                  span {
+                    display:block;
+                    margin:5px 0 0;
+                    color:#F8691F;
+                  }
+                }
+
+              }
+            }
+          }
+
+        }
       }
 
     }
