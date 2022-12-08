@@ -1647,6 +1647,8 @@ div.form-pop div.outline {
   border: 1px solid #555555;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.16);
   padding: 50px 15px 15px;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 @media (min-width: 800px) {
   div.form-pop div.outline {
@@ -5281,6 +5283,28 @@ body div#content.sub section.sub-farm div.container div.data div.table_field01 p
     height: 38px;
   }
 }
+body div#content.sub section.sub-farm div.container div.data div.table_field01 p button.search {
+  font-size: 14px;
+  color: #555555;
+  width: 130px;
+  height: 36px;
+  padding-right: 30px;
+  background: url("data:image/svg+xml,%3Csvg id='search_black_24dp' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath id='패스_1322' data-name='패스 1322' d='M0,0H24V24H0Z' fill='none'/%3E%3Cpath id='패스_1323' data-name='패스 1323' d='M15.5,14h-.79l-.28-.27a6.51,6.51,0,1,0-.7.7l.27.28v.79l5,4.99L20.49,19Zm-6,0A4.5,4.5,0,1,1,14,9.5,4.494,4.494,0,0,1,9.5,14Z' fill='%234d4d4d'/%3E%3C/svg%3E%0A") no-repeat right 10px center/24px auto;
+  border: 1px solid #BBBBBB;
+  border-radius: 4px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sub-farm div.container div.data div.table_field01 p button.search {
+    height: 38px;
+    font-size: 15px;
+    width: 160px;
+    margin: 0 26px 0 0;
+  }
+}
+body div#content.sub section.sub-farm div.container div.data div.table_field01 p button.search.post {
+  display: block;
+  margin: 0 0 10px;
+}
 body div#content.sub section.sub-farm div.container div.data div.table_field01 p textarea {
   width: 100%;
   height: 72px;
@@ -6912,10 +6936,40 @@ body div#content.sub section.sign div.container div.step03 div.table p input[typ
 body div#content.sub section.sign div.container div.step03 div.table p select.tel {
   width: calc(50% - 5px);
 }
-body div#content.sub section.sign div.container div.step03 div.table p input[type=text].tel#tel2,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=text].tel#phone1, body div#content.sub section.sign div.container div.step03 div.table p input[type=text].tel#tel1,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=date].tel#phone1,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=date].tel#tel1,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=tel].tel#phone1,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=tel].tel#tel1,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=password].tel#phone1,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=password].tel#tel1,
+body div#content.sub section.sign div.container div.step03 div.table p select.tel#phone1,
+body div#content.sub section.sign div.container div.step03 div.table p select.tel#tel1 {
+  display: block;
+  margin-bottom: 10px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sign div.container div.step03 div.table p input[type=text].tel#phone1, body div#content.sub section.sign div.container div.step03 div.table p input[type=text].tel#tel1,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=date].tel#phone1,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=date].tel#tel1,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=tel].tel#phone1,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=tel].tel#tel1,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=password].tel#phone1,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=password].tel#tel1,
+body div#content.sub section.sign div.container div.step03 div.table p select.tel#phone1,
+body div#content.sub section.sign div.container div.step03 div.table p select.tel#tel1 {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+body div#content.sub section.sign div.container div.step03 div.table p input[type=text].tel#phone2, body div#content.sub section.sign div.container div.step03 div.table p input[type=text].tel#tel2,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=date].tel#phone2,
 body div#content.sub section.sign div.container div.step03 div.table p input[type=date].tel#tel2,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=tel].tel#phone2,
 body div#content.sub section.sign div.container div.step03 div.table p input[type=tel].tel#tel2,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=password].tel#phone2,
 body div#content.sub section.sign div.container div.step03 div.table p input[type=password].tel#tel2,
+body div#content.sub section.sign div.container div.step03 div.table p select.tel#phone2,
 body div#content.sub section.sign div.container div.step03 div.table p select.tel#tel2 {
   margin-right: 10px;
 }
@@ -6927,6 +6981,32 @@ body div#content.sub section.sign div.container div.step03 div.table p input[typ
 body div#content.sub section.sign div.container div.step03 div.table p select.tel {
     display: inline-block;
     width: 140px;
+  }
+}
+body div#content.sub section.sign div.container div.step03 div.table p input[type=text].address1,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=date].address1,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=tel].address1,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=password].address1,
+body div#content.sub section.sign div.container div.step03 div.table p select.address1 {
+  margin-bottom: 10px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sign div.container div.step03 div.table p input[type=text].address1,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=date].address1,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=tel].address1,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=password].address1,
+body div#content.sub section.sign div.container div.step03 div.table p select.address1 {
+    margin-bottom: 0;
+    width: 460px;
+  }
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.sign div.container div.step03 div.table p input[type=text].address2,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=date].address2,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=tel].address2,
+body div#content.sub section.sign div.container div.step03 div.table p input[type=password].address2,
+body div#content.sub section.sign div.container div.step03 div.table p select.address2 {
+    width: 340px;
   }
 }
 @media (min-width: 1195px) {
@@ -6962,7 +7042,8 @@ body div#content.sub section.sign div.container div.step03 div.table p input:rea
   background: #F2F1F1;
 }
 body div#content.sub section.sign div.container div.step03 div.table p input + button,
-body div#content.sub section.sign div.container div.step03 div.table p button + input {
+body div#content.sub section.sign div.container div.step03 div.table p button + input,
+body div#content.sub section.sign div.container div.step03 div.table p input + input {
   margin-top: 5px;
 }
 body div#content.sub section.sign div.container div.step03 div.table p u.counter {
@@ -7355,14 +7436,23 @@ body div#content.sub section.mypage div.container div.form div.table p input[typ
 body div#content.sub section.mypage div.container div.form div.table p input[type=tel].tel,
 body div#content.sub section.mypage div.container div.form div.table p input[type=password].tel,
 body div#content.sub section.mypage div.container div.form div.table p select.tel {
-  width: calc(50% - 5px);
+  width: calc((100% - 20px) / 3);
 }
-body div#content.sub section.mypage div.container div.form div.table p input[type=text].tel#tel2,
-body div#content.sub section.mypage div.container div.form div.table p input[type=date].tel#tel2,
-body div#content.sub section.mypage div.container div.form div.table p input[type=tel].tel#tel2,
-body div#content.sub section.mypage div.container div.form div.table p input[type=password].tel#tel2,
-body div#content.sub section.mypage div.container div.form div.table p select.tel#tel2 {
-  margin-right: 10px;
+body div#content.sub section.mypage div.container div.form div.table p input[type=text].tel:nth-of-type(2),
+body div#content.sub section.mypage div.container div.form div.table p input[type=date].tel:nth-of-type(2),
+body div#content.sub section.mypage div.container div.form div.table p input[type=tel].tel:nth-of-type(2),
+body div#content.sub section.mypage div.container div.form div.table p input[type=password].tel:nth-of-type(2),
+body div#content.sub section.mypage div.container div.form div.table p select.tel:nth-of-type(2) {
+  margin: 0 10px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.mypage div.container div.form div.table p input[type=text].tel:nth-of-type(2),
+body div#content.sub section.mypage div.container div.form div.table p input[type=date].tel:nth-of-type(2),
+body div#content.sub section.mypage div.container div.form div.table p input[type=tel].tel:nth-of-type(2),
+body div#content.sub section.mypage div.container div.form div.table p input[type=password].tel:nth-of-type(2),
+body div#content.sub section.mypage div.container div.form div.table p select.tel:nth-of-type(2) {
+    margin: 0 10px 0 0;
+  }
 }
 @media (min-width: 1195px) {
   body div#content.sub section.mypage div.container div.form div.table p input[type=text].tel,
@@ -7381,6 +7471,32 @@ body div#content.sub section.mypage div.container div.form div.table p input[typ
 body div#content.sub section.mypage div.container div.form div.table p input[type=password]#farm,
 body div#content.sub section.mypage div.container div.form div.table p select#farm {
     width: calc(100% - 196px);
+  }
+}
+body div#content.sub section.mypage div.container div.form div.table p input[type=text].address1,
+body div#content.sub section.mypage div.container div.form div.table p input[type=date].address1,
+body div#content.sub section.mypage div.container div.form div.table p input[type=tel].address1,
+body div#content.sub section.mypage div.container div.form div.table p input[type=password].address1,
+body div#content.sub section.mypage div.container div.form div.table p select.address1 {
+  margin-bottom: 10px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.mypage div.container div.form div.table p input[type=text].address1,
+body div#content.sub section.mypage div.container div.form div.table p input[type=date].address1,
+body div#content.sub section.mypage div.container div.form div.table p input[type=tel].address1,
+body div#content.sub section.mypage div.container div.form div.table p input[type=password].address1,
+body div#content.sub section.mypage div.container div.form div.table p select.address1 {
+    margin-bottom: 0;
+    width: 460px;
+  }
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.mypage div.container div.form div.table p input[type=text].address2,
+body div#content.sub section.mypage div.container div.form div.table p input[type=date].address2,
+body div#content.sub section.mypage div.container div.form div.table p input[type=tel].address2,
+body div#content.sub section.mypage div.container div.form div.table p input[type=password].address2,
+body div#content.sub section.mypage div.container div.form div.table p select.address2 {
+    width: 340px;
   }
 }
 body div#content.sub section.mypage div.container div.form div.table p input[type=text]#check,
@@ -7606,10 +7722,25 @@ body div#content.sub section.mypage div.container div.list > div > span {
   }
 }
 body div#content.sub section.mypage div.container div.list > div > strong {
+  position: relative;
   display: block;
   color: #111111;
   font-weight: 400;
   margin: 6px 0;
+}
+body div#content.sub section.mypage div.container div.list > div > strong > button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  border: 1px solid #4E3DC4;
+  background: #fff;
+  border-radius: 4px;
+  color: #4E3DC4;
+  padding: 2px 5px;
+  font-weight: 600;
+  width: 72px;
 }
 body div#content.sub section.mypage div.container div.list > div div {
   border: 1px solid #CCCCCC;
@@ -7650,12 +7781,15 @@ body div#content.sub section.mypage div.container div.list > div > i {
   font-size: 15px;
   font-weight: 600;
   color: #111111;
+  width: 84px;
+  text-align: center;
 }
 @media (min-width: 1195px) {
   body div#content.sub section.mypage div.container div.list > div > i {
     font-size: 16px;
     right: 20px;
     top: 40px;
+    width: 110px;
   }
 }
 body div#content.sub section.mypage div.container div.list > div > i.reject {
@@ -7664,7 +7798,7 @@ body div#content.sub section.mypage div.container div.list > div > i.reject {
 body div#content.sub section.mypage div.container div.list > div > i.end {
   color: #999999;
 }
-body div#content.sub section.mypage div.container div.list > div button {
+body div#content.sub section.mypage div.container div.list > div > button {
   position: absolute;
   right: 0;
   top: 90px;
@@ -7675,20 +7809,22 @@ body div#content.sub section.mypage div.container div.list > div button {
   color: #4E3DC4;
   padding: 12px;
   font-weight: 600;
+  width: 84px;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.mypage div.container div.list > div button {
+  body div#content.sub section.mypage div.container div.list > div > button {
     font-size: 15px;
     right: 20px;
     top: 70px;
-    padding: 10px 30px;
+    padding: 10px 5px;
+    width: 110px;
   }
 }
-body div#content.sub section.mypage div.container div.list > div button span {
+body div#content.sub section.mypage div.container div.list > div > button span {
   display: block;
 }
 @media (min-width: 1195px) {
-  body div#content.sub section.mypage div.container div.list > div button span {
+  body div#content.sub section.mypage div.container div.list > div > button span {
     display: inline;
   }
 }

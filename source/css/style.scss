@@ -2970,6 +2970,29 @@ body {
                     height:38px;
                   }
                 }
+
+                button.search {
+                  font-size:14px;
+                  color:#555555;
+                  width:130px;
+                  height:36px;
+                  padding-right:30px;
+                  background: url("data:image/svg+xml,%3Csvg id='search_black_24dp' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath id='패스_1322' data-name='패스 1322' d='M0,0H24V24H0Z' fill='none'/%3E%3Cpath id='패스_1323' data-name='패스 1323' d='M15.5,14h-.79l-.28-.27a6.51,6.51,0,1,0-.7.7l.27.28v.79l5,4.99L20.49,19Zm-6,0A4.5,4.5,0,1,1,14,9.5,4.494,4.494,0,0,1,9.5,14Z' fill='%234d4d4d'/%3E%3C/svg%3E%0A") no-repeat right 10px center / 24px auto;
+                  border:1px solid #BBBBBB;
+                  border-radius:4px;
+
+                  @media (min-width: $screen-size-pc) {
+                    height:38px;
+                    font-size:15px;
+                    width:160px;
+                    margin:0 26px 0 0;
+                  }
+
+                  &.post {
+                    display:block;
+                    margin:0 0 10px;
+                  }
+                }
     
                 textarea {
                   width:100%;
@@ -2981,6 +3004,7 @@ body {
                 }
                 
               }
+
             }
     
             div.table_field02 {
@@ -4736,9 +4760,24 @@ body {
                     margin:0 10px 0 0;
                   }
 
+
                   &.tel {
                     width:calc(50% - 5px);
 
+
+                    &#phone1,
+                    &#tel1 {
+                      display:block;
+                      margin-bottom:10px;
+
+
+                      @media (min-width: $screen-size-pc) {
+                        display:inline-block;
+                        margin-bottom:0;
+                      }
+                    }
+
+                    &#phone2,
                     &#tel2 {
                       margin-right:10px;
                     }
@@ -4749,6 +4788,21 @@ body {
                     }
                   }
 
+                  &.address1 {
+                    margin-bottom:10px;
+
+                    @media (min-width: $screen-size-pc) {
+                      margin-bottom:0;
+                      width:460px;
+                    }
+                  }
+
+                  &.address2 {
+
+                    @media (min-width: $screen-size-pc) {
+                      width:340px;
+                    }
+                  }
                   &#farm {
                     @media (min-width: $screen-size-pc) {
                       width:calc(100% - 196px);
@@ -4777,7 +4831,8 @@ body {
                 }
 
                 input + button,
-                button + input {
+                button + input,
+                input + input {
                   margin-top:5px;
                 }
     
@@ -5005,7 +5060,7 @@ body {
 
 
           div.form {
-            
+
 
 
 
@@ -5014,17 +5069,17 @@ body {
               font-weight:400;
               color:#555;
               margin:0 0 20px;
-      
+
               @media (min-width: $screen-size-pc) {
               }
-      
+
               strong {
                 color:#222;
                 font-size:18px;
                 font-weight:600;
                 padding-right:4px;
               }
-      
+
             }
 
 
@@ -5033,7 +5088,7 @@ body {
               border-top:1px solid #CCCCCC;
               border-right:1px solid #CCCCCC;
               font-size:0;
-    
+
               p {
                 position:relative;
                 border-bottom:1px solid #CCCCCC;
@@ -5042,11 +5097,11 @@ body {
                 color:#555;
                 word-break:keep-all;
                 font-size:0;
-    
+
                 @media (min-width: $screen-size-pc) {
                   padding:7px 10px 7px 168px;
                 }
-    
+
                 strong {
                   display:block;
                   position:absolute;
@@ -5062,7 +5117,7 @@ body {
                   color:#111111;
                   font-weight:400;
                   font-size:15px;
-    
+
                   @media (min-width: $screen-size-pc) {
                     width:148px;
                     font-size:16px;
@@ -5076,7 +5131,7 @@ body {
                   font-size:13px;
                   color:#EC653B;
                   font-style:normal;
-    
+
                   @media (min-width: $screen-size-pc) {
                     font-size:14px;
                     display:inline-block;
@@ -5096,23 +5151,23 @@ body {
                     }
                   }
                 }
-    
+
                 span {
                   display:block;
                   min-height:36px;
                   padding:10px 0;
                   font-size:15px;
-    
+
                   @media (min-width: $screen-size-pc) {
                     min-height:38px;
                     font-size:16px;
                   }
-    
+
                 }
 
                 span.check {
-                  
-                  
+
+
                   input {
                     display:none;
                   }
@@ -5122,11 +5177,11 @@ body {
                     padding:0 0 0 30px;
                     font-size:16px;
                     color:#111111;
-    
+
                     @media (min-width: $screen-size-pc) {
                       font-size:17px;
                     }
-                    
+
                     &::before {
                       content:"";
                       display:block;
@@ -5142,7 +5197,7 @@ body {
                   }
 
                   input:checked + label {
-                    
+
                     &::before {
                       border-color:#4335A9;
                       background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cg id='그룹_1742' data-name='그룹 1742' transform='translate(-230 -345)'%3E%3Ccircle id='타원_39' data-name='타원 39' cx='15' cy='15' r='15' transform='translate(230 345)' fill='%234e3dc4'/%3E%3Cpath id='패스_1624' data-name='패스 1624' d='M453.8,314.363l-5.248-5.248,2.1-2.1,3.269,3.269,8.658-7.686,1.972,2.222Z' transform='translate(-211.75 51.404)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat #4E3DC4 center / 100% auto;
@@ -5159,7 +5214,7 @@ body {
                   background:#4D4D4D;
                   border:1px solid #222222;
                   border-radius:4px;
-    
+
                   @media (min-width: $screen-size-pc) {
                     height:38px;
                     font-size:15px;
@@ -5167,7 +5222,7 @@ body {
 
                   &.small {
                     width:70px;
-    
+
                     @media (min-width: $screen-size-pc) {
                       width:80px;
                     }
@@ -5183,7 +5238,7 @@ body {
                   background: url("data:image/svg+xml,%3Csvg id='search_black_24dp' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath id='패스_1322' data-name='패스 1322' d='M0,0H24V24H0Z' fill='none'/%3E%3Cpath id='패스_1323' data-name='패스 1323' d='M15.5,14h-.79l-.28-.27a6.51,6.51,0,1,0-.7.7l.27.28v.79l5,4.99L20.49,19Zm-6,0A4.5,4.5,0,1,1,14,9.5,4.494,4.494,0,0,1,9.5,14Z' fill='%234d4d4d'/%3E%3C/svg%3E%0A") no-repeat right 10px center / 24px auto;
                   border:1px solid #BBBBBB;
                   border-radius:4px;
-    
+
                   @media (min-width: $screen-size-pc) {
                     height:38px;
                     font-size:15px;
@@ -5201,7 +5256,7 @@ body {
                 button + input {
                   margin-top:5px;
                 }
-    
+
                 input[type=text],
                 input[type=date],
                 input[type=tel],
@@ -5215,7 +5270,7 @@ body {
                   @include inner-shadow($x:2px,$y: 2px, $blur: 4px, $spread: 0, $alpha: 0.10);
                   padding:0 10px;
                   font-size:15px;
-    
+
                   @media (min-width: $screen-size-pc) {
                     height:38px;
                     font-size:16px;
@@ -5224,10 +5279,14 @@ body {
                   }
 
                   &.tel {
-                    width:calc(50% - 5px);
+                    width:calc((100% - 20px) / 3);
 
-                    &#tel2 {
-                      margin-right:10px;
+                    &:nth-of-type(2) {
+                      margin:0 10px;
+
+                      @media (min-width: $screen-size-pc) {
+                        margin:0 10px 0 0;
+                      }
                     }
 
                     @media (min-width: $screen-size-pc) {
@@ -5242,6 +5301,22 @@ body {
                     }
                   }
 
+
+                  &.address1 {
+                    margin-bottom:10px;
+
+                    @media (min-width: $screen-size-pc) {
+                      margin-bottom:0;
+                      width:460px;
+                    }
+                  }
+
+                  &.address2 {
+
+                    @media (min-width: $screen-size-pc) {
+                      width:340px;
+                    }
+                  }
                   &#check {
                     padding-right:60px;
                   }
@@ -5249,7 +5324,7 @@ body {
                   &.wbtn {
                     width:calc(100% - 80px);
                     margin-right:10px;
-    
+
                     @media (min-width: $screen-size-pc) {
                       width:290px;
                     }
@@ -5276,7 +5351,7 @@ body {
                 button + input {
                   margin-top:5px;
                 }
-    
+
                 u.counter {
                   font-size:12px;
                   color:#4E3DC4;
@@ -5293,7 +5368,7 @@ body {
                   }
                 }
 
-    
+
                 textarea {
                   width:100%;
                   height:72px;
@@ -5302,7 +5377,7 @@ body {
                   @include inner-shadow($x:2px,$y: 2px, $blur: 4px, $spread: 0, $alpha: 0.10);
                   padding:0 10px;
                 }
-                
+
               }
             }
 
@@ -5316,7 +5391,7 @@ body {
             font-size:0;
             border-radius:4px;
             margin:0 0 20px;
-  
+
             @media (min-width: $screen-size-pc) {
               padding:15px 20px;
               text-align:right;
@@ -5327,7 +5402,7 @@ body {
               font-weight:400;
               margin:0 0 16px;
               color:#111;
-  
+
               @media (min-width: $screen-size-pc) {
                 position:absolute;
                 left:20px;
@@ -5340,7 +5415,7 @@ body {
               display:inline-block;
               vertical-align:top;
               width:calc(50% - 10px);
-  
+
               @media (min-width: $screen-size-pc) {
                 width:auto;
               }
@@ -5350,7 +5425,7 @@ body {
                 display:block;
                 color:#111;
                 margin:0 0 6px;
-  
+
                 @media (min-width: $screen-size-pc) {
                   display:inline-block;
                   margin:0 8px 0 0;
@@ -5365,7 +5440,7 @@ body {
                 font-size:14px;
                 color:#555555;
                 padding:0 10px;
-  
+
                 @media (min-width: $screen-size-pc) {
                   width:160px;
                   font-size:15px;
@@ -5382,7 +5457,7 @@ body {
               font-size:16px;
               text-decoration:none;
               color:#AAAAAA;
-  
+
               @media (min-width: $screen-size-pc) {
                 display:inline-block;
                 width:30px;
@@ -5402,7 +5477,7 @@ body {
               color:#fff;
               width:64px;
               height:34px;
-  
+
               @media (min-width: $screen-size-pc) {
                 position:static;
                 margin:0 0 0 10px;
@@ -5419,7 +5494,7 @@ body {
               padding:20px 100px 20px 26px;
               line-height:1.6;
               font-size:14px;
-  
+
               @media (min-width: $screen-size-pc) {
                 padding:20px 180px 20px 60px;
                 font-size:15px;
@@ -5429,14 +5504,14 @@ body {
                 margin:0;
                 font-size:14;
                 color:#555;
-  
+
                 @media (min-width: $screen-size-pc) {
                   display:inline-block;
                 }
 
                 &.head {
                   font-size:15px;
-  
+
                   @media (min-width: $screen-size-pc) {
                     display:block;
                     font-size:16px;
@@ -5449,13 +5524,14 @@ body {
                 }
               }
 
+
               &>span {
                 position:absolute;
                 left:0;
                 top:20px;
                 font-size:14px;
                 color:#999999;
-  
+
                 @media (min-width: $screen-size-pc) {
                   font-size:15px;
                   left:20px;
@@ -5463,10 +5539,27 @@ body {
               }
 
               &>strong {
+                position:relative;
                 display:block;
                 color:#111111;
                 font-weight:400;
                 margin:6px 0;
+
+                &>button {
+                  position:absolute;
+                  right:0;
+                  top:50%;
+                  transform:translateY(-50%);
+                  font-size:13px;
+                  border:1px solid #4E3DC4;
+                  background:#fff;
+                  border-radius:4px;
+                  color:#4E3DC4;
+                  padding:2px 5px;
+                  font-weight:600;
+                  width:72px;
+
+                }
               }
 
               div {
@@ -5480,7 +5573,7 @@ body {
                   font-size:14px;
                   font-weight:400;
                   color:#111;
-  
+
                   @media (min-width: $screen-size-pc) {
                     display:inline;
                     font-size:15px;
@@ -5492,7 +5585,7 @@ body {
                   display:block;
                   font-size:14px;
                   color:#4E3DC4;
-  
+
                   @media (min-width: $screen-size-pc) {
                     display:inline;
                     font-size:15px;
@@ -5509,11 +5602,14 @@ body {
                 font-size:15px;
                 font-weight:600;
                 color:#111111;
-  
+                width:84px;
+                text-align:center;
+
                 @media (min-width: $screen-size-pc) {
                   font-size:16px;
                   right:20px;
                   top:40px;
+                  width:110px;
                 }
 
                 &.reject {
@@ -5526,7 +5622,7 @@ body {
                 }
               }
 
-              button {
+              &>button {
                 position:absolute;
                 right:0;
                 top:90px;
@@ -5537,17 +5633,19 @@ body {
                 color:#4E3DC4;
                 padding:12px;
                 font-weight:600;
-  
+                width:84px;
+
                 @media (min-width: $screen-size-pc) {
                   font-size:15px;
                   right:20px;
                   top:70px;
-                  padding:10px 30px;
+                  padding:10px 5px;
+                  width:110px;
                 }
 
                 span {
                   display:block;
-  
+
                   @media (min-width: $screen-size-pc) {
                     display:inline;
                   }
@@ -5558,7 +5656,6 @@ body {
 
         }
       }
-
       section.report {
         text-align:center;
 

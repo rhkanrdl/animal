@@ -1288,6 +1288,8 @@ div.form-pop {
 		border:1px solid #555555;
 		@include drop-shadow($x:0,$y: 0, $blur: 20px, $spread: 0, $alpha: 0.16);
 		padding:50px 15px 15px;
+		max-height:80vh;
+		overflow-y:auto;
 	
 		@media (min-width: 800px) {
 			width:800px;
