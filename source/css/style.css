@@ -8783,6 +8783,73 @@ body div#content.sub section.procedure div.container ul.step li div p span {
   margin: 5px 0 0;
   color: #F8691F;
 }
+body div#content.sub section.terms {
+  text-align: center;
+}
+body div#content.sub section.terms div.container {
+  word-break: keep-all;
+  line-height: 1.6;
+}
+body div#content.sub section.terms div.container h3 {
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 30px;
+  font-size: 18px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.terms div.container h3 {
+    font-size: 19px;
+    margin: 0 0 40px;
+  }
+}
+body div#content.sub section.terms div.container h4 {
+  position: relative;
+  padding: 0 0 0 22px;
+  font-weight: 700;
+  color: #111;
+  margin: 0 0 20px;
+  font-size: 16px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.terms div.container h4 {
+    font-size: 17px;
+    margin: 0 0 25px;
+  }
+}
+body div#content.sub section.terms div.container h4::before {
+  content: "○";
+  position: absolute;
+  left: 0;
+}
+body div#content.sub section.terms div.container h4 small {
+  font-weight: 400;
+  font-size: 16px;
+}
+body div#content.sub section.terms div.container h4 strong {
+  color: #4E3DC4;
+}
+body div#content.sub section.terms div.container p.text {
+  position: relative;
+  padding: 0 0 0 14px;
+  margin: 0 0 20px 10px;
+  font-size: 14px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.terms div.container p.text {
+    font-size: 16px;
+    margin: 0 0 30px 10px;
+  }
+}
+body div#content.sub section.terms div.container ul {
+  margin: 0 0 20px 10px;
+  font-size: 14px;
+}
+@media (min-width: 1195px) {
+  body div#content.sub section.terms div.container ul {
+    font-size: 16px;
+    margin: 0 0 30px 10px;
+  }
+}
 body footer#footer {
   text-align: center;
   padding: 26px 0;
